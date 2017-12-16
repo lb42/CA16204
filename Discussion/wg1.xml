@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled Document</title>
+            <author/>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>2017-11-04T09:59:40.715699584</date>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <p>no publication statement available</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Written by OpenOffice</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <listChange>
+            <change>
+               <name/>
+               <date>2017-11-20T10:34:28.740000000</date>
+            </change>
+         </listChange>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="div1">
+            <head>Proposed plan of action for WG1</head>
+            <p>This is a hasty draft of some ideas for consideration by the WG charged with production of the Corpus. Please don’t hesitate to disagree, propose changes, endorse, question, problematize etc etc. And please bear in mind that I have only hinted at directions of work: almost every point I make here will need more careful consideraiton and much deeper discussion. </p>
+            <p rend="color(#009933)">I added some more ideas and comments in green.</p>
+            <p>I think these are the actions we should be undertaking. Each action has a corresponding deliverable, or set of deliverables, and I think they should be undertaken in the order indicated.</p>
+            <list type="ordered">
+               <item>Definition of sampling principles and selection criteria : a list of identifiable features of novels we will use when deciding whether or not to include them in the corpus<list type="unordered">
+                     <head/>
+                  </list>
+               </item>
+               <item>Definition of which textual features and metadata components shoould be represented in the encoded versions of texts in the corpus : a minimal XML encoding schema, probably based on existing standards such as TEI simplePrint.<list type="unordered">
+                     <head>
+                        <p rend="color(#009933)">Here, I would like to split up the tasks: </p>
+                        <list type="unordered">
+                           <item>
+                              <p rend="color(#009933)">Defining (first, preliminary) annotation schemes</p>
+                              <p rend="color(#009933)">Here, the TEI Guidelines can provide text structuring annotations. </p>
+                              <p rend="color(#009933)">We additionally need other annotation concepts for ,e.g., parts-of-speech, lemmatizations.for all languages  </p>
+                           </item>
+                           <item>
+                              <p rend="color(#009933)">Defining text metadata schemes</p>
+                              <p rend="color(#009933)">I developed a TEI based metadata scheme for text documents covering several bibliographic informations. Maybe, we can use this as a starting point? </p>
+                           </item>
+                           <item>
+                              <p rend="color(#009933)">Choice of format</p>
+                              <p rend="color(#009933)">In the memorandum, there is no distinct preference of format. </p>
+                              <p rend="color(#009933)">The focus of the COST Action is to  build a corpus. Defining a new  XML-schemes is a challenging and time consuming task. I would prefer using existing formats and schemes. </p>
+                              <p rend="color(#009933)">If ELTeC should be used in different analysis scenarios, we should probably discuss formats which can support multi-layered stand-off annotation such as PAULA XML.</p>
+                              <p rend="color(#009933)">Other important question is: Which annotation and analysing tools use which kind of formats?</p>
+                           </item>
+                        </list>
+                     </head>
+                  </list>
+               </item>
+            </list>
+            <p rend="color(#009933)">		Maybe, we can list all known and already used formats and tool we are aware of and 		discuss there application in the Action (pro and cons)?</p>
+            <list type="ordered">
+               <item>
+                  <list type="unordered">
+                     <item>
+                        <list type="unordered">
+                           <head/>
+                        </list>
+                     </item>
+                  </list>
+               </item>
+               <item>Definition of workflow to build corpus : Identification of titles to be included for each language;  sourcing available digital versions; defining and deploying conversion scripts; quality control.</item>
+               <item>A next important task might be the acquisition of Action members. </item>
+               <item>Building up a close communication with the other WG in the Action.</item>
+            </list>
+            <p>Some open questions on each of these topics are listed below.</p>
+            <div type="div2" rend="P35">
+               <head>Sampling principles. </head>
+               <p>What population is the corpus intended to represent (if it is intended to be representative?) Should we aim for a balance of some categories across the whole corpus, or only within individual languages? </p>
+               <p rend="color(#009933)">To build an overall representative corpus is almost impossible. There are various criteria which we then would need to address. Maybe, we should start with a corpus design which can be extended step by step by other COST members. In order to select a subcollection of the corpus for specific research questions, which should provide extensive metadata as sampling criteria (as you have already listed). </p>
+               <p rend="color(#009933)">A preliminary sampling principle might be “available”/”already digitized”?</p>
+               <p>Text features we might use as selection criteria are numerous, but if we aim to achieve a balanced corpus (whether balanced as a whole, or within individual languages only) we can only use a few. </p>
+               <p>Some suggestions:</p>
+               <list type="unordered">
+                  <item>size <list type="unordered">
+                        <item>wordcount </item>
+                        <item>pages</item>
+                     </list>
+                  </item>
+                  <item>canonicity/reception<list type="unordered">
+                        <item>reprints</item>
+                        <item>edition size</item>
+                        <item>reviews</item>
+                     </list>
+                  </item>
+                  <item>authorship<list type="unordered">
+                        <item>gender</item>
+                        <item>class </item>
+                        <item>region</item>
+                        <item>single/multiple/anonymous</item>
+                     </list>
+                  </item>
+                  <item>audience<list type="unordered">
+                        <item>high/low</item>
+                        <item>mass/targetted</item>
+                     </list>
+                  </item>
+                  <item>date<list type="unordered">
+                        <item>publication date of the manifestation and date of the text </item>
+                     </list>
+                  </item>
+                  <item>genre<list type="unordered">
+                        <item>keywords</item>
+                     </list>
+                  </item>
+                  <item>languages<list type="unordered">
+                        <item>language area, language type (e.g. German, Bavarian)</item>
+                        <item>language parts of the text </item>
+                     </list>
+                  </item>
+                  <item>place<list type="unordered">
+                        <item>publication places</item>
+                     </list>
+                  </item>
+                  <item>text genre<list type="unordered">
+                        <item>prose, lyrics etc.</item>
+                     </list>
+                  </item>
+                  <item>Reference of the source/archive<list type="unordered">
+                        <item>e.g. Dta, textgrid </item>
+                     </list>
+                  </item>
+               </list>
+               <p>We will aim to produce a balanced stratified corpus, in which for some criteria the numbers of titles in a given category corresponds with the number of available titles. These are the “sampling criteria”; of necessity few in number. The other criteria are “descriptive criteria”; we will aim to maximize variability in the corpus for these criteria. </p>
+            </div>
+            <div type="div2">
+               <head>Encoding scheme</head>
+               <p>The purpose of our encoding is not to represent the original text in all its complexity of structure or appearance, but simply to facilitate a richer and better-informed distant reading than a simple transcription of its lexical content would permit. So we want to distinguish headings and annotations from the rest of the text, and we want to locate stretches of text within gross structural features such as chapters and paragraphs.  We probably don’t care about linebreaks in the original print, though pagebreaks are useful to facilitate reference points in the source, and give some indication of “words-per-page”. </p>
+               <p>Metadata associated with each text (title, authorship, date etc.)  should always be represented in a standardised way to facilitate subsetting of the corpus.  This will also include coded values for selection/descriptive criteria itemized above.</p>
+               <p>Although we are not aiming at fidelity to particular editions, it’s probably important to know from what kind of edition the transcription derives (e.g. first printed edition, authorized reprint, unknown edition)  </p>
+               <p> Later stages of the project will need to use additional markup facilities to represent more sophisticated annotations: these will form an additional layer, not discussed here: the principle should however be that the base text we provide is always available in a uniform encoding.</p>
+               <p rend="color(#009933)">To include further preparation steps in our suggestion, would maybe be desirable (e.g., if the “base text” is somewhat difficult to process).</p>
+               <p rend="color(#009933)">Further questions/aspects concerning “the base text” might be: covering special character encoding, language encoding within the text (e.g. English In German texts), token definition, documentation of the overall characteristics of the base text (kind of transcription guidelines – what can be expected)</p>
+               <p rend="color(#009933)">Do we need to consider an additional normalization of the texts? I would assume that for automatic processing would require text with as little as possible linguistic variants. </p>
+            </div>
+            <div type="div2">
+               <head>Workflow.</head>
+               <p>Rights issues : we intend all our transcripts to be accessible according to an appropriate licence (e.g. CC-by). We should prepare an appropriate notice to that effect which we can send to those whose texts we propose to reuse or rework. </p>
+               <p>We should prepare a list of titles we would like to include first, according to the design criteria. Then determine which of these are already available in digital form. We should onsider available formats and select the most reliably convertible, probably HTML or a richer XML format. Assess accuracy of transcription. Deploy appropriate convertor, or write one. Vaidate against schema. Check accuracy.</p>
+               <p>Likely sources: Gutenberg; OTA; DTA; Obvil; Frantext; Textgrid; </p>
+               <p>	
+                  <hi rend="color(#009933)">The DTA and Textgrid both use TEI XML. Maybe, these two sources are a good starting paoint for the corpus?</hi>
+               </p>
+               <p>Typical convertors: from Gutenberg HTML; from DOC; from PDF</p>
+               <p>OCR from available page images is not excluded as a capture strategy, particularly for relatively modern printed texts.</p>
+               <p rend="color(#009933)bold">Corpus Preparation</p>
+               <p rend="color(#009933)">Which tools (annotation, conversion) and which pipelines and frameworks can we use? </p>
+               <p rend="color(#009933)">How do we would like to define the versioning aspects of the corpus?</p>
+               <list type="ordered">
+                  <head/>
+               </list>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
