@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Encoding Guidelines for the ELTEC</title>
+            <title>Encoding Guidelines for the ELTeC</title>
             <author>Work Group 1</author>
          </titleStmt>
          <publicationStmt>
@@ -21,44 +21,52 @@
       </revisionDesc>
    </teiHeader>
    <text>
-
       <body>
          <p>This document is the first draft of a reference document defining the encoding scheme to
-            be used for the European Language T E Corpus (ELTEC) which will be a major deliverable
-            of COST Action 125404, <title>Distant Reading</title>. As a first draft it necessarily
-            contains much uncertainty, either because policies have to be determined, or because
-            issues are under-specified. This version represents the views of its author only.
-            Particular areas of uncertainty are signalled. </p>
-
+            be used for the European Literary Text Collection (ELTeC) which will be a major
+            deliverable of COST Action 125404, <title>Distant Reading</title>. As a first draft it
+            necessarily contains much uncertainty, either because policies have to be determined, or
+            because issues are under-specified. This version represents the views of its author
+            only. Particular topics on which policy remains to be defined are signalled below with
+            the label <q>Open Question</q>. </p>
          <div>
             <head>Principles</head>
-            <p>The purpose of the ELTEC encoding scheme is not to represent the original text in all
-               its complexity of structure or appearance, but to facilitate a richer and
-               better-informed distant reading than a transcription of its lexical content alone
-               would permit. For example, it seems useful to distinguish headings and annotations
-               from the rest of the text, and to be able to locate stretches of text within gross
-               structural features such as chapters and paragraphs. It is probably also useful to
-               distinguish passages belonging to different narrative levels (for example, direct
-               speech versus narrative or quotation versus narrative) and to identify reference
-               points such as page breaks. In selecting features for inclusion in the markup scheme,
-               we have been guided, but not limited, by existing practice as far as possible <note
-                  place="foot">Particular collections we have examined are listed in section <ptr
-                     target="#sources"/></note></p>
+            <p>The MoU for the project points out that <q>Distant Reading methods cover a wide range
+                  of computational methods for literary text analysis, such as authorship
+                  attribution, topic modelling, character network analysis, or stylistic
+                  analysis.</q> The focus of the ELTeC encoding scheme is thus not to represent
+               texts in all their original complexity of structure or appearance, but rather to
+               facilitate a richer and better-informed distant reading than a transcription of its
+               lexical content alone would permit. For example, it seems useful to distinguish
+               headings and annotations from the rest of the text, and to be able to locate
+               stretches of text within gross structural features such as chapters and paragraphs.
+               It is probably also useful to distinguish passages belonging to different narrative
+               levels (for example, direct speech versus narrative or quotation versus narrative)
+               and to identify reference points such as page breaks. It is less useful to record
+               exact nuances of rendition or spelling in a particular version of a text. Our goal is
+               not to duplicate the work of scholarly editors or to produce (yet another) digital
+               edition of a source. </p>
+            <p>In selecting features for inclusion in the markup scheme, we have been guided, but
+               not limited, by existing practice as far as possible <note place="foot">Particular
+                  collections we have examined are listed in section <ptr target="#sources"/></note>
+               but the main goal has been to identify a small core set of essential textual features
+               which can be readily (preferably automatically) identified in existing digital
+               transcriptions, or easily and consistently provided by new transcriptions. </p>
             <p>This document lists all the textual features which are to be distinguished in an
-               ElTec conformant transcription. Whenever a given feature exists in a text, it will be
+               ELTeC conformant transcription. Whenever a given feature exists in a text, it will be
                marked up as indicated here. No other features will be captured by the markup: if
                some textual feature not provided for here is identified by a marked up source text,
-               that markup will be removed. The goal is to ensure that the Eltec texts can be
-               processed by very simple minded (though XML aware) systems primarily concerned with
-               lexis. </p>
+               that markup will be removed. The goal is to ensure that the ELTeC texts can be
+               processed by very simple minded (but XML-aware) systems primarily concerned with
+               lexis and to make life easier for the developers of such systems. </p>
             <p>We make no attempt to propose markup for linguistic annotations here. The assumption
                is that this will be produced by different annotation systems in different ways,
                though with an association between such annotations and the basic lexical structures
-               represented by the Eltec markup. </p>
+               represented by the core ELTeC markup. </p>
          </div>
          <div>
             <head>Basic Transcription Guidelines</head>
-            <p>The basic unit of the Eltec corpus is the text of a single novel, represented by a
+            <p>The basic unit of the ELTeC corpus is the text of a single novel, represented by a
                TEI <gi>text</gi> element. We propose no mechanism (other than metadata) to encode
                units larger than a single novel, such as multipart novel series like Proust's
                   <title>A la recherche du temps perdu</title> or Balzac's <title>Les
@@ -73,17 +81,35 @@
                   <item>Sort of : do not transcribe them, but indicate that they have been
                      suppressed by using the <gi>gap</gi> element. </item>
                </list></p>
-            <p>Within the body of a text, major structural divisions (parts, sections,
-               chapters etc.) will be captured using the generic <gi>div</gi> element, using its
-               <att>type</att> attribute as necessary (a closed set of values needs to be defined)</p> 
-            <p>The (human) language in which a text is expressed will be indicated explicitly by
-               using the <att>xml:lang</att> attribute to supply the ISO 2 letter code for the
+            <p>Within the body of a text, major structural divisions (parts, sections, chapters
+               etc.) will be captured using the generic <gi>div</gi> element, with attributes
+                  <att>type</att>, <att>xml:lang</att>, <att>xml:id</att> and <att>n</att> used as
+               further detailed below.</p>
+            <p>The names used for hierarchic structural divisions of a novel above the chapter are
+               arbitrary, culture-specific, and often inconsistent : in some novels things called
+                  <q>part</q> contain things called <q>book</q> and in others the reverse. We
+               propose to follow TEI in using a single element (<gi>div</gi>) for every hierarchical
+               structural division, down to the level of <q>chapter</q>.</p>
+            <p><label>Open Question</label> Is it useful to retain the name used for each level in
+               the original source? <list>
+                  <item> Yes: it is easy to keep and may help referencing : use the <att>type</att>
+                     attribute to hold the name used for each level of div in the work in
+                     question</item>
+                  <item>No : this name adds no useful information beyond the level indicated by the
+                     XML structure </item>
+                  <item>No : it would be more useful to provide an explicit and normalised
+                     indication of the hierarchic level for the benefit of non-XML-aware processors
+                     (e.g. <code>level1</code>, <code>level2</code> etc.)</item>
+               </list>in the novel in question as value for the <att>type</att> attribute. </p>
+            <p>The (human) language in which a text is expressed is indicated explicitly by the
+                  <att>xml:lang</att> attribute which supplies the ISO 2 letter code for the
                language concerned. This attribute will always be supplied on the <gi>text</gi>
                element to specify a default, and may also appear on other elements, for example
-                  <gi>foreign</gi>, to indicate passages where the language changes. The languages
-               used in a given text will be itemized in its metadata. </p>
-            <p><label>Open question</label> Should passages exhibiting for example regional or
-               dialectal variation be specially signalled? <list>
+                  <gi>foreign</gi>, to indicate passages where the language changes. The various
+               different languages used in a given text will be itemized in its metadata (see
+                  <gi>langUsage</gi> element in the header). </p>
+            <p><label>Open question</label> Should passages exhibiting regional or dialectal
+               variation be specially signalled? <list>
                   <item>No : this is too fine grained and controversial a distinction to be made
                      with reliable consistency </item>
                   <item>Yes : treat this in the same way as any other kind of code switching and
@@ -91,36 +117,112 @@
                   <item>Maybe : just use the <gi>distinct</gi> element to indicate the kind of
                      variation concerned</item>
                </list></p>
-<p>A single referencing scheme will be defined for the whole corpus, with the following components:
-<list>
-   <item>text identifier : every text will have an identifier consisting of its two letter language code
-   and a three digit serial number, for example <code>FR042</code></item><item>chapter identifier: each chapter
-      or equivalent will have an identifier concatenating the text identifier and a three digit serial number,
-      for example <code>FR042012</code> is the twelfth chapter of the 42nd French novel. </item>
-   <item>If sub-chapter segmentation (see below) is implemented, then the segments will append a further four digit serial number.l
-   will </item>
-</list>The identifier will be supplied as the value of an <att>xml:id</att> attribute on each <gi>text</gi>, 
-   <gi>div</gi> or <gi>s</gi> element as appropriate.</p><p>Note that these identifiers will not necessarily
-   correspond with the numbering used in a particular source text. In a work where the first twelve chapters
-   are considered to form part one, and the next twelve constitute part two, the first chapter of the second
-   part will have an identifier ending <code>013</code>, even though it may be numbered <code>1</code> in a
-   source text. </p><p><label>Open question</label> : is it important to preserve original number of 
-   deeply structured texts?
-   <list>
-      <item>Yes : the original numbering is widely used to reference the text: it should be supplied as
-      using the <att>n</att> attribute on the <gi>div</gi>. In the preceding example, the  value of "1" for this
-         attribute and the <gi>div</gi> element containing the twelve chaoters making up oart two will have the
-         value "2" for this attribute.  </item>
-   </list></p>
+            <p>A single reference scheme will be defined for the whole corpus, with the following
+               components: <list>
+                  <item>text identifier : every text will have an identifier consisting of its two
+                     letter language code and a three digit serial number, for example
+                        <code>FR042</code></item>
+                  <item>chapter identifier: each chapter or equivalent will have an identifier
+                     concatenating the text identifier and a three digit serial number, for example
+                        <code>FR042012</code> is the twelfth chapter of the 42nd French novel. </item>
+                  <item>If sub-chapter segmentation (see below) is implemented, then the segments
+                     will append a further four digit serial number.</item>
+               </list>The identifier will be supplied as the value of an <att>xml:id</att> attribute
+               on each <gi>text</gi>, <gi>div</gi> or <gi>s</gi> element as appropriate.</p>
+            <p>Note that these identifiers will not necessarily correspond with the numbering used
+               in a particular source text. In a work where the first twelve chapters are considered
+               to form part one, and the next twelve constitute part two, the first chapter of the
+               second part will have an identifier ending <code>013</code>, even though it may be
+               numbered <code>1</code> in a source text. </p>
+            <p><label>Open question</label> : is it important to preserve the original numbering,
+               particularly for deeply structured texts? <list>
+                  <item>Yes : the original numbering is widely used to reference the text: it should
+                     be supplied as using the <att>n</att> attribute on the <gi>div</gi>. In the
+                     preceding example, the value of "1" for this attribute and the <gi>div</gi>
+                     element containing the twelve chapters making up part two will have the value
+                     "2" for this attribute. </item>
+                  <item>No : the original numbering and referencing scheme are of no use in our
+                     intended applications, introduce unnecessary complexity, and may be a source of
+                     confusion. </item>
+               </list></p>
+            <p>The chapters of a novel mostly consist of prose, arranged in paragraphs, for which we
+               will use the TEI <gi>p</gi> element. It is not unusual to find other structures
+               however, specifically verse, or passages of dialogue presented as if in a play, with
+               speaker labels and even stage directions. Less frequently, novels may contain
+               material presented in list or tabular formats. Graphics with their own associated
+               heading or other text are also frequent. </p>
+            <p><label>Open Question</label> : how should material other than running prose and
+               dialogue be encoded? <list type="ordered">
+                  <item>Use the appropriate TEI elements for verse or drama (<gi>lg</gi>,
+                     <gi>l</gi>, <gi>sp</gi>, <gi>stage</gi>)</item>
+                  <item>Use the appropriate TEI elements for lists and tables (<gi>list</gi>,
+                        <gi>label</gi>, <gi>item</gi>, <gi>table</gi>, <gi>cell</gi>,
+                     <gi>row</gi>)</item>
+                  <item>Use the appropriate TEI elements for embedded graphics (<gi>figure</gi>,
+                        <gi>graphic</gi>, <gi>head</gi>)</item>
+                  <item>Suppress all non-prose material, replacing it by <gi>gap</gi></item>
+               </list></p>
+            <p>Novels are also full of direct speech, represented using various different
+               conventions, but almost always distinguished from the narrative voice. The first
+               person narrative is also common, but may be regarded as a special case. How exactly
+               different narrative strands are articulated in a novel, and the extent to which they
+               may be characterised by their lexis has been a preoccupation of many <q>distant
+                  reading</q> style analyses. It might therefore be helpful to distinguish material
+               purporting to be direct speech from material purporting to be narrative in our basic
+               encoding, though to do so consistently and accurately may occasionally be
+               problematic.</p>
+            <p><label>Open Question</label> : Should passages presented as direct speech in a novel
+               be distinguished from passages presented as narrative? <list>
+                  <item>Yes : use <gi>q</gi> and avoid nesting problems by always nesting it within
+                        <gi>p</gi></item>
+                  <item>Yes : use a <gi>milestone</gi> to mark the beginning and end of each passage
+                     of direct speech</item>
+                  <item>Sort of : provide an attribute on <gi>p</gi> to indicate whether or not the
+                     paragraph contains direct speech</item>
+                  <item>No : rely on (or normalise) typographic conventions such as quote marks or
+                     dashes to distinguish direct speech only. </item>
+               </list>
+            </p>
+            <p>Printed texts typically deploy a number of conventions which can cause problems for
+               linguistic analyses of even the most basic kind. Changes of font or style
+               (italicization or use of superscript, for example) can have particular lexical
+               significance which should be take into account. End-of-line hyphenation can make it
+               harder to identify the exact form of a token. Non-standard (i.e. non-modern)
+               spellings can mislead parsers. Our proposed encoding aims above all for
+               consistency and transparency in what is reliably achievable, leaving more difficult
+               and problematic issues to be addressed by linguistic annotations. </p>
+            <p>We do not preserve the lineation of running prose in our source texts, since this is always purely an
+               artefact of the source edition. For the same reason we will reassemble words broken
+               across a line break, silently removing any hyphen present. (This will make it
+               impossible to use our texts for hyphenation studies. So be it.) </p>
+            <p><label>Open Question</label> : Should page breaks in the source text be preserved ? 
+            <list><item>Yes : this is useful information  (e.g. to determine words-per-page, or to
+               anchor links to an image of the source text) which is usually available at no-cost in
+               existing digital texts</item><item>No : the proposed uses don't justify the cost of
+                  providing the information if it is missing. And pagination is inherently
+                  copy-specific.</item></list></p>
+            <p>Font and style variations in the source text usually signal something. Italics may
+               signal emphasis, quotation, foreign language terms etc. Superscripts almost always
+               signal abbreviation. The visual salience of these variations is of considerably less
+               interest to distant readers than the intended function they signal. However, it is
+               not always easy to determine that function reliably and consistently by algorithm.
+Some simple cases could however be addressed.           </p>
+          
+            <p>Words
+                 containing supralinear characters (such as French <soCalled>14<hi
+                    rend="super">eme</hi></soCalled>) should be normalised. The TEI element <gi>abbr</gi>
+              should be used to indicate the function. <code>&lt;abbr>14eme&lt;/abbr></code></p>
          </div>
          <div>
             <head>TEI Elements used</head>
+            <p>This section will provide a checklist of TEI elements used in the body of each ELTeC
+               text, with descriptions and examples of their intended applications. </p>
          </div>
          <div>
             <head>Metadata in the TEI Header</head>
             <p>Metadata associated with each text (title, authorship, date etc.) should always be
-               represented in a standardised way to facilitate subsetting of the corpus. This will
-               also include coded values for selection/descriptive criteria itemized above.</p>
+               represented in a standardised way to facilitate subsetting of the collection. This
+               will also include coded values for selection/descriptive criteria itemized above.</p>
             <p>Although we are not aiming at fidelity to particular editions, it’s probably
                important to know from what kind of edition the transcription derives (e.g. first
                printed edition, authorized reprint, unknown edition) </p>
@@ -143,7 +245,7 @@
 -->
          </div>
          <div>
-            <schemaSpec ident="eltec">
+            <schemaSpec ident="ELTeC">
                <moduleRef key="tei"/>
                <moduleRef key="core" include="head item l lg list p pb sp stage hi"/>
                <moduleRef key="textstructure" include="div body"/>
