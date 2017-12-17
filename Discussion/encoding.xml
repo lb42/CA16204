@@ -139,10 +139,7 @@
             <p><label>Open question</label> is it important to preserve the original numbering,
                particularly for deeply structured texts? <list>
                   <item>Yes : the original numbering is widely used to reference the text: it should
-                     be supplied as using the <att>n</att> attribute on the <gi>div</gi>. In the
-                     preceding example, the value of "1" for this attribute and the <gi>div</gi>
-                     element containing the twelve chapters making up part two will have the value
-                     "2" for this attribute. </item>
+                     be supplied as using the <att>n</att> attribute on the <gi>div</gi>.</item>
                   <item>No : the original numbering and referencing scheme are of no use in our
                      intended applications, introduce unnecessary complexity, and may be a source of
                      confusion. </item>
