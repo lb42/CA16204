@@ -22,9 +22,9 @@
    </teiHeader>
    <text>
       <body>
-         <p>This document is the first draft of a reference document defining the encoding scheme to
+         <p>This is the first draft of a reference document defining the encoding scheme to
             be used for the European Literary Text Collection (ELTeC) which will be a major
-            deliverable of COST Action 125404, <title>Distant Reading</title>. As a first draft it
+            deliverable of COST Action 16204, <title>Distant Reading</title>. As a first draft it
             necessarily contains much uncertainty, either because policies have to be determined, or
             because issues are under-specified. This version represents the views of its author
             only. Particular topics on which policy remains to be defined are signalled below with
@@ -91,7 +91,7 @@
                propose to follow TEI in using a single element (<gi>div</gi>) for every hierarchical
                structural division, down to the level of <q>chapter</q>.</p>
             <p><label>Open Question</label> Is it useful to retain the name used for each level in
-               the original source? <list>
+               the original source (the type of div) ? <list>
                   <item> Yes: it is easy to keep and may help referencing : use the <att>type</att>
                      attribute to hold the name used for each level of div in the work in
                      question</item>
@@ -100,7 +100,7 @@
                   <item>No : it would be more useful to provide an explicit and normalised
                      indication of the hierarchic level for the benefit of non-XML-aware processors
                      (e.g. <code>level1</code>, <code>level2</code> etc.)</item>
-               </list>in the novel in question as value for the <att>type</att> attribute. </p>
+               </list></p>
             <p>The (human) language in which a text is expressed is indicated explicitly by the
                   <att>xml:lang</att> attribute which supplies the ISO 2 letter code for the
                language concerned. This attribute will always be supplied on the <gi>text</gi>
@@ -128,13 +128,15 @@
                   <item>If sub-chapter segmentation (see below) is implemented, then the segments
                      will append a further four digit serial number.</item>
                </list>The identifier will be supplied as the value of an <att>xml:id</att> attribute
-               on each <gi>text</gi>, <gi>div</gi> or <gi>s</gi> element as appropriate.</p>
+               on each <gi>text</gi>, <gi>div</gi> or <gi>s</gi> element as appropriate. Adding this
+            identifier is an easily automated task which can be built into the workflow for
+            accession to the ELTeC.</p>
             <p>Note that these identifiers will not necessarily correspond with the numbering used
                in a particular source text. In a work where the first twelve chapters are considered
                to form part one, and the next twelve constitute part two, the first chapter of the
                second part will have an identifier ending <code>013</code>, even though it may be
                numbered <code>1</code> in a source text. </p>
-            <p><label>Open question</label> : is it important to preserve the original numbering,
+            <p><label>Open question</label> is it important to preserve the original numbering,
                particularly for deeply structured texts? <list>
                   <item>Yes : the original numbering is widely used to reference the text: it should
                      be supplied as using the <att>n</att> attribute on the <gi>div</gi>. In the
@@ -151,7 +153,7 @@
                speaker labels and even stage directions. Less frequently, novels may contain
                material presented in list or tabular formats. Graphics with their own associated
                heading or other text are also frequent. </p>
-            <p><label>Open Question</label> : how should material other than running prose and
+            <p><label>Open Question</label> how should material other than running prose and
                dialogue be encoded? <list type="ordered">
                   <item>Use the appropriate TEI elements for verse or drama (<gi>lg</gi>,
                      <gi>l</gi>, <gi>sp</gi>, <gi>stage</gi>)</item>
@@ -171,7 +173,7 @@
                purporting to be direct speech from material purporting to be narrative in our basic
                encoding, though to do so consistently and accurately may occasionally be
                problematic.</p>
-            <p><label>Open Question</label> : Should passages presented as direct speech in a novel
+            <p><label>Open Question</label>  Should passages presented as direct speech in a novel
                be distinguished from passages presented as narrative? <list>
                   <item>Yes : use <gi>q</gi> and avoid nesting problems by always nesting it within
                         <gi>p</gi></item>
@@ -186,7 +188,7 @@
             <p>Printed texts typically deploy a number of conventions which can cause problems for
                linguistic analyses of even the most basic kind. Changes of font or style
                (italicization or use of superscript, for example) can have particular lexical
-               significance which should be take into account. End-of-line hyphenation can make it
+               significance which should be taken into account. End-of-line hyphenation can make it
                harder to identify the exact form of a token. Non-standard (i.e. non-modern)
                spellings can mislead parsers. Our proposed encoding aims above all for consistency
                and transparency in what is reliably achievable, leaving more difficult and
@@ -216,10 +218,9 @@
                         <gi>emph</gi></item>
                   <item>otherwise, replace all indications of highlighting by the TEI <gi>hi</gi>
                      element</item>
-                  <item>indications of supralinear characters (such as French <soCalled>14<hi
-                           rend="super">eme</hi></soCalled>) should be removed. Instead, the TEI
+                  <item>indications of superscript characters (such as French <soCalled>14&#x1d49;</soCalled>) should be removed. Instead, the TEI
                      element <gi>abbr</gi> should be used to indicate the presence of an
-                     abbreviation: <code>&lt;abbr>14eme&lt;/abbr></code></item>
+                     abbreviated word: <code>&lt;abbr>14e&lt;/abbr></code></item>
                </list></p><p><label>Open Question</label>: Is it feasible or useful to recode highlighted
                   spans of text in this way?
                <list>
