@@ -13,11 +13,11 @@
             <p>Unpublished draft for discussion</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Original document drafted in TEI format</p>
+            <p>A born digital document drafted in TEI format by LB</p>
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
-         <change>First draft on ES </change>
+         <change when="2017-12-17">First (partial) discussion draft</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -45,7 +45,7 @@
                and to identify reference points such as page breaks. It is less useful to record
                exact nuances of rendition or spelling in a particular version of a text. Our goal is
                not to duplicate the work of scholarly editors or to produce (yet another) digital
-               edition of a source. </p>
+               edition of a specific source document. </p>
             <p>In selecting features for inclusion in the markup scheme, we have been guided, but
                not limited, by existing practice as far as possible <note place="foot">Particular
                   collections we have examined are listed in section <ptr target="#sources"/></note>
@@ -188,30 +188,48 @@
                (italicization or use of superscript, for example) can have particular lexical
                significance which should be take into account. End-of-line hyphenation can make it
                harder to identify the exact form of a token. Non-standard (i.e. non-modern)
-               spellings can mislead parsers. Our proposed encoding aims above all for
-               consistency and transparency in what is reliably achievable, leaving more difficult
-               and problematic issues to be addressed by linguistic annotations. </p>
-            <p>We do not preserve the lineation of running prose in our source texts, since this is always purely an
-               artefact of the source edition. For the same reason we will reassemble words broken
-               across a line break, silently removing any hyphen present. (This will make it
-               impossible to use our texts for hyphenation studies. So be it.) </p>
-            <p><label>Open Question</label> : Should page breaks in the source text be preserved ? 
-            <list><item>Yes : this is useful information  (e.g. to determine words-per-page, or to
-               anchor links to an image of the source text) which is usually available at no-cost in
-               existing digital texts</item><item>No : the proposed uses don't justify the cost of
-                  providing the information if it is missing. And pagination is inherently
-                  copy-specific.</item></list></p>
+               spellings can mislead parsers. Our proposed encoding aims above all for consistency
+               and transparency in what is reliably achievable, leaving more difficult and
+               problematic issues to be addressed by linguistic annotations. </p>
+            <p>We do not preserve the lineation of running prose in our source texts, since this is
+               always purely an artefact of the source edition. For the same reason we will
+               reassemble words broken across a line break, silently removing any hyphen present.
+               (This will make it impossible to use our texts for hyphenation studies. So be it.) </p>
+            <p><label>Open Question</label> : Should page breaks in the source text be preserved ? <list>
+                  <item>Yes : this is useful information (e.g. to determine words-per-page, or to
+                     anchor links to an image of the source text) which is usually available at
+                     no-cost in existing digital texts</item>
+                  <item>No : the proposed uses don't justify the cost of providing the information
+                     if it is missing. And pagination is inherently copy-specific.</item>
+               </list></p>
             <p>Font and style variations in the source text usually signal something. Italics may
                signal emphasis, quotation, foreign language terms etc. Superscripts almost always
                signal abbreviation. The visual salience of these variations is of considerably less
                interest to distant readers than the intended function they signal. However, it is
                not always easy to determine that function reliably and consistently by algorithm.
-Some simple cases could however be addressed.           </p>
-          
-            <p>Words
-                 containing supralinear characters (such as French <soCalled>14<hi
-                    rend="super">eme</hi></soCalled>) should be normalised. The TEI element <gi>abbr</gi>
-              should be used to indicate the function. <code>&lt;abbr>14eme&lt;/abbr></code></p>
+               Some simple cases could however be addressed. A possibly strategy is outlined below.
+               It assumes the existence of a digital version of the text in which visual features
+               are explicit, whether by means of TEI-style markup or styling information such as
+               that provided by Word. <list>
+                  <item>if possible, replace indications of highlighting by an appropriate TEI
+                     element, chosen from the following list : <gi>foreign</gi>, <gi>title</gi>,
+                        <gi>emph</gi></item>
+                  <item>otherwise, replace all indications of highlighting by the TEI <gi>hi</gi>
+                     element</item>
+                  <item>indications of supralinear characters (such as French <soCalled>14<hi
+                           rend="super">eme</hi></soCalled>) should be removed. Instead, the TEI
+                     element <gi>abbr</gi> should be used to indicate the presence of an
+                     abbreviation: <code>&lt;abbr>14eme&lt;/abbr></code></item>
+               </list></p><p><label>Open Question</label>: Is it feasible or useful to recode highlighted
+                  spans of text in this way?
+               <list>
+                  <item>Yes : in many cases this can be an automatic process and the results justify
+                  investing the effort </item><item>No : there are likely to be too many borderline
+                     or debatable cases to do this automatically so this would have to be done as
+                     part of a major proof reading exercise</item>
+               </list></p>
+            <p>Whichever solution is adopted, it should be applied uniformly across the ELTeC. A
+               collection in which some texts make distinctions ignored by others is unsatisfactory.</p>
          </div>
          <div>
             <head>TEI Elements used</head>
