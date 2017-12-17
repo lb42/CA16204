@@ -22,13 +22,13 @@
    </teiHeader>
    <text>
       <body>
-         <p>This is the first draft of a reference document defining the encoding scheme to
-            be used for the European Literary Text Collection (ELTeC) which will be a major
-            deliverable of COST Action 16204, <title>Distant Reading</title>. As a first draft it
-            necessarily contains much uncertainty, either because policies have to be determined, or
-            because issues are under-specified. This version represents the views of its author
-            only. Particular topics on which policy remains to be defined are signalled below with
-            the label <q>Open Question</q>. </p>
+         <p>This is the first draft of a reference document defining the encoding scheme to be used
+            for the European Literary Text Collection (ELTeC) which will be a major deliverable of
+            COST Action 16204, <title>Distant Reading</title>. As a first draft it necessarily
+            contains much uncertainty, either because policies have to be determined, or because
+            issues are under-specified. This version represents the views of its author only.
+            Particular topics on which policy remains to be defined are signalled below with the
+            label <q>Open Question</q>. </p>
          <div>
             <head>Principles</head>
             <p>The MoU for the project points out that <q>Distant Reading methods cover a wide range
@@ -129,8 +129,8 @@
                      will append a further four digit serial number.</item>
                </list>The identifier will be supplied as the value of an <att>xml:id</att> attribute
                on each <gi>text</gi>, <gi>div</gi> or <gi>s</gi> element as appropriate. Adding this
-            identifier is an easily automated task which can be built into the workflow for
-            accession to the ELTeC.</p>
+               identifier is an easily automated task which can be built into the workflow for
+               accession to the ELTeC.</p>
             <p>Note that these identifiers will not necessarily correspond with the numbering used
                in a particular source text. In a work where the first twelve chapters are considered
                to form part one, and the next twelve constitute part two, the first chapter of the
@@ -173,8 +173,8 @@
                purporting to be direct speech from material purporting to be narrative in our basic
                encoding, though to do so consistently and accurately may occasionally be
                problematic.</p>
-            <p><label>Open Question</label>  Should passages presented as direct speech in a novel
-               be distinguished from passages presented as narrative? <list>
+            <p><label>Open Question</label> Should passages presented as direct speech in a novel be
+               distinguished from passages presented as narrative? <list>
                   <item>Yes : use <gi>q</gi> and avoid nesting problems by always nesting it within
                         <gi>p</gi></item>
                   <item>Yes : use a <gi>milestone</gi> to mark the beginning and end of each passage
@@ -218,19 +218,22 @@
                         <gi>emph</gi></item>
                   <item>otherwise, replace all indications of highlighting by the TEI <gi>hi</gi>
                      element</item>
-                  <item>indications of superscript characters (such as French <soCalled>14&#x1d49;</soCalled>) should be removed. Instead, the TEI
-                     element <gi>abbr</gi> should be used to indicate the presence of an
-                     abbreviated word: <code>&lt;abbr>14e&lt;/abbr></code></item>
-               </list></p><p><label>Open Question</label>: Is it feasible or useful to recode highlighted
-                  spans of text in this way?
-               <list>
+                  <item>indications of superscript characters (such as French
+                        <soCalled>14&#x1d49;</soCalled>) should be removed. Instead, the TEI element
+                        <gi>abbr</gi> should be used to indicate the presence of an abbreviated
+                     word: <code>&lt;abbr>14e&lt;/abbr></code></item>
+               </list></p>
+            <p><label>Open Question</label>: Is it feasible or useful to recode highlighted spans of
+               text in this way? <list>
                   <item>Yes : in many cases this can be an automatic process and the results justify
-                  investing the effort </item><item>No : there are likely to be too many borderline
-                     or debatable cases to do this automatically so this would have to be done as
-                     part of a major proof reading exercise</item>
+                     investing the effort </item>
+                  <item>No : there are likely to be too many borderline or debatable cases to do
+                     this automatically so this would have to be done as part of a major proof
+                     reading exercise</item>
                </list></p>
             <p>Whichever solution is adopted, it should be applied uniformly across the ELTeC. A
-               collection in which some texts make distinctions ignored by others is unsatisfactory.</p>
+               collection in which some texts make distinctions ignored by others is
+               unsatisfactory.</p>
          </div>
          <div>
             <head>TEI Elements used</head>
@@ -239,12 +242,16 @@
          </div>
          <div>
             <head>Metadata in the TEI Header</head>
-            <p>Metadata associated with each text (title, authorship, date etc.) should always be
-               represented in a standardised way to facilitate subsetting of the collection. This
-               will also include coded values for selection/descriptive criteria itemized above.</p>
-            <p>Although we are not aiming at fidelity to particular editions, it’s probably
-               important to know from what kind of edition the transcription derives (e.g. first
-               printed edition, authorized reprint, unknown edition) </p>
+            <p>This section will describe the metadata associated with each text (title, authorship,
+               date etc.) The intention is to provide this in a standardised way to facilitate
+               subsetting of the collection, using (for example) coded values for the descriptive
+               selection criteria associated with the text. Although we are not aiming at fidelity
+               to particular editions, it’s probably important to know from what kind of edition the
+               transcription derives (e.g. first printed edition, authorized reprint, unknown
+               edition) </p>
+            <p>This will be encoded using the relevant elements proposed for the TEI Header. This
+               section will provide a checklist of all TEI Header elements to be provided for each
+               text, with descriptions and examples of their intended usage. </p>
          </div>
          <div>
             <head>Linguistic annotation</head>
@@ -263,7 +270,10 @@
                as possible linguistic variants. </p>
 -->
          </div>
-         <div>
+         <div><head>Formal specification</head>
+            <p>The ELTeC encoding scheme defined by this document is  a TEI-conformant
+               customization, from which user documentation, and formal RELAXNG or DTD specifications can be
+               generated automatically. This section contains the schema specification itself.</p>
             <schemaSpec ident="ELTeC">
                <moduleRef key="tei"/>
                <moduleRef key="core" include="head item l lg list p pb sp stage hi"/>
