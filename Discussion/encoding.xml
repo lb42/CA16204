@@ -283,7 +283,15 @@
          </div>
       </body>
       <back xml:id="sources">
+         <p>Sources consulted</p>
          <listBibl>
+            <bibl>An introduction to TEI Simple Print 
+               <idno type="URI">http://www.tei-c.org/release/doc/tei-p5-exemplars/html/tei_simplePrint.doc.html</idno></bibl>
+            <bibl>Burnard (Lou) <date>2005</date>
+               <title level="a">Metadata for corpus work</title> in <title>Developing Linguistic
+                  Corpora: A guide to good practice</title> ed. Martin Wynne. Oxford: Oxbow Books,
+               pp 30-46. <!--<ref target="2005-metadata.xml">XML source</ref>--></bibl>
+            <bibl> Odebrecht, Carolin. (2017). Metadata for Historical Corpora. Realization of the Metamodel for Corpus Metadata with the help of TEI Customization [Data set]. Zenodo. http://doi.org/10.5281/zenodo.267999</bibl>
             <bibl><idno type="URI">github.com/cligs/textbox</idno></bibl>
          </listBibl>
       </back>
