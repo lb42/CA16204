@@ -254,10 +254,10 @@
                     <item>Kind of novel<list type="unordered">
                             <item>Main theme (cf. Falkentheorie)</item>
                         </list></item>
-                </list>
-                <list type="ordered">
+                </list></div>
+                <div>
                     <head>Metadata for texts in ELTeC</head>
-                </list>
+               
                 <p>For every text in the ELTeC, the following metadata should be recorded. </p>
                 <list type="unordered">
                     <item>title</item>
