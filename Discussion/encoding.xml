@@ -255,349 +255,330 @@
                uniformly to all parts of the collection should be supplied in the ELTeC header;
                information specific to a particular document in the text header. </p>
          </div>
-           <div>
-          <head>Text-level metadata</head>
-              <p>Here is an example template for an individual text header
+         <div>
+            <head>Text-level metadata</head>
+            <p>Here is an example template for an individual text header
                <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                    <teiHeader type="novelHeader">
-                       <fileDesc>
-                          <titleStmt>
-                             <title><!-- standard title of work --> </title>
-                               <author> <!-- information about the author --> </author>
-                          </titleStmt>
-                          <extent> <!-- size of the text, in pages and words --> </extent>
-                          <publicationStmt>
-                             <!-- boilerplate statement about status as part of ELTeC -->
-                          </publicationStmt>
-                           <sourceDesc>
-                              <bibl> <!-- bibliographic description of the printed source -->
-                              </bibl>
-                           </sourceDesc>
-                       </fileDesc>
-                       <profileDesc> <!-- additional descriptive information --> 
-                       </profileDesc>
-                         <revisionDesc> <!-- revision information -->
-                         </revisionDesc>
-                    </teiHeader>
-                   </egXML></p>
-          <p>Within the <gi>teiHeader</gi>, a <gi>fileDesc</gi>, a <gi>profileDesc</gi>,
-              and  a <gi>revisionDesc</gi> are all required. The <gi>encodingDesc</gi> may be
-             supplied in (hopefully unlikely) event that some aspect of this document's encoding is
-             anomalous.
-          </p>
-          <p>The <gi>fileDesc</gi> contains the following mandatory elements:
-          <specList>
-              <specDesc key="titleStmt"/>
-              <specDesc key="extent" atts="type"/>
-              <specDesc key="publicationStmt"/>
-              <specDesc key="sourceDesc"/>
-            </specList>
-          </p>
-         
-          <p> Taking these in turn, the <gi>titleStmt</gi> contains the title and author of the
-             document. The <gi>title </gi>should be taken from an authoritative bibliographic source, and
-           should include a phrase such as "encoded in TEI XML to ELTeC standard". The <gi>author</gi>
-           may contain one or more of the following:
-             <specList>
-               <specDesc key="persName"/>
-              <specDesc key="forename"/>
-              <specDesc key="surname"/>
-                <specDesc key="birth"/>
-                <specDesc key="death"/>
-                <specDesc key="affiliation"/>
-                <specDesc key="sex"/>
-            </specList>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples"><teiHeader type="DocumentHeader">
-                <fileDesc>
+                  <teiHeader type="novelHeader">
+                     <fileDesc>
+                        <titleStmt>
+                           <title><!-- standard title of work -->
+                           </title>
+                           <author>
+                              <!-- information about the author -->
+                           </author>
+                        </titleStmt>
+                        <extent>
+                           <!-- size of the text, in pages and words -->
+                        </extent>
+                        <publicationStmt>
+                           <!-- boilerplate statement about status as part of ELTeC -->
+                        </publicationStmt>
+                        <sourceDesc>
+                           <bibl>
+                              <!-- bibliographic description of the printed source -->
+                           </bibl>
+                        </sourceDesc>
+                     </fileDesc>
+                     <profileDesc>
+                        <!-- additional descriptive information -->
+                     </profileDesc>
+                     <revisionDesc>
+                        <!-- revision information -->
+                     </revisionDesc>
+                  </teiHeader>
+               </egXML>
+            </p>
+            <p>Within the <gi>teiHeader</gi>, a <gi>fileDesc</gi>, a <gi>profileDesc</gi>, and a
+                  <gi>revisionDesc</gi> are all required. The <gi>encodingDesc</gi> may be supplied
+               in (hopefully unlikely) event that some aspect of this document's encoding is
+               anomalous. </p>
+            <p>The <gi>fileDesc</gi> contains the following mandatory elements: <specList>
+                  <specDesc key="titleStmt"/>
+                  <specDesc key="extent"/>
+                  <specDesc key="publicationStmt"/>
+                  <specDesc key="sourceDesc"/>
+               </specList>
+            </p>
+            <p> Taking these in turn, the <gi>titleStmt</gi> contains the title, author, and encoder
+               of the document. For novels with multiple authors, titles, or encoders the element
+               concerned is simply repeated. The <gi>title </gi>should be taken from an
+               authoritative bibliographic source, and should include a phrase such as <soCalled>ELTeC
+               edition</soCalled>. The <gi>author</gi> may contain one or more of the
+               following descriptive elements: <specList>
+                  <specDesc key="persName"/>
+                  <specDesc key="forename"/>
+                  <specDesc key="surname"/>
+                  <specDesc key="birth"/>
+                  <specDesc key="death"/>
+                  <specDesc key="affiliation" atts="type"/>
+                  <specDesc key="sex" atts="value"/>
+                  <specDesc key="ident" atts="type"/>
+               </specList>
+            </p>
+            <p>In addition to one or more <gi>author</gi> elements, a <gi>titleStmt</gi> should
+               contain at least one <gi>respStmt</gi> element indicating the person responsible for
+               the ELTeC encoded version, using the following elements <specList>
+                  <specDesc key="resp"/>
+                  <specDesc key="respStmt"/>
+                  <specDesc key="name"/>
+               </specList></p>
+            <p>Here is an example :
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                   <titleStmt>
-                    <title>...</title>
-                    <editor>
-                      <persName>
-                        <forename>...</forename>
-                        <surname>...</surname>
-                      </persName>
-                    </editor>
-                    <author>
-                      <persName>
-                        <forename>...</forename>
-                        <surname>...</surname>
-                      </persName>
-                    </author>
+                     <title>Howards End : ELTeC edition</title>
+                     <author>
+                        <persName>
+                           <forename>Edward</forename>
+                           <forename>Morgan</forename>
+                           <surname>Forster</surname>
+                        </persName>
+                        <persName>E.M. Forster</persName>
+                        <birth when="1879"/>
+                        <death when="1970"/>
+                        <sex value="M"/>
+                        <idno type="viaf">https://viaf.org/viaf/31996364</idno>
+                     </author>
+                     <respStmt>
+                        <resp>ELTeC encoding</resp>
+                        <name>Lou Burnard</name>
+                     </respStmt>
                   </titleStmt>
-                </fileDesc>
-              </teiHeader></egXML>
-          </p>
-          <p> The <gi>extent</gi> provides information about the size of the document. The attribute
-              <att>type</att> defines the counting unit, 'tokens' or 'words'.<specList>
-              <specDesc key="extent" atts="type"/>
-            </specList>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples"><teiHeader type="DocumentHeader">
-                <fileDesc>
-                  <titleStmt/>
-                  <extent type="...">...</extent>
-                </fileDesc>
-              </teiHeader></egXML></p>
-          <p>The <gi>publicationStmt</gi> refers to a printed publication of the text.<specList>
-              <specDesc key="idno"/>
-              <specDesc key="pubPlace"/>
-              <specDesc key="publisher"/>
-              <specDesc key="date" atts="when"/>
-              <specDesc key="biblScope"/>
-            </specList>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples"><teiHeader type="DocumentHeader">
-                <fileDesc>
-                  <titleStmt/>
-                  <publicationStmt>
-                    <idno>...</idno>
-                    <pubPlace>...</pubPlace>
-                    <publisher>...</publisher>
-                    <date when="...">...</date>
-                    <biblScope>...</biblScope>
-                  </publicationStmt>
-                </fileDesc>
-              </teiHeader></egXML></p>
-          <p>The publication may be published within series. The <gi>seriesStmt</gi> provides
-            information about the publication series of the document.<specList>
-              <specDesc key="title"/>
-              <specDesc key="biblScope" atts="type"/>
-            </specList>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples"><teiHeader type="DocumentHeader">
-                <fileDesc>
-                  <titleStmt/>
-                  <publicationStmt/>
-                  <seriesStmt>
-                    <title>...</title>
-                    <editor>...</editor>
-                    <biblScope type="vol">...</biblScope>
-                  </seriesStmt>
-                </fileDesc>
-              </teiHeader></egXML>
-          </p>
-          <p>Additionally to the <gi>publicationStmt</gi> and the <gi>seriesStmt</gi> which cover
-            either the editorial publication history or the first publication of the historical
-            texts the <gi>msDesc</gi> gives further information about the source if necessary.<specList>
-              <specDesc key="msDesc"/>
-              <specDesc key="msIndentifier"/>
-              <specDesc key="msName"/>
-              <specDesc key="repository"/>
-              <specDesc key="collection"/>
-              <specDesc key="history"/>
-              <specDesc key="origin"/>
-              <specDesc key="objectType"/>
-              <specDesc key="origDate" atts="precision notAfter-custom notBefore-custom"/>
-              <specDesc key="origPlace"/>
-              <specDesc key="title"/>
-              <specDesc key="locus"/>
-              <specDesc key="recordHist"/>
-              <specDesc key="soucre" atts="facs"/>
-              <specDesc key="ref" atts="target"/>
-            </specList>
+               </egXML>
+            </p>
+            <p> The <gi>extent</gi> provides information about the size of the document, given by
+               means of the following elements<specList>
+                  <specDesc key="extent" />
+                  <specDesc key="measure" atts="unit quantity"/>
+               </specList>
+     Exactly which measurements will be most useful and easily incorporated is yet to be determined:
+     probably a count of words and pages will suffice. </p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples"><extent>
+                           <measure unit="words" quantity="20010"/>
+                           <measure unit="pages" quantity="245"/>
+                        </extent>
+                  </egXML>
+            
+            <p>The <gi>publicationStmt</gi> is required for TEI conformance: in individual text
+               headers it will contain some standard boiler plate text referring to the fuller
+               statement which will be furnished by the collection-level header. 
+               <!--<specList>
+                  <specDesc key="idno"/>
+                  <specDesc key="pubPlace"/>
+                  <specDesc key="publisher"/>
+                  <specDesc key="date" atts="when"/>
+                  <specDesc key="biblScope"/>
+               </specList>-->
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <publicationStmt>
+                          <p>Incorporated into the ELTeC <date>2018-02-12</date></p>
+                        </publicationStmt>
+                     </egXML>
+            </p>
+           <p>The <gi>sourceDesc</gi> element is also required for TEI conformance. It will contain
+              a bibliographic description of the source text against which the digital text has been
+              validated, typically the first published edition of the work concerned. Where the
+              ELTeC version derives from a pre-existing digital version of this work, a reference to
+              that source will also be provided. The following elements are used to record this
+              information:
+              <specList>
+                 <specDesc key="bibl"/>
+                 <specDesc key="title"/>
+                 <specDesc key="author"/>
+                 <specDesc key="publisher"/>
+                 <specDesc key="pubDate"/>
+                 <specDesc key="ref"/>
+              </specList>
+           </p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <teiHeader type="DocumentHeader">
-                <fileDesc>
-                  <titleStmt/>
-                  <publicationStmt/>
-                  <seriesStmt/>
-                  <sourceDesc n="...">
-                    <msDesc>
-                      <msIdentifier>
-                        <msName>...</msName>
-                        <altIdentifier>
-                          <repository>...</repository>
-                          <collection>...</collection>
-                          <idno>...</idno>
-                        </altIdentifier>
-                      </msIdentifier>
-                      <history>
-                        <origin>
-                          <objectType>...</objectType>
-                          <origDate precision="medium" notAfter-custom="..." notBefore-custom="..."
-                            >...</origDate>
-                          <origPlace>...</origPlace>
-                          <title>...</title>
-                          <locus>...</locus>
-                        </origin>
-                      </history>
-                    </msDesc>
-                    <recordHist>
-                      <source facs="...">
-                        <ref target="...">...</ref>
-                      </source>
-                    </recordHist>
-                  </sourceDesc>
-                </fileDesc>
-              </teiHeader></egXML> The <gi>msDesc</gi> gives a short overview over the publication
-            history of each document of the corpus. <gi>recordHist</gi> is used to provide repertory
-            references where much more detailed information about the text history is given. </p>
-          <p>The <gi>profileDesc</gi> contains metadata concerning the language of the every
-            document. <specList>
-              <specDesc key="langUsage"/>
-              <specDesc key="language" atts="ident"/>
-            </specList>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <teiHeader type="DocumentHeader">
-                <fileDesc/>
-                <profileDesc>
-                  <langUsage>
-                    <language style="Language" ident="...">...</language>
-                    <language style="LanguageType" ident="...">...</language>
-                    <language style="LanguageArea" ident="...">...</language>
-                  </langUsage>
-                </profileDesc>
-              </teiHeader></egXML>
-          </p>
-          <p>The <gi>encodingDesc</gi> contains a list of annotation keys sorted by rough linguistic
-            categories: <specList>
-              <specDesc key="schemaSpec" atts="ident"/>
-              <specDesc key="elementSpec" atts="ident rend"/>
-              <specDesc key="valList"/>
-              <specDesc key="valItem" atts="corresp ident"/>
-            </specList>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <teiHeader type="DocumentHeader">
-                <fileDesc/>
-                <profileDesc/>
-                <encodingDesc>
-                  <schemaSpec ident="AnnotationKey">
-                    <elementSpec ident="...">
-                      <valList>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                      </valList>
-                    </elementSpec>
-                  </schemaSpec>
-                  <schemaSpec ident="AnnotationKey">
-                    <elementSpec ident="...">
-                      <valList>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                      </valList>
-                    </elementSpec>
-                  </schemaSpec>
-                </encodingDesc>
-              </teiHeader>
-            </egXML> The <att>ident</att> of <gi>elementSpec</gi> contains a fixed list of
-            categories as a rough division of annotations according to their functions:
-            Transcription, Lexical, Syntactic, Morphological, Graphical, MarkUp, Meta and Other.</p>
-          <p>The <gi>revisionDesc</gi> refers to the version history of the document within a
-            corpus. Corpora may have several versions. Here, the changes between these versions will
-            be provided here with focus on the document.<specList>
-              <specDesc key="revisionDesc"/>
-              <specDesc key="change" atts="n when who"/>
-            </specList><egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <teiHeader type="DocumentHeader">
-                <fileDesc/>
-                <profileDesc/>
-                <encodingDesc/>
-                <revisionDesc>
-                  <change n="..." when="..." who="..." type="...">...</change>
-                  <change n="..." when="..." who="..." type="...">...</change>
-                </revisionDesc>
-              </teiHeader></egXML></p>
-        </div>
-        <div>
-          <head>Detailed TEI header structure</head>
-          <p>A full TEI structure for document metadata with all required elements is given below:
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <teiHeader type="DocumentHeader">
-                <fileDesc>
-                  <titleStmt>
-                    <title>...</title>
-                    <editor>
-                      <persName>
-                        <forename>...</forename>
-                        <surname>...</surname>
-                      </persName>
-                    </editor>
-                    <author>
-                      <persName>
-                        <forename>...</forename>
-                        <surname>...</surname>
-                      </persName>
-                    </author>
-                  </titleStmt>
-                  <extent type="...">...</extent>
-                  <publicationStmt>
-                    <idno>...</idno>
-                    <pubPlace>...</pubPlace>
-                    <publisher>...</publisher>
-                    <date when="...">...</date>
-                    <biblScope>...</biblScope>
-                  </publicationStmt>
-                  <seriesStmt>
-                    <title>...</title>
-                    <editor>...</editor>
-                    <biblScope type="vol">...</biblScope>
-                  </seriesStmt>
-                  <sourceDesc n="...">
-                    <msDesc>
-                      <msIdentifier>
-                        <msName>...</msName>
-                        <altIdentifier>
-                          <repository>...</repository>
-                          <collection>...</collection>
-                          <idno>...</idno>
-                        </altIdentifier>
-                      </msIdentifier>
-                      <history>
-                        <origin>
-                          <objectType>...</objectType>
-                          <origDate precision="medium" notAfter-custom="..." notBefore-custom="..."
-                            >...</origDate>
-                          <origPlace>...</origPlace>
-                          <title>...</title>
-                          <locus>...</locus>
-                        </origin>
-                      </history>
-                    </msDesc>
-                    <recordHist>
-                      <source facs="...">
-                        <ref target="...">...</ref>
-                      </source>
-                    </recordHist>
-                  </sourceDesc>
-                </fileDesc>
-                <profileDesc>
-                  <langUsage>
-                    <language style="Language" ident="...">...</language>
-                    <language style="LanguageType" ident="...">...</language>
-                    <language style="LanguageArea" ident="...">...</language>
-                  </langUsage>
-                </profileDesc>
-                <encodingDesc>
-                  <schemaSpec ident="AnnotationKey">
-                    <elementSpec ident="...">
-                      <valList>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                      </valList>
-                    </elementSpec>
-                    <elementSpec ident="...">
-                      <valList>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                      </valList>
-                    </elementSpec>
-                    <elementSpec ident="...">
-                      <valList>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                        <valItem ident="..." corresp="..."/>
-                      </valList>
-                    </elementSpec>
-                  </schemaSpec>
-                </encodingDesc>
-                <revisionDesc>
-                  <change n="..." when="..." who="..." type="...">...</change>
-                  <change n="..." when="..." who="..." type="...">...</change>
-                </revisionDesc>
-              </teiHeader>
+               <sourceDesc>
+                  <bibl><author>E.M. Forster</author>
+                  <title>Howards End</title>
+                  <pubPlace>London</pubPlace>
+                  <publisher>Constable</publisher>
+                  <pubDate>1910</pubDate>
+                  </bibl>
+                  <bibl><title>The Project Gutenberg Etext of Howards End, by E. M. Forster</title>
+                     <ref target="http://www.gutenberg.org/files/2891/2891-h/2891-h.htm">HTML
+                        version</ref></bibl>
+               </sourceDesc>
             </egXML>
-          </p>
-        </div>
+            <!--   
+               
+               
+               
+               The <gi>profileDesc</gi> contains metadata concerning the language of the every
+               document. <specList>
+                  <specDesc key="langUsage"/>
+                  <specDesc key="language" atts="ident"/>
+               </specList>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <teiHeader type="DocumentHeader">
+                     <fileDesc/>
+                     <profileDesc>
+                        <langUsage>
+                           <language style="Language" ident="...">...</language>
+                           <language style="LanguageType" ident="...">...</language>
+                           <language style="LanguageArea" ident="...">...</language>
+                        </langUsage>
+                     </profileDesc>
+                  </teiHeader></egXML>
+            </p>
+            <p>The <gi>encodingDesc</gi> contains a list of annotation keys sorted by rough
+               linguistic categories: <specList>
+                  <specDesc key="schemaSpec" atts="ident"/>
+                  <specDesc key="elementSpec" atts="ident rend"/>
+                  <specDesc key="valList"/>
+                  <specDesc key="valItem" atts="corresp ident"/>
+               </specList>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <teiHeader type="DocumentHeader">
+                     <fileDesc/>
+                     <profileDesc/>
+                     <encodingDesc>
+                        <schemaSpec ident="AnnotationKey">
+                           <elementSpec ident="...">
+                              <valList>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                              </valList>
+                           </elementSpec>
+                        </schemaSpec>
+                        <schemaSpec ident="AnnotationKey">
+                           <elementSpec ident="...">
+                              <valList>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                              </valList>
+                           </elementSpec>
+                        </schemaSpec>
+                     </encodingDesc>
+                  </teiHeader>
+               </egXML>
+                The <att>ident</att> of <gi>elementSpec</gi> contains a fixed list of categories as
+               a rough division of annotations according to their functions: Transcription, Lexical,
+               Syntactic, Morphological, Graphical, MarkUp, Meta and Other.</p>
+            <p>The <gi>revisionDesc</gi> refers to the version history of the document within a
+               corpus. Corpora may have several versions. Here, the changes between these versions
+               will be provided here with focus on the document.<specList>
+                  <specDesc key="revisionDesc"/>
+                  <specDesc key="change" atts="n when who"/>
+               </specList>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <teiHeader type="DocumentHeader">
+                     <fileDesc/>
+                     <profileDesc/>
+                     <encodingDesc/>
+                     <revisionDesc>
+                        <change n="..." when="..." who="..." type="...">...</change>
+                        <change n="..." when="..." who="..." type="...">...</change>
+                     </revisionDesc>
+                  </teiHeader></egXML>
+            </p>
+         </div>
+         <div>
+            <head>Detailed TEI header structure</head>
+            <p>A full TEI structure for document metadata with all required elements is given below:
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <teiHeader type="DocumentHeader">
+                     <fileDesc>
+                        <titleStmt>
+                           <title>...</title>
+                           <editor>
+                              <persName>
+                                 <forename>...</forename>
+                                 <surname>...</surname>
+                              </persName>
+                           </editor>
+                           <author>
+                              <persName>
+                                 <forename>...</forename>
+                                 <surname>...</surname>
+                              </persName>
+                           </author>
+                        </titleStmt>
+                        <extent type="...">...</extent>
+                        <publicationStmt>
+                           <idno>...</idno>
+                           <pubPlace>...</pubPlace>
+                           <publisher>...</publisher>
+                           <date when="...">...</date>
+                           <biblScope>...</biblScope>
+                        </publicationStmt>
+                        <seriesStmt>
+                           <title>...</title>
+                           <editor>...</editor>
+                           <biblScope type="vol">...</biblScope>
+                        </seriesStmt>
+                        <sourceDesc n="...">
+                           <msDesc>
+                              <msIdentifier>
+                                 <msName>...</msName>
+                                 <altIdentifier>
+                                    <repository>...</repository>
+                                    <collection>...</collection>
+                                    <idno>...</idno>
+                                 </altIdentifier>
+                              </msIdentifier>
+                              <history>
+                                 <origin>
+                                    <objectType>...</objectType>
+                                    <origDate precision="medium" notAfter-custom="..."
+                                       notBefore-custom="...">...</origDate>
+                                    <origPlace>...</origPlace>
+                                    <title>...</title>
+                                    <locus>...</locus>
+                                 </origin>
+                              </history>
+                           </msDesc>
+                           <recordHist>
+                              <source facs="...">
+                                 <ref target="...">...</ref>
+                              </source>
+                           </recordHist>
+                        </sourceDesc>
+                     </fileDesc>
+                     <profileDesc>
+                        <langUsage>
+                           <language style="Language" ident="...">...</language>
+                           <language style="LanguageType" ident="...">...</language>
+                           <language style="LanguageArea" ident="...">...</language>
+                        </langUsage>
+                     </profileDesc>
+                     <encodingDesc>
+                        <schemaSpec ident="AnnotationKey">
+                           <elementSpec ident="...">
+                              <valList>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                              </valList>
+                           </elementSpec>
+                           <elementSpec ident="...">
+                              <valList>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                              </valList>
+                           </elementSpec>
+                           <elementSpec ident="...">
+                              <valList>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                                 <valItem ident="..." corresp="..."/>
+                              </valList>
+                           </elementSpec>
+                        </schemaSpec>
+                     </encodingDesc>
+                     <revisionDesc>
+                        <change n="..." when="..." who="..." type="...">...</change>
+                        <change n="..." when="..." who="..." type="...">...</change>
+                     </revisionDesc>
+                  </teiHeader>
+               </egXML>
+            </p>-->
+         </div>
          <div>
             <head>Linguistic and semantic annotation</head>
             <p> Later stages of the project will need to use additional markup facilities to
@@ -645,7 +626,9 @@
             <bibl> Odebrecht, Carolin. (2017). Metadata for Historical Corpora. Realization of the
                Metamodel for Corpus Metadata with the help of TEI Customization [Data set]. Zenodo.
                http://doi.org/10.5281/zenodo.267999</bibl>
-            <bibl><idno type="URI">github.com/cligs/textbox</idno></bibl>
+            <bibl>
+               <idno type="URI">github.com/cligs/textbox</idno>
+            </bibl>
          </listBibl>
       </back>
    </text>
