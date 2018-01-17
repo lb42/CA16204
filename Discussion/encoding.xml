@@ -404,14 +404,16 @@ http://isni.oclc.org/--> <p>This section describes the metadata associated with 
                   <gi>revisionDesc</gi> are all required. The <gi>encodingDesc</gi> may be supplied
                in (hopefully unlikely) event that some aspect of this document's encoding is
                anomalous. </p>
-            <p>The <gi>fileDesc</gi> contains the following mandatory elements: <specList>
-                  <specDesc key="titleStmt"/>
-                  <specDesc key="extent"/>
-                  <specDesc key="publicationStmt"/>
-                  <specDesc key="sourceDesc"/>
-               </specList>
-            </p>
-            <p> Taking these in turn, the <gi>titleStmt</gi> contains the title, author, and encoder
+           
+          <div> <head>Components of the file description</head> 
+             <p>The <gi>fileDesc</gi> contains the following mandatory elements: <specList>
+                <specDesc key="titleStmt"/>
+                <specDesc key="extent"/>
+                <specDesc key="publicationStmt"/>
+                <specDesc key="sourceDesc"/>
+             </specList>
+             </p>
+             <p> Taking these in turn, the <gi>titleStmt</gi> contains the title, author, and encoder
                of the document. For novels with multiple authors, titles, or encoders the element
                concerned is simply repeated. The <gi>title </gi>should be taken from an
                authoritative bibliographic source, and should include a phrase such as <soCalled>ELTeC
@@ -497,6 +499,7 @@ http://isni.oclc.org/--> <p>This section describes the metadata associated with 
                  <specDesc key="title"/>
                  <specDesc key="author"/>
                  <specDesc key="publisher"/>
+                 <specDesc key="pubPlace"/>
                  <specDesc key="pubDate"/>
                  <specDesc key="ref"/>
               </specList>
@@ -514,182 +517,51 @@ http://isni.oclc.org/--> <p>This section describes the metadata associated with 
                         version downloaded on <date>2017-12-26</date></ref></bibl>
                </sourceDesc>
             </egXML>
-            <!--   
-               
-               
-               
-               The <gi>profileDesc</gi> contains metadata concerning the language of the every
-               document. <specList>
-                  <specDesc key="langUsage"/>
-                  <specDesc key="language" atts="ident"/>
-               </specList>
-               <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                  <teiHeader type="DocumentHeader">
-                     <fileDesc/>
-                     <profileDesc>
-                        <langUsage>
-                           <language style="Language" ident="...">...</language>
-                           <language style="LanguageType" ident="...">...</language>
-                           <language style="LanguageArea" ident="...">...</language>
-                        </langUsage>
-                     </profileDesc>
-                  </teiHeader></egXML>
-            </p>
-            <p>The <gi>encodingDesc</gi> contains a list of annotation keys sorted by rough
-               linguistic categories: <specList>
-                  <specDesc key="schemaSpec" atts="ident"/>
-                  <specDesc key="elementSpec" atts="ident rend"/>
-                  <specDesc key="valList"/>
-                  <specDesc key="valItem" atts="corresp ident"/>
-               </specList>
-               <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                  <teiHeader type="DocumentHeader">
-                     <fileDesc/>
-                     <profileDesc/>
-                     <encodingDesc>
-                        <schemaSpec ident="AnnotationKey">
-                           <elementSpec ident="...">
-                              <valList>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                              </valList>
-                           </elementSpec>
-                        </schemaSpec>
-                        <schemaSpec ident="AnnotationKey">
-                           <elementSpec ident="...">
-                              <valList>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                              </valList>
-                           </elementSpec>
-                        </schemaSpec>
-                     </encodingDesc>
-                  </teiHeader>
-               </egXML>
-                The <att>ident</att> of <gi>elementSpec</gi> contains a fixed list of categories as
-               a rough division of annotations according to their functions: Transcription, Lexical,
-               Syntactic, Morphological, Graphical, MarkUp, Meta and Other.</p>
-            <p>The <gi>revisionDesc</gi> refers to the version history of the document within a
-               corpus. Corpora may have several versions. Here, the changes between these versions
-               will be provided here with focus on the document.<specList>
+       </div><div><head>Components of the profile description</head>
+          <p>The <gi>profileDesc</gi> of an ELTeC text has the following mandatory components:
+          <specList>
+             <specDesc key="langUsage"/>
+             <specDesc key="textClass"/>
+           </specList></p><p>The <gi>langUsage</gi> element contains one or more <gi>language</gi>
+              elements, one for each language, dialect, sublanguage etc. explicitly identified in
+              the body of the text, indicating roughly how much of the text uses this language. For
+              example, a text which is almost entirely in British English, but also contains some
+              parts in US English would have an entry like this: </p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+             <langUsage>
+                <language ident="en-GB" usage="90">British English</language>
+                <language ident="en-US" usage="10">North American English</language>
+             </langUsage></egXML>
+          <p>The TEI <gi>textClass</gi> element can contain one or more of the following elements:
+          <specList>
+             <specDesc key="catRef"/>
+             <specDesc key="classCode"/>
+             <specDesc key="keywords"/>
+          </specList> These three methods for classifying texts can be used in parallel. It is an
+             <label>open question</label> which we should use for the ELTeC collection: the schema
+             proposed here permits any.</p>
+          <!-- should look at TEI in Libraries -->
+       </div>     
+         
+  <div><head>Components of the Revision Description</head>    
+            <p>The <gi>revisionDesc</gi> element is used to document significant points in the
+               version history of the document. At least one entry should be provided for an ELTeC
+               document, specifying when it was first added to the collection. The following
+               elements can be used:
+               <specList>
                   <specDesc key="revisionDesc"/>
-                  <specDesc key="change" atts="n when who"/>
+                  <specDesc key="change" atts="when who"/>
                </specList>
+               
                <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                  <teiHeader type="DocumentHeader">
-                     <fileDesc/>
-                     <profileDesc/>
-                     <encodingDesc/>
                      <revisionDesc>
-                        <change n="..." when="..." who="..." type="...">...</change>
-                        <change n="..." when="..." who="..." type="...">...</change>
-                     </revisionDesc>
-                  </teiHeader></egXML>
+                        <change when="2018-02-21" who="ELTeC:LB">Added new linguistic
+                           classifications</change>
+                        <change when="2018-01-29" who="ELTeC:LB">Added to the ELTeC</change>
+                      </revisionDesc></egXML>
             </p>
-         </div>
-         <div>
-            <head>Detailed TEI header structure</head>
-            <p>A full TEI structure for document metadata with all required elements is given below:
-               <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                  <teiHeader type="DocumentHeader">
-                     <fileDesc>
-                        <titleStmt>
-                           <title>...</title>
-                           <editor>
-                              <persName>
-                                 <forename>...</forename>
-                                 <surname>...</surname>
-                              </persName>
-                           </editor>
-                           <author>
-                              <persName>
-                                 <forename>...</forename>
-                                 <surname>...</surname>
-                              </persName>
-                           </author>
-                        </titleStmt>
-                        <extent type="...">...</extent>
-                        <publicationStmt>
-                           <idno>...</idno>
-                           <pubPlace>...</pubPlace>
-                           <publisher>...</publisher>
-                           <date when="...">...</date>
-                           <biblScope>...</biblScope>
-                        </publicationStmt>
-                        <seriesStmt>
-                           <title>...</title>
-                           <editor>...</editor>
-                           <biblScope type="vol">...</biblScope>
-                        </seriesStmt>
-                        <sourceDesc n="...">
-                           <msDesc>
-                              <msIdentifier>
-                                 <msName>...</msName>
-                                 <altIdentifier>
-                                    <repository>...</repository>
-                                    <collection>...</collection>
-                                    <idno>...</idno>
-                                 </altIdentifier>
-                              </msIdentifier>
-                              <history>
-                                 <origin>
-                                    <objectType>...</objectType>
-                                    <origDate precision="medium" notAfter-custom="..."
-                                       notBefore-custom="...">...</origDate>
-                                    <origPlace>...</origPlace>
-                                    <title>...</title>
-                                    <locus>...</locus>
-                                 </origin>
-                              </history>
-                           </msDesc>
-                           <recordHist>
-                              <source facs="...">
-                                 <ref target="...">...</ref>
-                              </source>
-                           </recordHist>
-                        </sourceDesc>
-                     </fileDesc>
-                     <profileDesc>
-                        <langUsage>
-                           <language style="Language" ident="...">...</language>
-                           <language style="LanguageType" ident="...">...</language>
-                           <language style="LanguageArea" ident="...">...</language>
-                        </langUsage>
-                     </profileDesc>
-                     <encodingDesc>
-                        <schemaSpec ident="AnnotationKey">
-                           <elementSpec ident="...">
-                              <valList>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                              </valList>
-                           </elementSpec>
-                           <elementSpec ident="...">
-                              <valList>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                              </valList>
-                           </elementSpec>
-                           <elementSpec ident="...">
-                              <valList>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                                 <valItem ident="..." corresp="..."/>
-                              </valList>
-                           </elementSpec>
-                        </schemaSpec>
-                     </encodingDesc>
-                     <revisionDesc>
-                        <change n="..." when="..." who="..." type="...">...</change>
-                        <change n="..." when="..." who="..." type="...">...</change>
-                     </revisionDesc>
-                  </teiHeader>
-               </egXML>
-            </p>-->
-         </div>
+         </div></div>
+   
          <div>
             <head>Linguistic and semantic annotation</head>
             <p> Later stages of the project will need to use additional markup facilities to
@@ -698,16 +570,7 @@ http://isni.oclc.org/--> <p>This section describes the metadata associated with 
                example to distinguish proper names, names of people, places, events, etc.). These
                will form an additional layer, not discussed here: the principle should however be
                that the base text we provide is always available in a uniform encoding.</p>
-            <!-- <p rend="color(#009933)">To include further preparation steps in our suggestion, would
-               maybe be desirable (e.g., if the “base text” is somewhat difficult to process).</p>
-            <p rend="color(#009933)">Further questions/aspects concerning “the base text” might be:
-               covering special character encoding, language encoding within the text (e.g. English
-               In German texts), token definition, documentation of the overall characteristics of
-               the base text (kind of transcription guidelines – what can be expected)</p>
-            <p rend="color(#009933)">Do we need to consider an additional normalization of the
-               texts? I would assume that for automatic processing would require text with as little
-               as possible linguistic variants. </p>
--->
+          
          </div>
          <div>
             <head>Formal specification</head>
@@ -716,12 +579,14 @@ http://isni.oclc.org/--> <p>This section describes the metadata associated with 
                generated automatically. This section contains the schema specification itself.</p>
             <schemaSpec ident="ELTeC">
                <moduleRef key="tei"/>
-               <moduleRef key="core" include="head item l lg list p pb sp stage hi title"/>
+               <moduleRef key="core" include="author bibl date head idno item l lg list measure
+                  name p pb publisher pubPlace pubDate ref resp respStmt sp stage hi title"/>
                <moduleRef key="textstructure" include="div body"/>
                <moduleRef key="header"
-                  include="fileDesc titleStmt publicationStmt sourceDesc
+                  include="extent fileDesc titleStmt publicationStmt sourceDesc
                   encodingDesc profileDesc revisionDesc"
                />
+               <moduleRef key="namesdates" include="birth death sex affiliation"/>
             </schemaSpec>
          </div>
       </body>
