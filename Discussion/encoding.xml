@@ -86,11 +86,13 @@
                is that this will be produced by different annotation systems in different ways,
                though with an association between such annotations and the basic lexical structures
                represented by the core ELTeC markup. </p>
-            <!-- CO: These linguistic or any other annotations may be assigned in different formats. Thus, the tei representation serves as a starting point for some other automatic annotations and analysis. I think, -->
+            <!-- CO: These linguistic or any other annotations may be assigned in different formats. 
+               Thus, the tei representation serves as a starting point for some other automatic annotations and analysis. I think, -->
          </div>
          <div>
             <head>Basic Transcription Guidelines</head>
-            <!-- CO: General thoughts: I think, we should have in mind when the encoding can be done automatically and when we need man power for encoding. -->
+            <!-- CO: General thoughts: I think, we should have in mind when the encoding can be done automatically 
+               and when we need man power for encoding. -->
             <!-- LB : in what way ? this sounds like a workflow issue -->
             <p>The basic unit of the ELTeC corpus is the text of a single novel, represented by a
                TEI <gi>text</gi> element. We propose no mechanism (other than metadata) to encode
@@ -159,7 +161,8 @@
                      define a set of appropriate language codes for the project</item>
                   <!-- CO: From a linguistic point of view, I would like to say yes but detecting dialectal variation 
                      is something which cannot be done automatically. I think, without a more explicit guidelines concerning 
-                     the detection of foreign material we might end up with confusing analysis. The definition of the elemetn foreing is broad. For example,
+                     the detection of foreign material we might end up with confusing analysis. The
+                     definition of the element foreign is broad. For example,
                      neoclassic words may or may not count as foreign. Especially in a corpus containing roman and germanic languages.  -->
                   <!-- BN: This annotation could be complex. I think it will be better to annotate
 dialectal variations during linguistic annotation.-->
@@ -203,7 +206,7 @@ dialectal variations during linguistic annotation.-->
                   <!-- CO: we may use here the "head" element as the numbering of a chapter may be analysed as a head, maybe next to other heads. See comment above-->
                   <!-- BN: I'm not sure. Sometimes scholars refer to specific passages by original numbering ("The chapter two of Don Quixote bla bla bla"). In this case
 this information is necessary. -->
-                  <!-- head is not the same as @n : I agree with Borja -->
+                  <!-- LB: head is not the same as @n : I agree with Borja -->
                   <item>No : the original numbering and referencing scheme are of no use in our
                      intended applications, introduce unnecessary complexity, and may be a source of
                      confusion. </item>
@@ -254,7 +257,8 @@ this information is necessary. -->
                   <item>Sort of : provide an attribute on <gi>p</gi> to indicate whether or not the
                      paragraph contains direct speech</item>
                   <!-- CO:  I don't know whether the kind of suggestion annotation help to process the corpus. 
-                     Either the whole paragraph needs to be excluded from analysis or you include the paragraph and you know that the paragraph contain  some speech text. I think, this is not a big benefit.    -->
+                     Either the whole paragraph needs to be excluded from analysis or you include the paragraph 
+                     and you know that the paragraph contain  some speech text. I think, this is not a big benefit.    -->
                   <item>No : rely on (or normalise) typographic conventions such as quote marks or
                      dashes to distinguish direct speech only. </item>
                   <!-- CO: At the moment, I would prefer this solution. -->
@@ -448,6 +452,7 @@ http://isni.oclc.org/-->
                            <death when="1970"/>
                            <sex value="M"/>
                            <idno type="viaf">https://viaf.org/viaf/31996364</idno>
+                           <idno type="wiki">https://www.wikidata.org/wiki/Q189119</idno>
                         </author>
                         <respStmt>
                            <resp>ELTeC encoding</resp>
@@ -502,14 +507,17 @@ http://isni.oclc.org/-->
                         <author>E.M. Forster</author>
                         <title>Howards End</title>
                         <pubPlace>London</pubPlace>
-                        <publisher>Constable</publisher>
+                        <publisher>Edward Arnold</publisher>
                         <date>1910</date>
+                        <idno type="wiki">https://www.wikidata.org/wiki/Q1146642</idno>
                      </bibl>
                      <bibl>
                         <title>The Project Gutenberg Etext of Howards End, by E. M. Forster</title>
                         <ref target="http://www.gutenberg.org/files/2891/2891-h/2891-h.htm">HTML
                            version downloaded on <date>2017-12-26</date></ref>
-                     </bibl>
+                     </bibl>               
+                     <note type="editions" source="worldcat">
+                        Worldcat lists 484 print editions in English</note>
                   </sourceDesc>
                </egXML>
             </div>
@@ -537,23 +545,50 @@ http://isni.oclc.org/-->
                      <specDesc key="term"/>
                   </specList> These three methods for classifying texts can be used in parallel. It
                   is an <label>open question</label> which we should use for the ELTeC collection:
-                  the schema proposed here permits any combination. </p><p>The <gi>keywords</gi> option allows us to supply one or more
-                     <gi>term</gi> elements to categorise a text in some way. If the values are
-                     taken from a known closed list or authority file, that file should be specified
-                  using the <att>source</att> attribute. 
-                  </p>
+                  the schema proposed here permits any combination. </p>
+               <p>The <gi>keywords</gi> option allows us to supply one or more <gi>term</gi>
+                  elements to categorise a text in some way. If the values are taken from a known
+                  closed list or authority file, that file should be specified using the
+                     <att>source</att> attribute. </p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <textClass>
+                     <keywords source="http://wikidata.org">
+                        <term>social class</term>
+                        <term>social convention</term>
+                        <term>modernity</term>
+                        <term>family drama</term>
+                        <term>Condition of England question</term>
+                     </keywords>
+                  </textClass>
+               </egXML>
                <p><label>Open Question</label> : should we invent our own taxonomy, use a
                   pre-existing one, make no attempt to constrain or predefine terms used here?</p>
                <p>The <gi>classCode</gi> option allows us to use classification codes used or
                   defined by existing authorities, such as library catalogue schemes, while the
-                  <gi>catRef</gi> option allows us to specify such codes using our own
-                  classification scheme. In this case, we will need to predefine that scheme in the
-                  Corpus header using the following elements:
-               <specList>
-                  <specDesc key="taxonomy"/>
-                  <specDesc key="category"/>
-                  <specDesc key="catDesc"/>
-               </specList></p>
+                     <gi>catRef</gi> option allows us to specify such codes using our own
+                  classification scheme. </p>   
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <catRef target="#author_m #reprint_3"/>
+                  <classCode source="UDC">8231.111</classCode>
+               </egXML>
+               <p>Since our selection and descriptive criteria are likely to be
+                     specific to the project, we will probably have to define them in the corpus
+                     header using the following elements: <specList>
+                     <specDesc key="taxonomy"/>
+                     <specDesc key="category"/>
+                     <specDesc key="catDesc"/>
+                  </specList></p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <taxonomy>
+                     <category xml:id="author_m"><catDesc>male authorship</catDesc></category>
+                     <category xml:id="author_f"><catDesc>female authorship</catDesc></category>
+                     <category xml:id="author_u"><catDesc>author gender unknown</catDesc></category>
+                     <category xml:id="reprint_0"><catDesc>no reprints found</catDesc></category>
+                     <category xml:id="reprint_1"><catDesc>1 to 50 editions</catDesc></category>
+                     <category xml:id="reprint_2"><catDesc>50 to 100 editions</catDesc></category>
+                     <category xml:id="reprint_3"><catDesc>Over 100 reprints</catDesc></category>
+                  </taxonomy>
+               </egXML>
                <!-- LB: some examples are needed here. Check recommendations of TEI in Libraries -->
             </div>
             <div>
@@ -583,10 +618,11 @@ http://isni.oclc.org/-->
                   corpus. It is even possible to specify that different parts of a document follow
                   different policies, provided that all the available policies are defined
                   somewhere. </p>
-               <p><label>Open Question</label> : We propose as far as possible not to allow for any variation in encoding policies
-                  applied within the ELTeC. We will still need to determine our encoding policies,
-                  of course, and to document them appropriately in the ELTeC corpus header, but
-                  there should be no need for separate specifications at the document level. </p>
+               <p><label>Open Question</label> : We propose as far as possible not to allow for any
+                  variation in encoding policies applied within the ELTeC. We will still need to
+                  determine our encoding policies, of course, and to document them appropriately in
+                  the ELTeC corpus header, but there should be no need for separate specifications
+                  at the document level. </p>
             </div>
          </div>
          <div>
