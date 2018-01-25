@@ -52,7 +52,7 @@
                The first edition will reveal spelling variances and variances concerning different text levels, e.g, direct speech
                (like any other modern edition will do in some way or the other)-->
             <!-- LB : the idea of encoding specifically the first edition wasn't what I thought the
-               brief was when I started work on this document! -->
+               brief was when I started work on this document! Licensing issues-->
             <p>In selecting features for inclusion in the markup scheme, we have been guided, but
                not limited, by existing practice as far as possible <note place="foot">Particular
                   collections we have examined are listed in section <ptr target="#sources"/></note>
@@ -262,7 +262,8 @@ this information is necessary. -->
                   <item>No : rely on (or normalise) typographic conventions such as quote marks or
                      dashes to distinguish direct speech only. </item>
                   <!-- CO: At the moment, I would prefer this solution. -->
-                  <!-- LB: it's certainly the easiest! -->
+                  <!-- LB: it's certainly the easiest! tho normalising punctuation marks may be
+                     problematic-->
                </list>
             </p>
             <p>Printed texts typically deploy a number of conventions which can cause problems for
@@ -515,9 +516,9 @@ http://isni.oclc.org/-->
                         <title>The Project Gutenberg Etext of Howards End, by E. M. Forster</title>
                         <ref target="http://www.gutenberg.org/files/2891/2891-h/2891-h.htm">HTML
                            version downloaded on <date>2017-12-26</date></ref>
-                     </bibl>               
-                     <note type="editions" source="worldcat">
-                        Worldcat lists 484 print editions in English</note>
+                     </bibl>
+                     <note type="editions" source="worldcat"> Worldcat lists 484 print editions in
+                        English</note>
                   </sourceDesc>
                </egXML>
             </div>
@@ -557,7 +558,6 @@ http://isni.oclc.org/-->
                         <term>social convention</term>
                         <term>modernity</term>
                         <term>family drama</term>
-                        <term>Condition of England question</term>
                      </keywords>
                   </textClass>
                </egXML>
@@ -566,14 +566,14 @@ http://isni.oclc.org/-->
                <p>The <gi>classCode</gi> option allows us to use classification codes used or
                   defined by existing authorities, such as library catalogue schemes, while the
                      <gi>catRef</gi> option allows us to specify such codes using our own
-                  classification scheme. </p>   
+                  classification scheme. </p>
                <egXML xmlns="http://www.tei-c.org/ns/Examples">
                   <catRef target="#author_m #reprint_3"/>
                   <classCode source="UDC">8231.111</classCode>
                </egXML>
-               <p>Since our selection and descriptive criteria are likely to be
-                     specific to the project, we will probably have to define them in the corpus
-                     header using the following elements: <specList>
+               <p>Since our selection and descriptive criteria are likely to be specific to the
+                  project, we will probably have to define them in the corpus header using the
+                  following elements: <specList>
                      <specDesc key="taxonomy"/>
                      <specDesc key="category"/>
                      <specDesc key="catDesc"/>
@@ -639,17 +639,55 @@ http://isni.oclc.org/-->
             <p>The ELTeC encoding scheme defined by this document is a TEI-conformant customization,
                from which user documentation, and formal RELAXNG or DTD specifications can be
                generated automatically. This section contains the schema specification itself.</p>
-            <schemaSpec ident="ELTeC">
+            <schemaSpec ident="ELTeC" start="TEI">
                <moduleRef key="tei"/>
                <moduleRef key="core"
                   include="author bibl date head item l lg list measure
                   name p pb publisher pubPlace ref resp respStmt sp stage hi term title"/>
-               <moduleRef key="textstructure" include="div body"/>
+               <moduleRef key="textstructure" include="TEI text div body"/>
                <moduleRef key="header"
                   include="catDesc category catRef change classCode  encodingDesc extent fileDesc idno  keywords langUsage language  
-                  profileDesc publicationStmt revisionDesc sourceDesc taxonomy textClass titleStmt"/>
+                  profileDesc publicationStmt revisionDesc sourceDesc taxonomy teiHeader textClass titleStmt"/>
                <moduleRef key="namesdates"
                   include="affiliation birth death forename  persName sex  surname"/>
+               <!-- class modifications to reduce attribute clutter -->
+               <!-- first remove classes which provide attributes we dont want -->
+               <classSpec ident="att.declaring" type="atts" mode="delete"/>
+               <classSpec ident="att.declarable" type="atts" mode="delete"/>
+               <classSpec ident="att.personal" type="atts" mode="delete"/>
+               <classSpec ident="att.ranging" type="atts" mode="delete"/>
+               <classSpec ident="att.written" type="atts" mode="delete"/>
+               <classSpec ident="att.breaking" type="atts" mode="delete"/>
+               <classSpec ident="att.datable.iso" type="atts" mode="delete"/>
+               <classSpec ident="att.datable.custom" type="atts" mode="delete"/>
+               <classSpec ident="att.divLike" type="atts" mode="delete"/>
+               <classSpec ident="att.editLike" type="atts" mode="delete"/>
+               <classSpec type="atts" ident="att.global.responsibility" mode="delete"/>
+               <classSpec ident="att.naming" type="atts" mode="delete"/>
+               <!-- next modify classes which provide some attributes we want and some we don't -->
+               <classSpec type="atts" ident="att.global.rendition" mode="change">
+                  <attList>
+                     <attDef ident="rendition" mode="delete"/>
+                     <attDef ident="style" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec type="atts" ident="att.typed" mode="change">
+                  <attList>
+                     <attDef ident="subtype" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec type="atts" ident="att.dimensions" mode="change">
+                  <attList>
+                     <attDef ident="precision" mode="delete"/>
+                     <attDef ident="scope" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec type="atts" ident="att.datable" mode="change">
+                  <attList>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="period" mode="delete"/>
+                  </attList>
+               </classSpec>
             </schemaSpec>
          </div>
       </body>
