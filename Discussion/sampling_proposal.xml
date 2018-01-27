@@ -3,38 +3,32 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title/>
-                <author>carolin</author>
-            </titleStmt>
+                <title>Sampling criteria for the ELTeC</title>
+                <author>Cost Action CA16204 – WG1 </author>
+               </titleStmt>
             <editionStmt>
-                <edition><date>2017-12-11</date></edition>
+                <edition><date>2018-01</date></edition>
             </editionStmt>
             <publicationStmt>
-                <p>unknown</p>
+                <p>Unpublished discussion document prepared for COST Action 16201</p>
             </publicationStmt>
             <sourceDesc>
                 <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application xml:id="docxtotei" ident="TEI_fromDOCX" version="2.15.0">
-                    <label>DOCX to TEI</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <revisionDesc>
+            <revisionDesc>
             <listChange>
-                <change><date>2018-01-27T12:26:40Z</date><name>carolin</name></change>
+                <change><date>2018-01-27</date> LB converted to XML</change>
+                <change><date>2018-01-27</date> CO Final draft</change>
+                
             </listChange>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
+            <head>Sampling criteria for the ELTeC</head>
             <div>
-                <head>Cost Action CA16204 – WG1 </head>
-                <p>Sampling criteria for ELTeC</p>
-                <p>Outline</p>
+                  <head>Outline</head>
                 <list type="ordered">
                     <item>Task</item>
                     <item>Method</item>
@@ -485,9 +479,9 @@
                 </list>
             </div>
             <div>
-                <head>>Literature</head>
-                <bibl>Algee-Hewitt, Mark; McGurl, Mark (2015): Between Canon and Corpus. Seix
-                    Perspectives on the 20th-Centurary Novels. Literary Lab. </bibl>
+                <head>Literature</head>
+                <bibl>Algee-Hewitt, Mark; McGurl, Mark (2015): Between Canon and Corpus. Six
+                    Perspectives on the 20th-Century Novels. Literary Lab. </bibl>
                 <bibl>Biber, Douglas (1993): Representativeness in Corpus Design. In: <title
                         level="j">Literary and Linguistic Computing </title>(8), 243–257.</bibl>
                 <bibl>Herrmann, Leonhard (2011): System? Kanon? Epoche? In: Matthias Beilein,

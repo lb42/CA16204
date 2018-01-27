@@ -7,7 +7,7 @@
       <fileDesc>
          <titleStmt>
             <title>Encoding Guidelines for the ELTeC</title>
-            <author>Work Group 1</author>
+            <author>Cost Action CA16204 – WG1</author>
          </titleStmt>
          <publicationStmt>
             <p>Unpublished draft for discussion</p>
@@ -28,9 +28,9 @@
             for the European Literary Text Collection (ELTeC) which will be a major deliverable of
             COST Action 16204, <title>Distant Reading</title>. As a first draft it necessarily
             contains much uncertainty, either because policies have to be determined, or because
-            issues are under-specified. This version represents the views of its author only.
-            Particular topics on which policy remains to be defined are signalled below with the
-            label <q>Open Question</q>. </p>
+            issues are currently under-specified. Particular topics on which policy remains to be
+            defined are signalled below with the label <q>Open Question</q>. Input from other
+            participants in the Action about these topics would be particularly useful. </p>
          <div>
             <head>Principles</head>
             <p>The MoU for the project points out that <q>Distant Reading methods cover a wide range
@@ -54,11 +54,11 @@
             <!-- LB : the idea of encoding specifically the first edition wasn't what I thought the
                brief was when I started work on this document! Licensing issues-->
             <p>In selecting features for inclusion in the markup scheme, we have been guided, but
-               not limited, by existing practice as far as possible <note place="foot">Particular
-                  collections we have examined are listed in section <ptr target="#sources"/></note>
-               but the main goal has been to identify a small core set of essential textual features
-               which can be readily (preferably automatically) identified in existing digital
-               transcriptions, or easily and consistently provided by new transcriptions. </p>
+               not limited, by existing practice as far as possible. Particular collections we have
+               examined are listed in section <ptr target="#sources"/> but the main goal has been to
+               identify a small core set of essential textual features which can be readily
+               (preferably automatically) identified in existing digital transcriptions, or easily
+               and consistently provided by new transcriptions. </p>
             <!-- BN : I definitely agree:-->
             <p>This document lists all the textual features which are to be distinguished in an
                ELTeC conformant transcription. Whenever a given feature exists in a text, it will be
@@ -650,7 +650,7 @@ http://isni.oclc.org/-->
                   profileDesc publicationStmt revisionDesc sourceDesc taxonomy teiHeader textClass titleStmt"/>
                <moduleRef key="namesdates"
                   include="affiliation birth death forename  persName sex  surname"/>
-               <!-- class modifications to reduce attribute clutter -->
+               <!-- Class modifications to reduce attribute clutter -->
                <!-- first remove classes which provide attributes we dont want -->
                <classSpec ident="att.declaring" type="atts" mode="delete"/>
                <classSpec ident="att.declarable" type="atts" mode="delete"/>
@@ -686,6 +686,12 @@ http://isni.oclc.org/-->
                   <attList>
                      <attDef ident="calendar" mode="delete"/>
                      <attDef ident="period" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec type="atts" ident="att.pointing" mode="change">
+                  <attList>
+                     <attDef ident="targetLang" mode="delete"/>
+                     <attDef ident="evaluate" mode="delete"/>
                   </attList>
                </classSpec>
             </schemaSpec>
