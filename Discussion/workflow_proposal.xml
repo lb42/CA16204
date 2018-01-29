@@ -38,7 +38,7 @@
                             communication and planning based on the meeting of WG4</hi></note -->:
                     Dutch, English, French, German, Modern Greek, Italian, Polish, Portuguese,
                     Russian and Spanish. Each novel will be in a machine readable format and encoded
-                    in XML (following standar TEI).</p>
+                    in XML (following standard TEI).</p>
                 <p> The main steps to achieve this objective are the next:</p>
                 <list type="ordered">
                     <item>Selecting authors and novels.</item>
@@ -59,7 +59,7 @@
                 </div>
                 <div>
                     <head>Step 1. Selecting authors and novels.</head>
-                    <p> The objective of this step is to find appropriate
+                    <p> The objective of this step is to find appropriate titles
                         <!-- note place="comment"
                             resp="LB" n="2"><date when="2018-01-24T11:00:04Z"/><hi>I agree with
                                 Carolin’s comment below: the selection process is a matter of
@@ -74,7 +74,7 @@
                                 list of ‘categories’ that would exhaustively account for all texts
                                 produced in a given language’We should use this word more carefully.
                             </hi></note -->
-                        of each language published during 1850-1920 according to the sampling
+                        for each language published during 1850-1920 according to the sampling
                         criteria (Doc1). It will be done in two sub-steps. The first one is to
                         extract, as far as possible, a list of novels published during that period
                         and the amount of reprints. This
@@ -87,11 +87,11 @@
                     <p> The list of novels will be published in a web page, including information
                         about author’s name, title, date and place of the first edition, number of
                         reprints during the period, source from which this information has been
-                        extracted, size, topic, etc.. See eltecSheet document. At this moment, the
+                        extracted, size, topic, etc. See eltecSheet document. At this moment, the
                         information that must be stored is not fixed. We expect suggestions from the
-                        all group.</p>
-                    <p> The second sub-step is the selection of the appropriate novels for the ELTeC
-                        corpus. From this list, each group will select the
+                        whole group.</p>
+                    <p> The second sub-step is the selection of appropriate novels for the ELTeC
+                        corpus. From this list, each group will select
                         <!-- note place="comment"
                             resp="CO" n="6"><date when="2018-01-24T09:58:20Z"/><hi>Again, focusing
                                 on representativeness this might lead to another canon corpus. The
@@ -112,7 +112,7 @@
                         suggest to follow the next steps.</p>
                     <p> First, to look for novels in digital repositories. See Appendix 2 for some
                         of them. In this case, however, it is important that the text retrieved
-                        follows the sampling criteria of DOC1. Therefore, the novel must be in
+                        follows the sampling criteria of DOC1. The novel must be in
                         machine-readable format (plain text, HTML, XML, DOC, ODT, RTF, Epub, or
                         similar.), it must be <emph>licensed</emph> under open or free
                         licenses as Creative Commons or similar (according to MoU, the final corpus
@@ -127,7 +127,7 @@
                         novels.<!-- note place="comment" resp="LB" n="7"><date
                                 when="2018-01-24T11:02:55Z"/><hi>I wonder though if we have the
                                 resources to do this...</hi></note -->
-                        In both cases, the text must transform to a machine-readable format. See
+                        In both cases, the text must be transformed to a machine-readable format. See
                         Appendix 3 for a list of tools for digitizing texts. This way we will obtain
                         a machine-readable format (plain text) of each novel. The problem is that it
                         is a complex and time-consuming tasks.</p>
@@ -146,7 +146,7 @@
                         texts.<!-- note place="comment" resp="LB"
                             n="9"><date when="2018-01-24T10:59:15Z"/>
                             <hi>See                              http://www.matthewjockers.net/2010/08/26/auto-converting-project-gutenberg-text-to-tei/</hi></note --></head>
-                    <p> Both if novels have been obtained directly in a machine-readable format or
+                    <p> Whether  novels have been obtained directly in a machine-readable format or
                         if they have been digitized, it is necessary to check the text in order to
                         fix typos and normalize it. Exactly what elements must be normalized will be
                         decide later. </p>
@@ -178,12 +178,12 @@
                     <div>
                         <head>4.1. Metadata annotation.</head>
                         <p> Metadata attributes have been specified in the Encoding Scheme (Doc2).
-                            In order to introduce in each text, two task must be done.</p>
+                            In order to introduce in each text, two tasks must be done.</p>
                         <p> First, a controlled language must be developed to control the values of
                             each attribute and the coherence of the metadata.</p>
                         <p> Second, the annotation process of the metadata of each novel: to create
-                            a well-formed XML document based on TEI and to introduce head attributes
-                            with the appropriate value (metadata).</p>
+                            a well-formed XML document based on TEI and to introduce header elements and attributes
+                            with the appropriate value.</p>
                         <p> We will try to follow a semi-automatic annotation process here. Metadata
                             could be compiled and stored in a CSV file during previous steps (one
                             file per novel). Then a well-formed XML file could be created
@@ -211,7 +211,7 @@
                             Similarly, we will follow a semi-automatic annotation approach, trying
                             to annotate automatically as much as possible.</p>
                         <p> However, in both cases, annotation must be manually checked with two
-                            objectives: first, to introduce all that information that has not been
+                            objectives: first, to introduce any  information that has not been
                             possible to annotate automatically (direct speech?, page breaks?,
                             tables?), and second to correct possible mistakes during automatic
                             annotation. At this moment, exactly what information will be annotated
@@ -236,12 +236,12 @@
                         process.</p>
                     <p> The repository should guarantee that the novels could be downloaded as XML
                         files and as plain texts. We can also demonstrate the use of more sophisticated
-                        technology such as TEI-Publisher
-                        (teipublisher.com/) or txm (textometrie.org) </p>
+                        technologies such as TEI-Publisher
+                        (teipublisher.com/) or txm (textometrie.org). </p>
                     <p> We can offer a
                         DOI<!-- note place="comment" resp="CO" n="15"
                                 ><date when="2018-01-24T10:39:09Z"/><hi>Maybe both</hi></note -->
-                        for each novel and for all the corpus through Zenodo: <ref
+                        for each novel and for the whole corpus through Zenodo: <ref
                             target="https://zenodo.org/"><hi>https://zenodo.org/</hi></ref>.</p>
                 </div>
                 <div>
@@ -249,7 +249,7 @@
                     <p> Two aspects must be evaluated: text quality and annotation.</p>
                     <p> Text quality could be evaluated by checking if text samples follows the
                         criteria of Doc1. The idea here is to find recurrent mistakes. The
-                        annotation the structure of each novel could be evaluated in the same way,
+                        annotation of the structure of each novel could be evaluated in the same way,
                         but in relation to Doc2. Metadata of each novel must be manually checked in
                         order to ensure the correctness of data.</p>
                     <p> Each file must be a valid XML-TEI document according to the defined XML
@@ -263,7 +263,7 @@
                                 we can validate using normal XML tools (oXygen, jing,
                                 xmllint...)</hi></note --></p>
                     <p> Ideally, manual annotation must be evaluated following a double annotation
-                        by two annotator and then calculating inter-annotators agreement. This
+                        by two annotators and then calculating inter-annotators agreement. This
                         standard approach will show us the quality of the annotation scheme and the
                         annotation process. It is not clear at this moment which information will be
                         manually annotated. Therefore, we suggest to leave this point for later
@@ -284,7 +284,8 @@
                     <list type="unordered">
                         <item>OCLC WorldCat <ref target="https://www.oclc.org/"
                                     ><hi>https://www.oclc.org</hi></ref></item>
-                        <item>…</item>
+                        <item>Gutenberg catalog (in RDF) http://www.gutenberg.org/wiki/Gutenberg:Feeds
+                        </item>
                     </list>
                 </div>
                 <div>
@@ -292,23 +293,23 @@
                     <list type="unordered">
                         <item>Gutenberg project [several languages]:
                             http://www.gutenberg.org/</item>
-                        <item>Oxford Text Archive (OTA) [several languages, mainly English]:
+                        <item>Oxford Text Archive (OTA) [several languages]:
                             http://ota.ox.ac.uk/</item>
                         <item>Deutsches Textarchiv (DTA - German Text Archive) [German]:
                             http://www.bbaw.de/en/research/dta</item>
                         <item>TextGrid Repository [German]:
                             https://textgrid.de/en/digitale-bibliothek</item>
-                        <item>OBVIL Bibliothèque [Frech]:
+                        <item>OBVIL Bibliothèque [French]:
                             http://obvil.paris-sorbonne.fr/bibliotheque</item>
                         <item>ARTFL-FRANTEXT [French]:
                             http://artfl-project.uchicago.edu/content/artfl-frantext</item>
                         <item>Biblioteca Virtual Miguel de Cervantes [Spanish (Castilian, Catalan
                             and Galician)]: http://www.cervantesvirtual.com/</item>
-                        <item>Liber Libri https://www.liberliber.it/online/ for Italian, or</item>
+                        <item>Liber Libri https://www.liberliber.it/online/ [Italian]</item>
                         <item>Biblioteca Digital Camões
                             http://www.cvc.instituto-camoes.pt/conhecer/biblioteca-digital-camoes/literatura-1.html
-                            for Portuguese.</item>
-                        <item>Others...</item>
+                            [Portuguese]</item>
+                        <item> Digitale Bibliotheek voor de Nederlandse letteren http://www.dbnl.org/ [Dutch]</item>
                     </list>
                 </div>
                 <div>
