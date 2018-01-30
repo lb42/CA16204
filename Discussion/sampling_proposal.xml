@@ -5,7 +5,7 @@
             <titleStmt>
                 <title>Sampling criteria for the ELTeC</title>
                 <author>Cost Action CA16204 – WG1 </author>
-               </titleStmt>
+            </titleStmt>
             <editionStmt>
                 <edition><date>2018-01</date></edition>
             </editionStmt>
@@ -16,11 +16,11 @@
                 <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
-            <revisionDesc>
+        <revisionDesc>
             <listChange>
                 <change><date>2018-01-27</date> LB converted to XML</change>
                 <change><date>2018-01-27</date> CO Final draft</change>
-                
+
             </listChange>
         </revisionDesc>
     </teiHeader>
@@ -28,7 +28,7 @@
         <body>
             <head>Sampling criteria for the ELTeC</head>
             <div>
-                  <head>Outline</head>
+                <head>Outline</head>
                 <list type="ordered">
                     <item>Task</item>
                     <item>Method</item>
@@ -270,164 +270,63 @@
                 <p>Criteria:</p>
                 <p> Date</p>
                 <list type="unordered">
-                    <item>1850 to 1920 (first iterations)</item>
+                    <item>1850 to 1920 (first iteration)</item>
                 </list>
                 <p>Dividing the period into five subgroups </p>
                 <list type="unordered">
-                    <item>somewhat arbitrary as dividing into decades, this may simplify the
-                        selection of novels</item>
+                    <item>Rather than dividing by decade we propose longer time slots </item>
                     <item>group A (1850-1863)</item>
                     <item>group B (1864-1877)</item>
                     <item>group C (1878-1891)</item>
                     <item>group D (1892-1905) </item>
                     <item>group E (1906-1920)</item>
+                </list>
+                <list type="unordered">
                     <item>Language of the text</item>
                     <item>Dutch, English, French, German, Greek, Italian, Polish, Portuguese,
                         Russian, Spanish</item>
+                </list>
+                <list type="unordered">
                     <item>Reprints</item>
                     <item>No reprints</item>
                     <item>Middle rate of reprints</item>
                     <item>High rate of reprints</item>
+                </list>
+                <list type="unordered">
                     <item>Author</item>
                     <item>Male</item>
                     <item>Female</item>
                     <item>mixed (undefined or more than one author)</item>
+                </list>
+                <list type="unordered">
                     <item>Length?</item>
                     <item>Average (cf. balancing) </item>
                     <item>Kind of novel?</item>
                     <item>Main theme </item>
                 </list>
-                <p>Example:</p>
+                <p>The following table suggests minimum and maximum numbers of titles to be selected
+                    for each criterion. For example, for each language, we would aim to select
+                    between 80 and 120 different titles. Of these, no more than 20 will come from
+                    each date period defined above. Of these, we will aim to have between 5 and 10
+                    examples from each of the reprint categories defined (high, medium, low). Of
+                    these, the number produced by male authors will be between 5 and 8, as will the
+                    number produced by female authors, and the number produced by authors of unknown
+                    or indeterminate sex. </p>
                 <table rend="rules">
                     <row rend="bold">
                         <cell>Language</cell>
-                        <cell>Group</cell>
-                        <cell>Reprints in group</cell>
-                        <cell>Author in group</cell>
-                        <cell>Others?</cell>
-                        <cell>Amount</cell>
+                        <cell>Date</cell>
+                        <cell>Reprint</cell>
+                        <cell>Author</cell>
                     </row>
                     <row>
-                        <cell>Spanish</cell>
-                        <cell>A = 20</cell>
-                        <cell>Low = 6</cell>
-                        <cell>male = 6</cell>
-                        <cell/>
-                        <cell>100</cell>
+                        <cell>80 - 120</cell>
+                        <cell>20</cell>
+                        <cell>5-10</cell>
+                        <cell>5-8</cell>
                     </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>Med = 6</cell>
-                        <cell>female = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>High = 6</cell>
-                        <cell>mixed = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell>B = 20</cell>
-                        <cell>Low = 6</cell>
-                        <cell>male = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>Med = 6</cell>
-                        <cell>female = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>High = 6</cell>
-                        <cell>mixed = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell>C = 20</cell>
-                        <cell>Low = 6</cell>
-                        <cell>male = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>Med = 6</cell>
-                        <cell>female = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>High = 6</cell>
-                        <cell>mixed = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell>D = 20</cell>
-                        <cell>Low = 6</cell>
-                        <cell>male = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>Med = 6</cell>
-                        <cell>female = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>High = 6</cell>
-                        <cell>mixed = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell>E = 20</cell>
-                        <cell>Low = 6</cell>
-                        <cell>male = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>Med = 6</cell>
-                        <cell>female = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell/>
-                        <cell>High = 6</cell>
-                        <cell>mixed = 6</cell>
-                        <cell/>
-                        <cell/>
-                    </row>
-                </table>
+                  </table>
+                
             </div>
             <div>
                 <head> Metadata for texts in ELTeC </head>
@@ -480,35 +379,37 @@
             </div>
             <div>
                 <head>Literature</head>
-                <listBibl><bibl>Algee-Hewitt, Mark; McGurl, Mark (2015): Between Canon and Corpus. Six
-                    Perspectives on the 20th-Century Novels. Literary Lab. </bibl>
-                <bibl>Biber, Douglas (1993): Representativeness in Corpus Design. In: <title
-                        level="j">Literary and Linguistic Computing </title>(8), 243–257.</bibl>
-                <bibl>Herrmann, Leonhard (2011): System? Kanon? Epoche? In: Matthias Beilein,
-                    Claudia Stockinger und Simone Winko (Hg.): Kanon, Wertung und Vermittlung.
-                    Literatur in der Wissensgesellschaft. Berlin: De Gruyter (Studien und Texte zur
-                    Sozialgeschichte der Literatur, Bd. 129), S. 59–75.</bibl>
-                <bibl>Hunston, Susan (2008): Collection strategies and design decisions. In: Anke
-                    Lüdeling und Merja Kytö (Hg.): Corpus Linguistics. An International Handbook. 2
-                    Bände. Berlin: De Gruyter (1), S. 154–168.</bibl>
-                <bibl>IFLA (2009): Functional Requirements for Bibliographic Records (Technical
-                    Report). Online verfügbar unter
-                    http://www.ifla.org/publications/functional-requirements-for-bibliographic-records,
-                    zuletzt geprüft am 23.12.2016.</bibl>
-                <bibl>Lüdeling, Anke (2011): Corpora in Linguistics. Sampling and Annotation. In:
-                    Karl Grandin (Hg.): Going Digital. Evolutionary and Revolutionary Aspects of
-                    Digitization. New York: Science History Publications (Nobel Symposium, 147),
-                    220–243.</bibl>
-                <bibl>Moisl, Hermann (2009): Exploratory Multivariate Analysis. In: Anke Lüdeling
-                    und Merja Kytö (Hg.): Corpus Linguistics. An International Handbook. 2 Bände.
-                    Berlin: De Gruyter (2), S. 874–899.</bibl>
-                <bibl>Winko, Simone (1996): Literarische Wertung und Kanonbildung. In: Grundzüge der
-                    Literaturwissenschaft. Hrsg. v. H. L. Arnold und H. Detering. München,
-                    585–600.</bibl>
-                <bibl>van Zundert, Joris; Andrews, Tara L. (2017): Qu'est-ce qu'un texte numérique?
-                    A new rationale for the digital representation of text. In: <title level="j"
-                        >Digital Scholarship in the Humanities </title>(32), S. 78–88. DOI:
-                    10.1093/llc/fqx039.</bibl></listBibl>
+                <listBibl>
+                    <bibl>Algee-Hewitt, Mark; McGurl, Mark (2015): Between Canon and Corpus. Six
+                        Perspectives on the 20th-Century Novels. Literary Lab. </bibl>
+                    <bibl>Biber, Douglas (1993): Representativeness in Corpus Design. In: <title
+                            level="j">Literary and Linguistic Computing </title>(8), 243–257.</bibl>
+                    <bibl>Herrmann, Leonhard (2011): System? Kanon? Epoche? In: Matthias Beilein,
+                        Claudia Stockinger und Simone Winko (Hg.): Kanon, Wertung und Vermittlung.
+                        Literatur in der Wissensgesellschaft. Berlin: De Gruyter (Studien und Texte
+                        zur Sozialgeschichte der Literatur, Bd. 129), S. 59–75.</bibl>
+                    <bibl>Hunston, Susan (2008): Collection strategies and design decisions. In:
+                        Anke Lüdeling und Merja Kytö (Hg.): Corpus Linguistics. An International
+                        Handbook. 2 Bände. Berlin: De Gruyter (1), S. 154–168.</bibl>
+                    <bibl>IFLA (2009): Functional Requirements for Bibliographic Records (Technical
+                        Report). Online verfügbar unter
+                        http://www.ifla.org/publications/functional-requirements-for-bibliographic-records,
+                        zuletzt geprüft am 23.12.2016.</bibl>
+                    <bibl>Lüdeling, Anke (2011): Corpora in Linguistics. Sampling and Annotation.
+                        In: Karl Grandin (Hg.): Going Digital. Evolutionary and Revolutionary
+                        Aspects of Digitization. New York: Science History Publications (Nobel
+                        Symposium, 147), 220–243.</bibl>
+                    <bibl>Moisl, Hermann (2009): Exploratory Multivariate Analysis. In: Anke
+                        Lüdeling und Merja Kytö (Hg.): Corpus Linguistics. An International
+                        Handbook. 2 Bände. Berlin: De Gruyter (2), S. 874–899.</bibl>
+                    <bibl>Winko, Simone (1996): Literarische Wertung und Kanonbildung. In: Grundzüge
+                        der Literaturwissenschaft. Hrsg. v. H. L. Arnold und H. Detering. München,
+                        585–600.</bibl>
+                    <bibl>van Zundert, Joris; Andrews, Tara L. (2017): Qu'est-ce qu'un texte
+                        numérique? A new rationale for the digital representation of text. In:
+                            <title level="j">Digital Scholarship in the Humanities </title>(32), S.
+                        78–88. DOI: 10.1093/llc/fqx039.</bibl>
+                </listBibl>
             </div>
         </body>
     </text>

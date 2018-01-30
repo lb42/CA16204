@@ -25,7 +25,7 @@
     </teiHeader>
     <text>
         <body>
-            <div>
+          
                 <head>Workflow</head>
                 <p> The objective of this document is to set out the main steps to build the ELTeC
                     core corpus of novels.</p>
@@ -176,7 +176,7 @@
                         annotation, document structure annotation and linguistic/literary
                         annotation. The last one will not be done for the moment.</p>
                     <div>
-                        <head>4.1. Metadata annotation.</head>
+                        <head>Metadata annotation.</head>
                         <p> Metadata attributes have been specified in the Encoding Scheme (Doc2).
                             In order to introduce in each text, two tasks must be done.</p>
                         <p> First, a controlled language must be developed to control the values of
@@ -192,7 +192,7 @@
                             checked (see evaluation step).</p>
                     </div>
                     <div>
-                        <head>4.2. Annotation of the structure of the novel.</head>
+                        <head>Annotation of the structure of the novel.</head>
                         <p> Doc2 includes tags for representing the structure of the novel
                             (chapters, paragraphs,
                             etc.).<!-- note place="comment" resp="CO" n="12"
@@ -271,57 +271,57 @@
                 </div>
                 <div>
                     <head>Bibliography</head>
-                    <bibl>Leech, Geoffrey (2005) “Adding Linguistic Annotation” in Wynne, M
+                    <listBibl><bibl>Leech, Geoffrey (2005) “Adding Linguistic Annotation” in Wynne, M
                         (editor), <title>Developing Linguistic Corpora: a Guide to Good
                             Practice</title>. Oxford: Oxbow Books. Available online from <ref
                             target="http://ota.ox.ac.uk/documents/creating/dlc/"
                             >http://ota.ox.ac.uk/documents/creating/dlc/</ref></bibl>
                     <bibl>Stubbs, Amber and James Pustejovsky (2012) <title>Natural
                             Language Annotation for Machine Learning</title>, O'Reilly.</bibl>
-                </div>
-                <div>
-                    <head>APPENDIX 1. List of catalogues.</head>
-                    <list type="unordered">
-                        <item>OCLC WorldCat <ref target="https://www.oclc.org/"
-                                    ><hi>https://www.oclc.org</hi></ref></item>
-                        <item>Gutenberg catalog (in RDF) http://www.gutenberg.org/wiki/Gutenberg:Feeds
-                        </item>
-                    </list>
-                </div>
-                <div>
-                    <head>APPENDIX 2. List of digital repositories</head>
-                    <list type="unordered">
-                        <item>Gutenberg project [several languages]:
-                            http://www.gutenberg.org/</item>
-                        <item>Oxford Text Archive (OTA) [several languages]:
-                            http://ota.ox.ac.uk/</item>
-                        <item>Deutsches Textarchiv (DTA - German Text Archive) [German]:
-                            http://www.bbaw.de/en/research/dta</item>
-                        <item>TextGrid Repository [German]:
-                            https://textgrid.de/en/digitale-bibliothek</item>
-                        <item>OBVIL Bibliothèque [French]:
-                            http://obvil.paris-sorbonne.fr/bibliotheque</item>
-                        <item>ARTFL-FRANTEXT [French]:
-                            http://artfl-project.uchicago.edu/content/artfl-frantext</item>
-                        <item>Biblioteca Virtual Miguel de Cervantes [Spanish (Castilian, Catalan
-                            and Galician)]: http://www.cervantesvirtual.com/</item>
-                        <item>Liber Libri https://www.liberliber.it/online/ [Italian]</item>
-                        <item>Biblioteca Digital Camões
-                            http://www.cvc.instituto-camoes.pt/conhecer/biblioteca-digital-camoes/literatura-1.html
-                            [Portuguese]</item>
-                        <item> Digitale Bibliotheek voor de Nederlandse letteren http://www.dbnl.org/ [Dutch]</item>
-                    </list>
-                </div>
-                <div>
-                    <head>Appendix 3. Tools and resources for digitizing texts.</head>
-                    <list type="unordered">
-                        <item>https://www.digitisation.eu/</item>
-                        <item>http://www.impact-project.eu/index.php</item>
-                        <item>https://www.digitisation.eu/tools-resources/tools-for-text-digitisation/</item>
-                        <item>http://www.impact-project.eu/taa/tech/tools/</item>
-                    </list>
-                </div>
+            </listBibl>    </div>
+               
+        </body><back><div>
+            <head>APPENDIX 1. List of catalogues.</head>
+            <list type="unordered">
+                <item>OCLC WorldCat <ref target="https://www.oclc.org/"
+                    ><hi>https://www.oclc.org</hi></ref></item>
+                <item>Gutenberg catalog (in RDF) http://www.gutenberg.org/wiki/Gutenberg:Feeds
+                </item>
+            </list>
+        </div>
+            <div>
+                <head>APPENDIX 2. List of digital repositories</head>
+                <list type="unordered">
+                    <item>Gutenberg project [several languages]:
+                        http://www.gutenberg.org/</item>
+                    <item>Oxford Text Archive (OTA) [several languages]:
+                        http://ota.ox.ac.uk/</item>
+                    <item>Deutsches Textarchiv (DTA - German Text Archive) [German]:
+                        http://www.bbaw.de/en/research/dta</item>
+                    <item>TextGrid Repository [German]:
+                        https://textgrid.de/en/digitale-bibliothek</item>
+                    <item>OBVIL Bibliothèque [French]:
+                        http://obvil.paris-sorbonne.fr/bibliotheque</item>
+                    <item>ARTFL-FRANTEXT [French]:
+                        http://artfl-project.uchicago.edu/content/artfl-frantext</item>
+                    <item>Biblioteca Virtual Miguel de Cervantes [Spanish (Castilian, Catalan
+                        and Galician)]: http://www.cervantesvirtual.com/</item>
+                    <item>Liber Libri https://www.liberliber.it/online/ [Italian]</item>
+                    <item>Biblioteca Digital Camões
+                        http://www.cvc.instituto-camoes.pt/conhecer/biblioteca-digital-camoes/literatura-1.html
+                        [Portuguese]</item>
+                    <item> Digitale Bibliotheek voor de Nederlandse letteren http://www.dbnl.org/ [Dutch]</item><item>National Library of Poland http://www.bn.org.pl/en/digital-resources/polona/ [Polish]</item>
+                </list>
             </div>
-        </body>
+            <div>
+                <head>Appendix 3. Tools and resources for digitizing texts.</head>
+                <list type="unordered">
+                    <item>https://www.digitisation.eu/</item>
+                    <item>http://www.impact-project.eu/index.php</item>
+                    <item>https://www.digitisation.eu/tools-resources/tools-for-text-digitisation/</item>
+                    <item>http://www.impact-project.eu/taa/tech/tools/</item>
+                </list>
+            </div>
+        </back>
     </text>
 </TEI>
