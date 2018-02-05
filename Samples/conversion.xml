@@ -1,0 +1,48 @@
+<body>
+  <div>
+    <head>A Greek PG HTML file in UTF8</head>
+    <list>
+      <item>Download Ebook #29062 from http://... (file <ident>vikelas.html</ident>)</item>
+      <item>run <ident>htmltotei</ident> to produce <ident>vikelas-0.xml</ident>; open this in
+        oXygen</item>
+      <item>reformat and use Summary view to show structure. <list>
+          <item>title page erroneously treated as divs. Adjust these</item>
+          <item>links to graphics are present but no graphic files included</item>
+          <item>remove <gi>eg</gi> elements and fix header </item>
+        </list></item>
+    </list>
+  </div>
+  <div>
+    <head>A French Wikisource HTML file</head>
+    <list>
+      <item>Download Paul et Virgine (texte entier) from http://fr.wikisource.html (file
+          <ident>FR_PaulVirginie.html</ident></item>
+      <item>run <ident>htmltotei</ident> to produce <ident>FR_PaulVirginie-0.xml</ident>; open this
+        in oXygen</item>
+      <item>Lots of red lines caused by misplaced <gi>hi</gi> elements, most of which (but not all)
+        should be div, pb, or hi elements, depending onm value of their <att>rend</att> attribute
+        For example:
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <hi><hi rend="pagenum ws-pagenum" xml:id="i"/></hi>
+        </egXML>
+         should be
+        <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="i"/></egXML>
+      </item>
+      <item>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <hi style="letter-spacing:0.3em;"><hi style="font-variant: small-caps">le
+            vieillard.</hi></hi>
+          <p>« Oh mon ami ! ne m’avez-vous pas dit que vous n’aviez pas de naissance ?</p></egXML>
+         should be
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <p><label>le vieillard.</label> « Oh mon ami ! ne m’....</p></egXML>
+        or maybe (not so easy) 
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <sp><speaker>le vieillard.</speaker>
+            <p>« Oh mon ami ! ne m’....</p></sp></egXML>
+        
+      </item>
+      <item>apply <ident>wikisource.xsl</ident> script to produce FR_PaulVirgine-1.xml</item>
+    </list>
+  </div>
+</body>
