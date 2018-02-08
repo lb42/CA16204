@@ -13,10 +13,10 @@
     </list>
   </div>
   <div>
-    <head>A French Wikisource HTML file</head>
+    <head>A French HTML file from Wikisource</head>
     <list>
-      <item>Download Paul et Virgine (texte entier) from http://fr.wikisource.html (file
-          <ident>FR_PaulVirginie.html</ident></item>
+      <item>Download Paul et Virgine (texte entier) from https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier (file
+          <ident>FR_PaulVirginie.html</ident>)</item>
       <item>run <ident>htmltotei</ident> to produce <ident>FR_PaulVirginie-0.xml</ident>; open this
         in oXygen</item>
       <item>Lots of red lines caused by misplaced <gi>hi</gi> elements, most of which (but not all)
@@ -36,13 +36,14 @@
          should be
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <p><label>le vieillard.</label> « Oh mon ami ! ne m’....</p></egXML>
-        or maybe (not so easy) 
+         or maybe (not so easy)
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <sp><speaker>le vieillard.</speaker>
             <p>« Oh mon ami ! ne m’....</p></sp></egXML>
-        
       </item>
-      <item>apply <ident>wikisource.xsl</ident> script to produce FR_PaulVirgine-1.xml</item>
+      <item>apply <ident>wikisource.xsl</ident> script to produce FR_PaulVirginie-1.xml</item>
+      <item>divide up into divs where necessary; delete a bit of cruft at start and end; it should
+        be valid : FR_PaulVirginie-2.xml</item>
     </list>
   </div>
 </body>

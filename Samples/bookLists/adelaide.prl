@@ -1,0 +1,16 @@
+#
+# run this on the catalogue page from https://ebooks.adelaide.edu.au/meta/collections
+#
+print "<!-- links from http://ebooks.adelaide.edu.au -->\n";
+while (<>) {
+if( /<li><a href\=\"([^\"]+)\">([^\/]+)\/\s*([^<]+)<\/a>/) {
+    $date="????";
+ $link=$1;
+ $title=$2;
+ $authDate=$3;
+ if ($authDate =~ s/\[([\d\-]+)\]//) {
+  $date=$1;
+}
+print "<bibl><author>$authDate<\/author><title>$title<\/title><date>$date<\/date><ref>$link<\/ref>\n";
+}
+}
