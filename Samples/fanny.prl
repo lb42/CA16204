@@ -1,2 +1,0 @@
-s/\<BR\>/\<\/p\>/e;
-s/\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;\&nbsp\;/\<p\>/e;

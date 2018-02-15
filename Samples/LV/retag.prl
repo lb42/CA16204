@@ -1,0 +1,14 @@
+while (<>) {
+chop;
+if (s/<big\>([IVX]+)//) {
+  $chap=$1;
+print "<div\ n=\"$chap\"><head\>$1<\/head\>\n";
+next;
+} elsif ($chap) {
+  $inP =1 if(/<p\>/);
+  s|<br\>|<\/p\>\n<p\>|;
+  s/body\>/div\>\n/;
+  s/\<\/html\>//;
+  print if($inP);
+}
+}
