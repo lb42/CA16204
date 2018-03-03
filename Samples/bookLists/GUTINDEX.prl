@@ -1,0 +1,10 @@
+while (<>) {
+if (/TITLE and AUTHOR/) {
+$started=1;
+}
+next unless ($started);
+s/ //e;
+if (/(.*?), by (.*?)\s+(\d+)/) {
+print "<title>$1</title><author>$2</author><idno>$3</idno>\n";
+}
+}
