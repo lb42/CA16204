@@ -1,0 +1,12 @@
+#!/bin/bash
+cd Bassett
+for number in {1850..1901}
+do
+echo "$number "
+wget "http://www.victorianresearch.org/atcl/show_year.php?year=$number" -O $number.html
+tidy -asxml -n --new-empty-tags image $number.html | saxon - ../bassetConv.xsl > $number.xml
+done
+cd ..
+exit 0
+
+
