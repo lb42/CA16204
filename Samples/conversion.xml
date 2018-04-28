@@ -15,35 +15,40 @@
   <div>
     <head>A French HTML file from Wikisource</head>
     <list>
-      <item>Download Paul et Virgine (texte entier) from https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier (file
+      <item>Download Paul et Virgine (texte entier) from
+        https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier (file
           <ident>FR_PaulVirginie.html</ident>)</item>
       <item>run <ident>htmltotei</ident> to produce <ident>FR_PaulVirginie-0.xml</ident>; open this
         in oXygen</item>
       <item>Lots of red lines caused by misplaced <gi>hi</gi> elements, most of which (but not all)
         should be div, pb, or hi elements, depending onm value of their <att>rend</att> attribute
-        For example:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+        For example: <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <hi><hi rend="pagenum ws-pagenum" xml:id="i"/></hi>
-        </egXML>
-         should be
-        <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="i"/></egXML>
+        </egXML> should be <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="i"/></egXML>
       </item>
       <item>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <hi style="letter-spacing:0.3em;"><hi style="font-variant: small-caps">le
             vieillard.</hi></hi>
           <p>« Oh mon ami ! ne m’avez-vous pas dit que vous n’aviez pas de naissance ?</p></egXML>
-         should be
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <p><label>le vieillard.</label> « Oh mon ami ! ne m’....</p></egXML>
-         or maybe (not so easy)
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+        should be <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <p><label>le vieillard.</label> « Oh mon ami ! ne m’....</p></egXML> or maybe (not so
+        easy) <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <sp><speaker>le vieillard.</speaker>
             <p>« Oh mon ami ! ne m’....</p></sp></egXML>
       </item>
       <item>apply <ident>wikisource.xsl</ident> script to produce FR_PaulVirginie-1.xml</item>
       <item>divide up into divs where necessary; delete a bit of cruft at start and end; it should
         be valid : FR_PaulVirginie-2.xml</item>
+    </list>
+  </div>
+  <div>
+    <head>Portuguese from PG</head>
+    <list>
+      <item>run tidy to produce xhtml
+        <eg>tidy -n -config tidyConfig.txt 26110-h.htm >olhoVidro_tidied.xml </eg></item>
+      <item>run PO.xsl to convert to nearly correct TEI</item>
+      <item>manual tidying</item>
     </list>
   </div>
 </body>
