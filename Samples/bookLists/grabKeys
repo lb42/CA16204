@@ -1,0 +1,4 @@
+ # need to expand xincludes in driver
+ saxon -xi bassetDriver.xml getKeys.xsl > bassetKeys.txt
+ # need to suppress duplicates because VWWP has one entry per vol
+saxon -xi bassetDriver.xml getKeys.xsl > bassetKeys.txt

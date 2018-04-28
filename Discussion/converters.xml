@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_simplePrint.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_simplePrint.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Auto-conversion tools for TEI</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="1"/>
+         <div n="1">
+            <head>Auto Conversion tools for TEI</head>
+            <p>TEI is not, of course, a single format, but there is sufficient consensus about its
+               core features for people to have attempted (at various times) to produce tools for
+               automatically converting into it from the cheerful anarchy of other commonly used
+               formats. In this document we review a number of the available tools, and propose a
+               recommended workflow.</p>
+         </div>
+         <div n="1">
+            <head>pg2tei</head>
+            <p>This tool is listed in the TEI wiki; it has apparently not been updated since 2012.
+               The tool was designed to do a mass conversion of Gutenberg texts, rather than a
+               single handcrafted conversion. The proposed pipeline is organized as follows: <list
+                  type="instructions">
+                  <item>* Downloading _catalog.rdf_ from the Project Gutenberg web server. * </item>
+                  <item>Parsing the RDF-catalog, selecting the texts that are available in
+                     HTML-format (or some of the eBook-formats), and extracting the specific
+                     meta-information from the RDF-XML. * </item>
+                  <item>Downloading and parsing the RDF-XML-file for each individual book,
+                     extracting the available meta-information. * </item>
+                  <item>Generation of the TEI XML header with the extracted meta information. * </item>
+                  <item>Conversion of the HTML-text to the ODT-format, filtering out the copyright
+                     statements in the text body and moving them to the TEI XML header section. * </item>
+                  <item>Conversion of the ODT-files to TEI XML. *</item>
+                  <item> Generation of a new text-specific RDF-XML-file with the additional
+                     descriptor and link to the newly generated TEI-XML-file.</item>
+               </list>
+            </p>
+            <p>The code for the conversion pipeline is made available under the [Apache 2.0
+               License](http://www.apache.org/licenses/LICENSE-2.0.html) and consists of a bunch of
+               java scripts (<q>It might use some Java 7 specific elements and constructions, but
+                  should be easily adaptable to Java 6 or earlier versions.</q>). It uses a Mac
+               utility called textutil to do the HTML to ODT conversion (step 4 above); and relies
+               on the TEI Stylesheet odttotei conversion to convert individual files from ODT to TEI
+               (step 5). </p>
+            <p>We did not spend try getting the <q>quick and dirty</q> java code to work; instead we
+               note the interest of this approach to collecting and repurposing metadata, which
+               seems worth stealing.</p>
+         </div>
+         <div n="2">
+            <head>Matthew Jockers Python scripts</head>
+            <p>Some more text here.</p>
+         </div>
+         <div n="3">
+            <head>pandoc</head>
+            <p/>
+         </div>
+         <div n="3">
+            <head>oxgarage</head>
+            <p>This is a wrapper for the TEI stylesheets permitting generic conversions between TEI
+               and a number of common document processing formats (DOCX, ODT, XHTML, etc.) See
+               article. The TEI provides a REST servoice which allows it to be invoked from a
+               command line script, or it can be installed and run locally </p>
+            <p>Customization is done by creating an XSLT "profile". Thjis is very powerful, but may
+               be non trivial. </p>
+         </div>
+         <div n="3">
+            <head>Input formats</head>
+            <p>The real question is not so much a lack of tools (anything in well fornmed XML can be
+               processed into TEI ) as a lack of information about the formats in which texts are
+               made available. This, oen oif the principal the challenmges which led to the
+               establishment of the TEI in the firsyt place, has sadly not gone away. Within the TEI
+               comnmyunity there has been a certain anmount of weailing and gnashing of teeth about
+               the laxity of popular TEI schemas which (insert stupid quote from mueller). But this
+               is as nothing compared with the variety of ways in which identical phenomena may be
+               encoded in a supposedly unform collection like that of PG. </p>
+            <p>We took a sample of 100 titles characterised in the PG metadata as being "novels" in
+               various languages. We first ran each text through the wonderful Tidy utility to get
+               them all into wellp-formed xhtml, encoded in utf8, anmd to strip out any extranbeous
+               non-XML markup. Then we counted the tags and attributes used. Then we looked at the
+               specific styles used to signal the following basic features: <list>
+                  <item>section divisions</item>
+                  <item>paragraph divisions</item>
+                  <item>page breaks</item>
+                  <item>verse lines</item>
+               </list></p>
+         </div><div><head>Case studies</head>
+         <div><head>Biblioteca
+            Virtual Miguel de Cervantes</head>
+            <p>HTML files with no specified doctype, and apparently using non-standard HTML tags header nav main section footer. Tidy command
+               tidy -asxml -latin1 -cn --drop-proprietary-attributes yes --new-blocklevel-tags header,nav,main,section,footer -f ambarina.err -o ambarina.xml  ambarina.htm
+               htmltotei ambarina.xhtml produces a nearly correct TEI file!
+            </p><p>Paragraphs are signalled by <gi>p</gi>; also each one is prefixed by an <gi>anchor</gi> with an invalid
+               <att>xml:id</att> attribute: (these could become values for @n on p)</p><p>Page breaks are identified by <gi>hi</gi> elements with 
+               <att>rend</att> set tohtmltotei c6. </p><p>chapters or parts are correctly identified and become <gi>div</gi> elements.</p></div></div>
+      </body>
+   </text>
+</TEI>

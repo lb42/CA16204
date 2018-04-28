@@ -1,0 +1,9 @@
+INDIR=PGfiles
+OUTDIR=TEIfiles
+
+for f in ${INDIR}/* ; do \
+FNAME=`basename $f .htm`;\
+echo ${FNAME} ;\
+     cat ${INDIR}/${FNAME}.htm | tidy -q --error-file tidyerrs --doctype omit --numeric-entities yes -ascii -asxml > temp.xml \
+#     | saxon -o:${OUTDIR}/${FNAME}.xml -s:- -xsl:postGrab.xsl chapId=${FNAME};\
+done;
