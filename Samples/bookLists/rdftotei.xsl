@@ -83,11 +83,14 @@
                 </xsl:when>
                 
                 <xsl:otherwise>                   
-                    <author dates="concat({$bdate},'-',{$obit})">
+                    <author>
+                        <xsl:attribute name="dates">
+                      <xsl:value-of select="concat($bdate,'-',$obit)"/>
+                        </xsl:attribute>
                         <xsl:value-of select="pgterms:agent/pgterms:name"/>
                     </author> 
-                    <xsl:message><xsl:value-of select="concat($pgNum, ' has dubious dates: ',$bdate, ' ', $obit )"/>
-                    </xsl:message>
+           <!--         <xsl:message><xsl:value-of select="concat($pgNum, ' has dubious dates: ',$bdate, ' ', $obit )"/>
+                    </xsl:message>-->
                  </xsl:otherwise>
             </xsl:choose>
  

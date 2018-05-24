@@ -38,6 +38,9 @@
                 <xsl:when test="contains(str[@name='title'], ', or')">
                     <xsl:value-of select="t:sanitize(substring-before(str[@name='title'],', or'))"/>
                 </xsl:when>
+                <xsl:when test="contains(str[@name='title'], 'a novel')">
+                    <xsl:value-of select="t:sanitize(substring-before(str[@name='title'],'a novel'))"/>
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="t:sanitize(str[@name='title'])"/>
                 </xsl:otherwise>
@@ -48,6 +51,7 @@
 -->        </xsl:variable>
         <bibl xml:id="{$titleId}" n="{$titleKey}">
             <author>
+                <xsl:if test="$auth">????</xsl:if>
                 <xsl:value-of select="$auth"/>
             </author>
             <title>
