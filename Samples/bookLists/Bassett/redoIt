@@ -1,0 +1,6 @@
+#extract the csv files from bassett's dump
+# then
+csvtotei authors.csv authors.tmp
+saxon authors.tmp authors2tei.xsl -o:authors.tei
+csvtotei titles.csv titles.tmp
+saxon titles.tmp titles2tei.xsl -o:titles.tei

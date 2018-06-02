@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="u o xs c html ss x2 x xsi"
-    xmlns:u="urn:schemas-microsoft-com:office:spreadsheet"
-    xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet"
-    xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office"
-    xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
-    xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml"
-    xmlns:x="urn:schemas-microsoft-com:office:excel"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:t="http://www.tei-c.org/ns/1.0"
-    version="2.0">
-    <xsl:param name="authorFile" select="document('authors.tei')"/>
+       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns="http://www.tei-c.org/ns/1.0" 
+    xmlns:t="http://www.tei-c.org/ns/1.0"
+   version="2.0">
+    <xsl:param name="authorFile" select="document('authorsBit.xml')"/>
     <xsl:template match="/">
         <listBibl>
-            <xsl:apply-templates select="*:Workbook/ss:Worksheet/*:Table"/>
+            <xsl:apply-templates select="//t:table"/>
         </listBibl>
     </xsl:template>
-    <xsl:template match="*:Workbook/ss:Worksheet/*:Table">
-        <xsl:for-each select="*:Row[position() gt 1]">
+    <xsl:template match="t:table">
+        <xsl:for-each select="t:row[position() gt 1]">
             <xsl:variable name="title">
-                <xsl:value-of select="*:Cell[3]/*:Data"/>
+                <xsl:value-of select="t:cell[@n='3']"/>
             </xsl:variable>
             <xsl:variable name="titleKey">
                 <xsl:choose>
@@ -32,20 +27,25 @@
                 </xsl:choose>
             </xsl:variable>
             <xsl:variable name="authId">
-                <xsl:value-of select="*:Cell[2]/*:Data"/>
+                <xsl:value-of select="t:cell[@n='2']"/>
             </xsl:variable>
-          
-            <xsl:variable name="authSex">
+               <xsl:variable name="authSex">
                 <xsl:value-of
                     select="substring($authorFile//author[substring-after(@xml:id, ':') = $authId]/@xml:id, 1, 1)"
                 />
             </xsl:variable>
-            
-            <xsl:variable name="authString">
+                   <xsl:variable name="authString">
                 <xsl:value-of
                     select="$authorFile//author[substring-after(@xml:id, ':') = $authId]/name[1]"/>
             </xsl:variable>
+     
+            <xsl:message>Looking for <xsl:value-of select="$authId"/></xsl:message>
+              <xsl:message>in <xsl:value-of select="$authorFile//author/@xml:id"/></xsl:message>    
             
+            <xsl:message><xsl:value-of select="$authSex"/></xsl:message>
+            <xsl:message><xsl:value-of select="$authString"/></xsl:message>
+            
+     
             <xsl:variable name="authKey">
                 <xsl:value-of select="substring-before($authString, ',')"/>
                 <!-- not sanitized for
@@ -54,7 +54,7 @@
             
             <bibl>
                 <xsl:attribute name="xml:id">
-                    <xsl:value-of select="concat('B', *:Cell[1]/*:Data)"/>
+                    <xsl:value-of select="concat('B', t:cell[@n='1'])"/>
                 </xsl:attribute>
                 <xsl:attribute name="n">
                     <xsl:value-of select="concat($titleKey, $authKey)"/>
@@ -66,18 +66,22 @@
                     <xsl:value-of select="$authString"/>
                 </author>
                 <title>
-                    <xsl:value-of select="*:Cell[3]/*:Data"/>
+                    <xsl:value-of select="t:cell[@n='3']"/>
                 </title>
                 <publisher>
-                    <xsl:value-of select="*:Cell[4]/*:Data"/>
+                    <xsl:value-of select="t:cell[@n='5']"/>
+<xsl:text>: </xsl:text>
+                    <xsl:value-of select="t:cell[@n='6']"/>
                 </publisher>
                 <date>
-                    <xsl:value-of select="*:Cell[5]/*:Data"/>
+                    <xsl:value-of select="substring(t:cell[@n='7'],1,4)"/>
                 </date>
+<!-- cell 4 contains number of volumes -->
             </bibl>
         </xsl:for-each>
     </xsl:template>
-    <xsl:function name="t:sanitize" as="xs:string">
+
+    <xsl:function name="t:sanitize" as="xs:string" >
         <xsl:param name="text"/>
         <xsl:variable name="alltext">
             <xsl:value-of select="($text)" separator=""/>

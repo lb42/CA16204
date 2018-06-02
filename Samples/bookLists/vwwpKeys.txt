@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>adogofflanders|Ouida
-avillagecommune|Ouida
+adogofflanders|Ouida
+aromanceoftwoworlds|Corelli
 atmidnightandotherstories|Cambridge
+avillagecommune|Ouida
 avillionandothertales|Craik
 comethupasaflower|Broughton
 daphne|Ward
@@ -18,8 +19,8 @@ myflirtations|Dixon
 olive|Craik
 onedoubtfulhourandothersidelightsonthefemininetemperament|Dixon
 paulferroll|Clive
+redasaroseisshe|Broughton
 redpottage|Cholmondeley
-redasaroseissheanovelbyrhodabroughton|Broughton
 seathrift|Radford
 signa|Ouida
 stories|Schreiner
@@ -33,18 +34,16 @@ themightyatom|Corelli
 thepottersthumb|Steel
 therailwaychildren|Nesbit
 theredhouse|Nesbit
-theromanceoftwoworlds|Corelli
+theselittleones|Nesbit
 thesouloflilith|Corelli
-thestoryofbessiecotrell|Ward
 thestoryofamodernwoman|Dixon
 thestoryofanafricanfarm|Schreiner
+thestoryofbessiecostrell|Ward
 thetreasureofheaven|Corelli
-thetruehistoryofjoshuadavidson|Linton
+thetruehistoryofjoshuadavidsonchristianandcommunist|Linton
 thetutorsward|Skene
-thevillagecommune(vol1)|Ouida
-thewomanwhodidnt|Cross
+thewomanwhodidnt|Cory
 thewouldbegoods|Nesbit
-theselittleones|Nesbit
 trooperpeterhalketofmashonaland|Schreiner
 undine|Schreiner
 vanitas|Lee
