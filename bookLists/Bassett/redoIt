@@ -1,6 +1,11 @@
-#extract the csv files from bassett's dump
+#extract the csv files from bassett dump
 # then
 csvtotei authors.csv authors.tmp
 saxon authors.tmp authors2tei.xsl -o:authors.tei
 csvtotei titles.csv titles.tmp
 saxon titles.tmp titles2tei.xsl -o:titles.tei
+# now merge existing link lists
+saxon titles.tei ../mergeGoogle.xsl -o:bassetPlus.tmp
+saxon bassetPlus.tmp ../mergeHathi.xsl -o:bassettPlus.xml
+# and make links file ready to reload
+saxon bassettPlus.xml ../showLinks.xsl -o:bassettLinks.csv
