@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<listBibl xmlns:xs="http://www.w3.org/2001/XMLSchema" n="IA19cennov">
+<listBibl xmlns="http://www.tei-c.org/ns/1.0" n="IA19cennov">
     <bibl xml:id="foreignersnovel02pric" n="theforeigners|Price"><author>Price, Eleanor C. (Eleanor
             Catherine)</author><title>The foreigners : a novel</title>London : Chatto &amp;
         Windus</bibl>
