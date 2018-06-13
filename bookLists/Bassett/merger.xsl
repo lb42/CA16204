@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:t="http://www.tei-c.org/ns/1.0" version="2.0">
+    
     <xsl:output exclude-result-prefixes="#all" omit-xml-declaration="yes"/>
 
     <!-- Process the bassett TEI file 
@@ -70,8 +71,8 @@
                     <xsl:copy-of select="@*"/>
                     <xsl:copy-of select="*"/>
                     <xsl:for-each select="key('bassettKeys', $myKey, $hitContext)">
-                        <xsl:message>Found!</xsl:message>
-                        <xsl:variable name="myRef">
+            <!--            <xsl:message>Found!</xsl:message>
+           -->             <xsl:variable name="myRef">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:variable>
                         <ref>
@@ -85,6 +86,8 @@
                 <xsl:text>
  </xsl:text>
             </xsl:for-each>
+            <xsl:message>Added links for <xsl:value-of
+                select="count(key('bassettKeys',//t:bibl/@n,$hitContext))"/> titles</xsl:message>
         </listBibl></body></text></TEI>
     </xsl:template>
 </xsl:stylesheet>
