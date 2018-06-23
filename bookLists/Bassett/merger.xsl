@@ -59,6 +59,14 @@
                     expanded to form URIs which point to the relevant download page at Project Gutenberg
                 </p>
             </prefixDef>
+            <prefixDef ident="ad"
+                matchPattern="([a-z]+[a-z0-9]*)"
+                replacementPattern="https://ebooks.adelaide.edu.au/$1">
+                <p> Private URIs using the <code>ad</code> prefix can be
+                    expanded to form URIs which point to the relevant download page at the
+                    ebooks@Adelaide site
+                </p>
+            </prefixDef>
         </listPrefixDef>
           </teiHeader>
         <text >
@@ -70,14 +78,28 @@
                 <xsl:copy select=".">
                     <xsl:copy-of select="@*"/>
                     <xsl:copy-of select="*"/>
+                    
                     <xsl:for-each select="key('bassettKeys', $myKey, $hitContext)">
             <!--            <xsl:message>Found!</xsl:message>
            -->             <xsl:variable name="myRef">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:variable>
+                        <xsl:variable name="type">
+                            <xsl:choose>
+                                <xsl:when test="$prefix = 'ia'">pages</xsl:when>
+                                <xsl:when test="$prefix = 'ht'">pages</xsl:when>
+                                <xsl:when test="$prefix = 'gb'">pages</xsl:when>
+                                <xsl:otherwise>transcr</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
                         <ref>
                             <xsl:attribute name="target">
-                                <xsl:value-of select="concat(concat($prefix,':'),$myRef)"/>
+                                <xsl:if test="not($prefix eq 'ht')"><xsl:value-of
+                                    select="concat($prefix,':')"/> </xsl:if>
+                                <xsl:value-of select="$myRef"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="$type"/>
                             </xsl:attribute>
                             <xsl:value-of select="$hitName"/>
                         </ref>

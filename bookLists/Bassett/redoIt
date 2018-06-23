@@ -5,11 +5,13 @@
 #csvtotei titles.csv titles.tmp
 #saxon titles.tmp titles2tei.xsl -o:titles.tei
 # now merge existing link lists
-saxon titles.tei ../mergeGoogle.xsl -o:bassetPlus.tmp
-saxon bassetPlus.tmp merger.xsl -o:bassettPlus_1.xml hitFile=../guten-list.xml hitName=ProjectGutenberg prefix=pg 
-saxon bassettPlus_1.xml merger.xsl -o:bassettPlus_2.xml hitFile=../ht-list-keyed.xml hitName=HathiTrust prefix= 
-saxon bassettPlus_2.xml merger.xsl -o:bassettPlus_3.xml hitFile=../internetArchive-list.xml hitName=InternetArchive prefix=ia 
-saxon bassettPlus_3.xml merger.xsl -o:bassettPlus_4.xml hitFile=../vwwp-list.xml hitName=VWWP prefix=vw 
+saxon titles.tei ../mergeGoogle.xsl -o:bassettPlus_GB.tmp
+saxon bassettPlus_GB.tmp merger.xsl -o:bassettPlus_GBPG.tmp hitFile=../guten-list.xml hitName=ProjectGutenberg prefix=pg 
+saxonBig bassettPlus_GBPG.tmp merger.xsl -o:bassettPlus_GBPGHT.tmp hitFile=../ht-list-keyed.xml hitName=HathiTrust prefix=ht 
+saxon bassettPlus_GBPGHT.tmp merger.xsl -o:bassettPlus_GBPGHTIA.tmp hitFile=../internetArchive-list.xml hitName=InternetArchive prefix=ia 
+saxon bassettPlus_GBPGHTIA.tmp merger.xsl -o:bassettPlus_GBPGHTIAVW.tmp hitFile=../vwwp-list.xml hitName=VWWP prefix=vw 
+saxon bassettPlus_GBPGHTIAVW.tmp merger.xsl -o:bassettPlus_GBPGHTIAVWAD.tmp hitFile=../adelaide-keyed.xml hitName=eBooksAdelaide prefix=ad 
 # tidyup and make links file ready to reload
-mv bassettPlus_4.xml bassettPlus.xml
-saxon bassettPlus.xml ../showLinks.xsl -o:bassettLinks.csv
+mv bassettPlus_GBPGHTIAVWAD.tmp bassettPlusPlus.xml
+saxon bassettPlusPlus.xml ../showlinks.xsl -o:bassettLinks.csv
+#rm *.tmp

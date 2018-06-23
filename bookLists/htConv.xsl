@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:h="http://www.w3.org/1999/xhtml"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:t="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="h t"
-    version="2.0">
+      xmlns:t="http://www.tei-c.org/ns/1.0"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+       exclude-result-prefixes="#all"
+     version="2.0">
     
     <xsl:template match="/">
-       <listBibl>
-       <xsl:for-each select="//bibl">
+       <listBibl xmlns="http://www.tei-c.org/ns/1.0">
+       <xsl:for-each select="//bibl[date[. gt '1830']]">
            <xsl:variable name="title">
                <xsl:value-of select="title"/>
            </xsl:variable>
@@ -45,7 +44,8 @@
                <xsl:value-of select="$theKey"/>
            </xsl:attribute>
            <xsl:copy-of select="*"></xsl:copy-of>
-       </xsl:copy>
+       </xsl:copy><xsl:text>
+</xsl:text>
        
        </xsl:for-each>
        </listBibl>

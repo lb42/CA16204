@@ -23,13 +23,17 @@
                                 <xsl:value-of
                                     select="concat('gb:',$hitFile//titles/title[@id =
                                     $id][1]/@googleId)"/>
-                            </xsl:attribute>Google Books</ref>
+                              </xsl:attribute>
+<xsl:attribute name="type">pages</xsl:attribute>Google Books</ref>
                         <xsl:text>
  </xsl:text>
                     </xsl:if>
                  
                </xsl:copy>
-              </xsl:for-each>
+            </xsl:for-each>
+	                <xsl:message>Added GB links for <xsl:value-of
+                select="count($hitFile//title)"/> titles</xsl:message>
+
         </listBibl>
     </xsl:template>
 </xsl:stylesheet>
