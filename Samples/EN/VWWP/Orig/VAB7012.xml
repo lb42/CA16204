@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:e="http://distantreading.net/ns">
-    
-  <!--  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.dlib.indiana.edu/lib/xml/vwwp/vwwp.xsd" xml:id="VAB7012">
- -->   <teiHeader>
+<?xml version="1.0" encoding="utf-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://www.dlib.indiana.edu/lib/xml/vwwp/vwwp.xsd" xml:id="VAB7012">
+    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>The Story of the Amulet : ELTeC edition</title>
-   <!--             <title type="filing">Story of the Amulet</title>
-  -->              <author>Nesbit, Edith (1858-1924)</author>
+                <title>The Story of the Amulet</title>
+                <title type="filing">Story of the Amulet</title>
+                <author>Nesbit, E. (Edith) (1858-1924)</author>
                 <respStmt>
                     <resp>Preliminary transcription by</resp>
                     <name>Jo Churcher </name>
@@ -27,44 +22,7 @@
                     <name xml:id="elizabethmunson">Elizabeth Munson</name>
                 </respStmt>
             </titleStmt>
-            <extent>
-                <measure unit="words"></measure>
-            </extent>
-            <publicationStmt>
-                <p>A part of ELTeC</p>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl><title>The Story of the Amulet </title>
-                    <author>Nesbit, E. (Edith), 1858-1924</author>
-                    <publisher>Digital Library Program, Indiana University</publisher>
-                    <pubPlace>Bloomington, IN</pubPlace>
-                    <date>August 24, 1997 </date>
-                    <idno>VAB7012</idno>
-                <relatedItem>
-                    <bibl>    <title>The Story of the Amulet </title>
-                    <author>E. Nesbit</author>
-                        <publisher>T. Fisher Unwin </publisher>
-                        <pubPlace>London </pubPlace>
-                        <date >1906</date></bibl>
-                </relatedItem></bibl>
-            </sourceDesc></fileDesc><encodingDesc n="eltec-1">
-                <p></p>
-            </encodingDesc><profileDesc>
-              <langUsage>
-                  <language ident="eng">English</language>
-                  <language ident="fre">French</language>
-                </langUsage>
-                <textDesc>
-                    <authorGender xmlns="http://distantreading.net/eltec/ns" key="F"></authorGender>
-                    <size xmlns="http://distantreading.net/eltec/ns" key="medium"></size>
-                    <canonicity xmlns="http://distantreading.net/eltec/ns" key="high"></canonicity>
-                    <timeSlot xmlns="http://distantreading.net/eltec/ns" key="T4"></timeSlot>
-                </textDesc>
-            </profileDesc>
-        <revisionDesc>
-            <change when="2018-07-21">LB : revised header retaining original as comments</change>
-        </revisionDesc></teiHeader>
-        <!--     <extent>TEI formatted filesize uncompressed: approx. 477 kbytes</extent>
+            <extent>TEI formatted filesize uncompressed: approx. 477 kbytes</extent>
             <publicationStmt>
                 <publisher>Digital Library Program, Indiana University</publisher>
                 <pubPlace>Bloomington, IN</pubPlace>
@@ -209,10 +167,10 @@
                 <keywords scheme="#lcsh">
                     <list>
                         <item>Fantasy fiction, English</item>
-                        <item>Magic -\- Juvenile fiction</item> 
-                        <item>Amulets -\- Juvenile fiction</item> 
-                        <item>Time travel -\- Juvenile fiction</item> 
-                        <item>Atlantis (Legendary place) -\- Juvenile fiction</item>
+                        <item>Magic -- Juvenile fiction</item> 
+                        <item>Amulets -- Juvenile fiction</item> 
+                        <item>Time travel -- Juvenile fiction</item> 
+                        <item>Atlantis (Legendary place) -- Juvenile fiction</item>
                     </list>
                 </keywords>
                 <keywords scheme="#mla">
@@ -241,7 +199,7 @@
             <change when="2010-07-27" who="elizabethmunson">Replaced bibl in body with bibl/title</change>
             <change who="elizabethmunson" when="2010-08-05">Added genre term(s)</change>
         </revisionDesc>
-    </teiHeader>-->
+    </teiHeader>
     <text>
         <front>
             <titlePage>

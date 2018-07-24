@@ -1,59 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" >
-  <!--  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.tei-c.org/ns/1.0  http://www.dlib.indiana.edu/lib/xml/vwwp/vwwp.xsd" xml:id="VAB7385">
--->    <teiHeader>
+    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Red as a rose is she : ELTeC edition</title>
-                  <author>Broughton, Rhoda (1840-1920)</author>
+                <title type="marc245a">Red as a rose is she</title>
+                <title type="marc245b">a novel</title>
+                <author>Broughton, Rhoda, 1840-1920</author>
                 <respStmt>
-                    <resp>ELTeC conversion</resp>
-                   <name>Lou Burnard</name>
-                </respStmt><respStmt>
                     <resp>Encoded By</resp>
-                    <name xml:id="nicholaecline">Nicholae Cline.</name>               
+                    <name xml:id="nicholaecline">Nicholae Cline.</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Encoded By</resp>
                     <name xml:id="rebeccabaumann">Rebecca Baumann </name>
                 </respStmt>
                 <respStmt>
                     <resp>Edited By</resp>
                     <name xml:id="mdalmau">Michelle Dalmau</name>
                 </respStmt>
-            </titleStmt><extent>
-                <measure unit="words"></measure>
-            </extent><publicationStmt>
-                <p>Incorporated into ELTeC July 2018</p>
-            </publicationStmt><sourceDesc>
-                <bibl><title>Red as a rose is she : Victorian Women Writers edition</title>
-                    <author>Rhoda Broughton</author>
-                    <publisher>Digital Library Program, Indiana University</publisher>
-                    <pubPlace>Bloomington, IN</pubPlace>                   
-                    <idno>VAB7385</idno>
-                <relatedItem>
-                    <bibl><author>Rhoda Broughton</author><title>Red as a rose is she : a novel</title>
-     <!--                   <edition>11th ed.</edition>
-     -->                   
-                            <pubPlace>London : </pubPlace>
-                            <publisher>R. Bentley, </publisher>
-                            <date>1887</date>
-                        
-                      <!--  <extent>450 p., [1] leaf of plates : ill. ; 20 cm.</extent>                   
-                        <series>Bentley's favourite novels ;</series>--></bibl>
-                </relatedItem></bibl>
-            </sourceDesc></fileDesc><encodingDesc n="eltec-1">
-                <p></p>
-            </encodingDesc><profileDesc>
-                <langUsage>    <language ident="eng">English</language>
-                </langUsage>
-                <textDesc>
-                    <authorGender xmlns="http://distantreading.net/eltec/ns" key="F"></authorGender>
-                    <size xmlns="http://distantreading.net/eltec/ns" key="medium"></size>
-                    <canonicity xmlns="http://distantreading.net/eltec/ns" key="low"></canonicity>
-                    <timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"></timeSlot>
-                </textDesc>
-            </profileDesc>
-        <!--  <publicationStmt>
+            </titleStmt>
+            <publicationStmt>
                 <publisher>"Digital Library Program, Indiana University"</publisher>
                 <pubPlace>Bloomington, IN</pubPlace>
                 <address>
@@ -356,7 +323,7 @@
                         <occupation>Doctor</occupation>
                     </person>
 
-                    <!-\-The relation Group needs to be updated per the encoding guidelines, but without having read the
+                    <!--The relation Group needs to be updated per the encoding guidelines, but without having read the
     book, I can't necessarily determine active and passive relationships.  Will ask Rebecca
     to have a look, mdalmau, 07/29/2012
                     <relationGrp>
@@ -381,7 +348,7 @@
                         <relation name="masterservant" active="#jblessington #hblessington #blessmaid #footman"/>
                         <relation name="friend" active="#sjgerard #linley #heavy #gentfriend #gentfriend2"/>
                     </relationGrp>
--\->
+-->
                 </listPerson>
             </particDesc>
             <textClass>
@@ -397,7 +364,7 @@
                     </list>
                 </keywords>
             </textClass>
-        </profileDesc>-->
+        </profileDesc>
         <revisionDesc>
             <change when="2010-04-12" who="nicholaecline">Began encoding document.</change>
             <change when="2010-11-12" who="#rebeccabaumann">Finished draft. </change>
@@ -3778,9 +3745,9 @@
                     compass to one centre, enter almost at the same moment the library. Two canary-coloured Colossi have
                     just deposited tea on a small table. <persName corresp="#sjgerard">St. John</persName> has neither
                     neckerchief nor collar; his brown throat is bared in a <hi rend="i">négligé</hi> as becoming to most
-                    men as the <hi rend="i">à quatre épingles</hi> exactitude of their park get-up is unbecoming.</p>
+                    men as the <hi rend="i">à quatre épingles</hi> exctitude of their park get-up is unbecoming.</p>
                 <p>A man in the loose carelessness of his every-day country clothes is a man: in the prim tightness of
-                    his Pall Mall toilette he is a little, stiff, jointless figure out of Noah's ark.</p>
+                    his Pall Mall pltte he is a little, stiff, jointless figure out of Noah's ark.</p>
                 <p><said who="#tgerard">"Slops again !"</said> says Paterfamilias, very gruffly. <said who="#tgerard">"I
                         never come into this room at any hour of the day or night without finding you women drinking
                         tea! Why on earth, if you are thirsty, cannot you drink beer or water, instead of ruining your
@@ -4139,7 +4106,7 @@
                         corresp="#pdenzil">Priscilla</persName>. <said who="#pdenzil">"Oh! <persName corresp="#tgerard"
                             >Sir Thomas</persName>, please let me put you down in the raffle for a fender-stool; <hi
                             rend="i">so</hi> handsome! white arums on a red ground; <hi rend="i">do</hi> let me, <hi
-                            rend="i">so</hi> handsome!"</said></p>
+                            rend="i"/>so handsome!"</said></p>
                 <p><said who="#tgerard">"A <hi rend="i">what</hi>, <persName corresp="#pdenzil">Miss
                             Priscilla</persName>?"</said></p>
                 <p><said who="#pdenzil">"A fender-stool."</said></p>
@@ -7007,8 +6974,8 @@
                         who="#rbrandon">"Dear fellow! he was quite happy!"</said></p>
                 <p><said who="#ecraven">"Was he?"</said> she says, with the same vacant look. <said who="#ecraven">"I'll
                         go to him."</said> As she speaks, she rises and moves towards the door.</p>
-                <p><said who="#rbrandon">"You had better not,"</said> he says hastily, laying his hand on her
-                    arm.</p>
+                <said><said who="#rbrandon">"You had better not,"</said> he says hastily, laying his hand on her
+                    arm.</said>
                 <p><said who="#ecraven">"Why?"</said> inquires she, looking at him with perfect calmness; <said
                         who="#ecraven">"are you afraid of my fainting or going into <pb n="228" xml:id="VAB7385-232"/>
                         hysterics ? You need not be; it is only that I am not the least sorry that <persName
@@ -7379,7 +7346,7 @@
                     frost-seared brake-fern all one way, and with rough hands pushing back <persName corresp="#rbrandon"
                         >Robert</persName> and <persName corresp="#ecraven">Esther</persName>, saying, <said>"This is
                         our territory; what brings you here?"</said></p>
-                <p><persName corresp="#ecraven">Esther</persName> shivers.</p>
+                <said><persName corresp="#ecraven">Esther</persName> shivers.</said>
                 <p><said who="#rbrandon">"You are cold, I'm afraid,"</said> says <persName corresp="#rbrandon"
                         >Brandon</persName>, anxiously, putting his head on one side, not out of sentimentality, but in
                     the endeavour to keep his hat on.</p>

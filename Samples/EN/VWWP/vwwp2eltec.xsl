@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:e="http://distantreading.net/ns"
     xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.tei-c.org/ns/1.0"
-    
+    xmlns="http://www.tei-c.org/ns/1.0"   
     exclude-result-prefixes="xs t xsi"
     version="2.0">
     
-    <xsl:param name="novelId">XXXXXX</xsl:param>
-    <xsl:param name="wordCount">0</xsl:param>
+   
     <xsl:output encoding="UTF-8" omit-xml-declaration="yes" method="xml" />
     
     <xsl:template match="/">
         <xsl:processing-instruction name="xml-model"  >
-        <xsl:text> href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:text>
+        <xsl:text> href="https://distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:text>
         </xsl:processing-instruction>
     <xsl:apply-templates />
     </xsl:template>
     
     <xsl:template match="t:TEI">
-        <TEI>
-  <!--      <xsl:attribute name="xmlns">http://www.tei-c.org/ns/1.0</xsl:attribute>
-  -->      <xsl:attribute name="xml:id"><xsl:value-of select="$novelId"/></xsl:attribute>
+        <xsl:variable name="novelId">
+            <xsl:text>ENG</xsl:text>
+            <xsl:value-of select="substring-after(//t:idno[1],'VAB')"/>
+        </xsl:variable>
+        <TEI>  
+        <xsl:attribute name="xml:id"><xsl:value-of select="$novelId"/></xsl:attribute>
         <xsl:attribute name="xml:lang">ENG</xsl:attribute>
         <xsl:apply-templates />
         </TEI>
     </xsl:template>
     
-    <!-- simplify header -->
+    <!-- calculate params -->
+    <xsl:variable name="wordCount">
+        <xsl:value-of select="e:word-count(/t:TEI/t:text)"/>
+    </xsl:variable>
+    <xsl:variable name="size">
+        <xsl:choose>
+            <xsl:when test="$wordCount &lt; 50000">short</xsl:when>
+            <xsl:when test="$wordCount &lt; 200000">medium</xsl:when>
+            <xsl:when test="$wordCount &gt; 200000">long</xsl:when>
+        </xsl:choose>
+    </xsl:variable>
     
     <xsl:variable name="title">
-        <xsl:value-of select="//t:fileDesc/t:titleStmt/t:title[1]"/>
+        <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title[1]"/>
     </xsl:variable>   
     
+    <xsl:variable name="date">
+        <xsl:value-of select="/t:TEI/t:teiHeader/t:fileDesc/t:sourceDesc//t:date[1]"/>
+    </xsl:variable>
+    
+    <xsl:variable name="timeSlot">
+        <xsl:choose>
+            <xsl:when test="$date le '1859'">T1</xsl:when>
+            <xsl:when test="$date le '1879'">T2</xsl:when>
+            <xsl:when test="$date le '1899'">T3</xsl:when>
+            <xsl:when test="$date le '1919'">T4</xsl:when>
+            
+        </xsl:choose></xsl:variable>
+    
+    <!-- simplify header -->
+    
+   
     <xsl:template match="t:title[@type='filing']"/>
         
     <xsl:template match="t:extent">
         <extent>    
-            <measure unit="words"><xsl:value-of select="$wordCount"/></measure>
+            <measure unit="words"><xsl:value-of select="$wordCount"/>
+              </measure>
+            <measure unit="pages"><xsl:value-of select="count(ancestor::t:TEI/t:text//t:pb)"/>
+            </measure>
         </extent>
     </xsl:template>
     
@@ -55,12 +86,16 @@
             <author><xsl:value-of select="descendant::t:author"/></author>
             <publisher>Digital Library Program, Indiana University</publisher>
             <pubPlace>Bloomington, IN</pubPlace>                   
-            <idno><xsl:value-of select="//t:publicationStmt/t:idno"/></idno>
+            <idno><xsl:value-of select="//t:idno[1]"/></idno>
         <relatedItem>
             <bibl>
                 <title><xsl:value-of select="$title"/></title>
                 <author><xsl:value-of select="descendant::t:author"/></author>
-                <xsl:copy-of select="descendant::t:publicationStmt/*"/>
+              <xsl:choose> <xsl:when test='t:biblFull'>
+                   <xsl:copy-of select="descendant::t:publicationStmt/*"/>
+              </xsl:when><xsl:when test='t:biblStruct'>
+                  <xsl:copy-of select="descendant::t:imprint/*"/>
+              </xsl:when> </xsl:choose>
             </bibl>
         </relatedItem></bibl></sourceDesc>
     </xsl:template>
@@ -77,9 +112,9 @@
             </langUsage>
             <textDesc>
                 <authorGender xmlns="http://distantreading.net/eltec/ns" key="F"></authorGender>
-                <size xmlns="http://distantreading.net/eltec/ns" key="medium"></size>
-                <canonicity xmlns="http://distantreading.net/eltec/ns" key="low"></canonicity>
-                <timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"></timeSlot>
+                <size xmlns="http://distantreading.net/eltec/ns" key="{$size}"></size>
+                <canonicity xmlns="http://distantreading.net/eltec/ns" key="?"></canonicity>
+                <timeSlot xmlns="http://distantreading.net/eltec/ns" key="{$timeSlot}"></timeSlot>
             </textDesc>
         </profileDesc>
     </xsl:template>
@@ -111,7 +146,7 @@
     </xsl:template>
     
        
-    <xsl:template match="t:div[not(@type='chapter') and not(@type='part') and not (@type='book')]">
+    <xsl:template match="t:div[not(@type='chapter') and not(@type='part') ]">
         <xsl:choose>
             <xsl:when test="@type='contents'">
                 <gap reason="toc"/>
@@ -121,6 +156,16 @@
             </xsl:when>
             <xsl:when test="ancestor::t:floatingText">
                 <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:when test="parent::t:front">
+                <div type="liminal">
+                    <xsl:apply-templates/>
+                </div>
+            </xsl:when>
+            <xsl:when test="@type='book' or @type='section' or @type='volume'">
+                <div type="part">
+                    <xsl:apply-templates/>
+                </div>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -177,7 +222,7 @@
         <milestone type="section" rend="stars"/>
     </xsl:template>
     
-    <xsl:template match="t:persName|t:said|t:postscript|t:salute|t:signed|t:distinct|t:sound">      
+    <xsl:template match="t:persName|t:said|t:postscript|t:salute|t:signed|t:distinct|t:sound|t:dateline">      
             <xsl:apply-templates/>
     </xsl:template>
     
@@ -230,6 +275,12 @@
        <xsl:comment> <xsl:value-of select="."/></xsl:comment>
      </xsl:template>
     
- 
+    <xsl:function name="e:word-count" as="xs:integer">
+        <xsl:param name="arg" as="xs:string?"/>       
+        <xsl:sequence
+            select="
+            count(tokenize($arg, '\W+')[. != ''])
+            "/>
+    </xsl:function>
     
 </xsl:stylesheet>
