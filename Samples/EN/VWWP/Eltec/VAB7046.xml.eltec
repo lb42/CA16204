@@ -1,4 +1,4 @@
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XXXXXX" xml:lang="ENG">
+<?xml-model href="https://distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:e="http://distantreading.net/ns" xml:id="ENG7046" xml:lang="ENG">
     <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <fileDesc>
             <titleStmt>
@@ -21,7 +21,7 @@
                     <name xml:id="elizabethmunson">Elizabeth Munson</name>
                 </respStmt>
             </titleStmt>
-            <extent><measure unit="words">0</measure></extent>
+            <extent><measure unit="words">67550</measure><measure unit="pages">323</measure></extent>
             <publicationStmt><p>Published as part of ELTeC</p></publicationStmt>
             
             
@@ -29,7 +29,7 @@
 </title><author>Ward, Humphry, Mrs., 1851-1920</author><publisher>Digital Library Program, Indiana University</publisher><pubPlace>Bloomington, IN</pubPlace><idno>VAB7046</idno><relatedItem><bibl><title>Daphne, or Marriage a la Mode</title><author>Ward, Humphry, Mrs., 1851-1920</author><publisher>Cassell </publisher><pubPlace>London; New York </pubPlace><date when="1909">1909</date></bibl></relatedItem></bibl></sourceDesc>
         </fileDesc>
         <encodingDesc n="eltec-1"><p/></encodingDesc>
-        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="low"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
+        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="medium"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T4"/></textDesc></profileDesc>
         <revisionDesc><change when="2018-07-23">LB convert to ELTeC-1</change><change when="2010-08-25">elizabethmunson: Added genre term</change><change when="2010-07-29">elizabethmunson: Removed date from fileDesc title</change><change when="2010-07-29">elizabethmunson: Added LCNAF form of author name to sourceDesc (hyphen 
             adjusted for both sourceDesc and fileDesc)</change><change when="2010-07-29">elizabethmunson: Normalized date in biblFull/publicationStmt</change><change when="2009-10-27">#bn: Normalized id scheme and encoding</change><change when="2009-05-10">#bn: Coverted from P4 to P5</change></revisionDesc>
     </teiHeader>
@@ -50,7 +50,10 @@
                 <pb n="verso" xml:id="VAB7046-001"/>
                 <p>ALL RIGHTS RESERVED</p>
             </div>
-            
+            <div type="liminal">
+                <pb xml:id="VAB7046-002"/>
+                <p>TO L.C.W.</p>
+            </div>
             <gap reason="toc"/>
         </front>
         <body>
@@ -4218,7 +4221,7 @@
                         affair where an English lawyer can help you, Penrose is your man. You know,
                         I expect, what a swell he is? A K.C. after seven years—lucky dog!—and last
                         year he was engaged in an Anglo-American case not wholly unlike yours—Brown
-                            <abbr>v.</abbr> Brown. So I thought of him as the best person among your
+                            v. Brown. So I thought of him as the best person among your
                         old friends and mine to come and give us some private informal help<pb n="225" xml:id="VAB7046-229"/> to-day, before you take any fresh
                         steps—if you do take any.”</p>
                     <p>“Awfully good of you both.” The speaker, still wrapped in his fur coat, sat
@@ -5965,7 +5968,7 @@
                         tragedy of guilt.</p>
                 </div>
             </div>
-            <p>THE END</p>
+            <trailer>THE END</trailer>
             <trailer>PRINTED DY CASSELL &amp; CO., LTD., LA BELLE, SAUVAGE, LONDON,
                 E.C.</trailer>
             <pb xml:id="VAB7046-323"/>

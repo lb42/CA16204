@@ -1,4 +1,4 @@
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XXXXXX" xml:lang="ENG">
+<?xml-model href="https://distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:e="http://distantreading.net/ns" xml:id="ENG7083" xml:lang="ENG">
     <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <fileDesc>
             <titleStmt>
@@ -18,7 +18,7 @@
                     <name xml:id="elizabethmunson">Elizabeth Munson</name>
                 </respStmt>
             </titleStmt>
-            <extent><measure unit="words">0</measure></extent>
+            <extent><measure unit="words">39010</measure><measure unit="pages">281</measure></extent>
             <publicationStmt><p>Published as part of ELTeC</p></publicationStmt>
             
             
@@ -26,7 +26,7 @@
 </title><author>Linton, E. Lynn (Elizabeth Lynn), 1822-1898</author><publisher>Digital Library Program, Indiana University</publisher><pubPlace>Bloomington, IN</pubPlace><idno>VAB7083</idno><relatedItem><bibl><title>The True History of Joshua Davidson</title><author>Linton, E. Lynn (Elizabeth Lynn), 1822-1898</author><publisher>Strahan and Co.</publisher><pubPlace>London </pubPlace><date when="1872">1872</date></bibl></relatedItem></bibl></sourceDesc>
         </fileDesc>
         <encodingDesc n="eltec-1"><p/></encodingDesc>
-        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="low"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
+        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="short"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="medium"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T2"/></textDesc></profileDesc>
         <revisionDesc><change when="2018-07-23">LB convert to ELTeC-1</change><change when="2010-08-26">elizabethmunson: Added genre term</change><change when="2010-07-30">elizabethmunson: Removed date from fileDesc title</change><change when="2010-07-30">elizabethmunson: Added filing title</change><change when="2010-07-30">elizabethmunson: Added LCNAF form of author name to sourceDesc and fileDesc author (hyphen 
             adjusted for both, parenthesis adjusted for fileDesc)</change><change when="2010-07-30">elizabethmunson: Normalized date in biblFull/publicationStmt</change><change when="2009-10-27">#bn: Normalized id scheme and encoding</change><change when="2009-10-27">#bn: Added Library of Congress Subject Headings</change><change when="2009-05-10">#bn: Coverted from P4 to P5</change></revisionDesc>
     </teiHeader>
@@ -47,7 +47,23 @@
                     LONDON: BRADBURY, EVANS, AND CO., PRINTERS, WHITEFRIARS.
                 </p>
             </div>
-            
+            <div type="liminal">
+                <pb n="vii" xml:id="VAB7083-002"/>
+                <head>PREFACE.</head>
+                <p><hi>SO</hi> many false reports have got about concerning the life and opinions of
+                    JOSHUA DAVIDSON, the Cornish carpenter, that I feel it to be a duty I owe his
+                    memory to tell the truth as I know it; leaving the world to judge between what
+                    I, his nearest friend, knew of him, and what gossips and his enemies have
+                    falsely said. As I am neither a gentleman nor a scholar I have not pretended to
+                    any graces of style; and I have not tried to make an amusing story. My little
+                    book is more a record of what JOSHUA said and thought than of what happened to
+                    him through others: that is, there is next to<pb n="viii" xml:id="VAB7083-003"/>
+                    no dramatic interest in it. Neither do I care to give my name. Those who know
+                    JOSHUA will know who I am well enough; and if I have said anything wrong they
+                    can come forward and challenge me. And for the rest it does not signify. I have
+                    written merely for truth's sake and love's; and with this I leave my dear
+                    friend's memory to the verdict of all honest hearts.</p>
+            </div>
         </front>
         <body>
             <div type="chapter">
@@ -2980,7 +2996,7 @@
                     taught by the Jewish carpenter of Nazareth? Who will answer me?—who will make
                     the dark thing clear?</p>
             </div>
-            <p>THE END.</p>
+            <trailer>THE END.</trailer>
             <trailer>BRADBURY, EVANS, AND CO., PRINTERS, WHITEFRIARS.</trailer>
         </body>
     </text>

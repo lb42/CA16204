@@ -1,4 +1,4 @@
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XXXXXX" xml:lang="ENG">
+<?xml-model href="https://distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:e="http://distantreading.net/ns" xml:id="ENG7047" xml:lang="ENG">
     <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <fileDesc>
             <titleStmt>
@@ -18,14 +18,14 @@
                     <name xml:id="elizabethmunson">Elizabeth Munson</name>
                 </respStmt>
             </titleStmt>
-            <extent><measure unit="words">0</measure></extent>
+            <extent><measure unit="words">157711</measure><measure unit="pages">487</measure></extent>
             <publicationStmt><p>Published as part of ELTeC</p></publicationStmt>
             
             <sourceDesc><bibl><title>The Daughters of Danaus : VWWP edition
 </title><author>Caird, Mona</author><publisher>Digital Library Program, Indiana University</publisher><pubPlace>Bloomington, IN</pubPlace><idno>VAB7047</idno><relatedItem><bibl><title>The Daughters of Danaus</title><author>Caird, Mona</author><publisher>Bliss, Sands, and Foster</publisher><pubPlace>London </pubPlace><date when="1894">1894</date></bibl></relatedItem></bibl></sourceDesc>
         </fileDesc>
         <encodingDesc n="eltec-1"><p/></encodingDesc>
-        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="low"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
+        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="long"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="medium"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
         <revisionDesc><change when="2018-07-23">LB convert to ELTeC-1</change><change when="2011-06-28">kateboeree: Added div type="book"</change><change when="2010-08-25">elizabethmunson: Added genre term</change><change when="2010-07-29">elizabethmunson: Removed date from fileDesc title</change><change when="2010-07-29">elizabethmunson: Added filing title</change><change when="2010-07-29">elizabethmunson: Added LCNAF form of author name to sourceDesc (hyphen 
             adjusted for both sourceDesc and fileDesc)</change><change when="2010-07-29">elizabethmunson: Normalized date in biblFull/publicationStmt</change><change when="2010-07-29">elizabethmunson: Tagged title element(s) inside bibl</change><change when="2009-10-27">#bn: Normalized id scheme and encoding</change><change when="2009-05-10">#bn: Coverted from P4 to P5</change></revisionDesc>
     </teiHeader>
@@ -44,7 +44,7 @@
             </div>
         </front>
         <body>
-            <div type="book"><pb n="5" xml:id="VAB7047-001"/>
+            <div type="part"><pb n="5" xml:id="VAB7047-001"/>
             <head>THE DAUGHTERS OF DANAUS</head>
             <div type="part">
                 <head>Part I.</head>
@@ -1062,7 +1062,7 @@
                         seems to me wrong. Surely a human being has a right to his own life. If he
                         has not that, what, in heaven's name, <emph>has</emph> he?”</p>
                     <p>“Anything but that!” cried Hadria.</p>
-                    <milestone unit="section" n="6"/>
+                    <milestone type="section" n="6"/>
                     <p>While the momentous interview was going on, Hadria walked restlessly up and
                         down the garden, feverishly waiting. The borders were brilliant with vast
                         sunflowers, white lilies, and blazing “red-hot pokers” tangled together in
@@ -3365,7 +3365,7 @@
                         that is your proper business. An animalcule that does not wriggle must be
                         morbid or peculiar. All will tender, in different forms of varying elegance,
                         the safe and simple admonition: ‘Wriggle and be damned to you!’”</p>
-                    <milestone unit="section" n="6"/>
+                    <milestone type="section" n="6"/>
                     <pb n="118" xml:id="VAB7047-114"/>
                     <p>It was at this somewhat fevered moment, that Hubert Temperley appeared, once
                         more, upon the scene. Hadria was with her mother, taking tea at Drumgarren,
@@ -4196,7 +4196,7 @@
                                 <l>Floats up from those dim fields about the homes</l>
                                 <l>Of happy men that have the power to die.”</l>
                             </quote>
-                            Tithonius, TENNYSON.
+                            <p>Tithonius, TENNYSON.</p>
                         
                     
                     <p><hi>A COUNTRYMAN</hi> with stooping gait touched his cap and bid good-day to
@@ -11834,7 +11834,7 @@
                         love? What a ridiculous, uncomfortable, outrageous thing it was! How
                         destructive to common sense and sanity and everything that kept life running
                         on reasonable lines. A poor joke at best, and oh, how stale!</p>
-                    <milestone unit="section" n="7"/>
+                    <milestone type="section" n="7"/>
                     <p>“Shall I tell you your ruling passion, Mrs. Temperley?”</p>
                     <p>“If you can, Professor Theobald.”</p>
                     <p>Before them stretched a woodland glade. The broad fronds of the bracken made
@@ -14170,7 +14170,7 @@
                         added, “I fear Mrs. Temperley will feel it very much. They were such old
                         friends.”</p>
                     <p>“Oh! poor woman, she is heart-broken.”</p>
-                    <milestone unit="section" n="6"/>
+                    <milestone type="section" n="6"/>
                     <p>The Professor lingered longer than the doctor had expected. He was very weak,
                         and could not bear the fatigue of seeing many people. But he was perfectly
                         cheerful, and when feeling<pb n="484" xml:id="VAB7047-480"/> little better
@@ -14361,7 +14361,7 @@
                         little common sympathy, can do so much to soften the worst of grief. It is
                         for the lack of that, that people despair and go down. I commend them to
                         you.”</p>
-                    <milestone unit="section" n="6"/>
+                    <milestone type="section" n="6"/>
                     <p>The figure lay motionless, as if asleep. The expression was one of utter
                         peace. It seemed as if all the love and tenderness, all the breadth and
                         beauty of the soul that had passed away, were shining out of the quieted
@@ -14402,7 +14402,7 @@
                         his head, sang a tender requiem.</p>
                 </div>
             </div>
-            <p>THE END.</p></div>
+            <trailer>THE END.</trailer></div>
         </body>
     </text>
 </TEI>

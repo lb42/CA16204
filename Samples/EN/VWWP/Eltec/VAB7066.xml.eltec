@@ -1,4 +1,4 @@
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XXXXXX" xml:lang="ENG">
+<?xml-model href="https://distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:e="http://distantreading.net/ns" xml:id="ENG7066" xml:lang="ENG">
     <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <fileDesc>
             <titleStmt>
@@ -21,7 +21,7 @@
                     <name xml:id="elizabethmunson">Elizabeth Munson</name>
                 </respStmt>
             </titleStmt>
-            <extent><measure unit="words">0</measure></extent>
+            <extent><measure unit="words">194073</measure><measure unit="pages">495</measure></extent>
             <publicationStmt><p>Published as part of ELTeC</p></publicationStmt>
             
             
@@ -29,7 +29,7 @@
 </title><author>Ouida, 1839-1908</author><publisher>Digital Library Program, Indiana University</publisher><pubPlace>Bloomington, IN</pubPlace><idno>VAB7066</idno><relatedItem><bibl><title>Folle-Farine</title><author>Ouida, 1839-1908</author><publisher>Chatto and Windus</publisher><pubPlace>London </pubPlace><date when="1883">1883</date></bibl></relatedItem></bibl></sourceDesc>
         </fileDesc>
         <encodingDesc n="eltec-1"><p/></encodingDesc>
-        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="low"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
+        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="long"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="medium"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
         <revisionDesc><change when="2018-07-23">LB convert to ELTeC-1</change><change when="2010-08-25">elizabethmunson: Added genre term</change><change when="2010-07-29">elizabethmunson: Removed date and "a machine
             readable transcription" from fileDesc title</change><change when="2010-07-29">elizabethmunson: Corrected hyphen in fileDesc and sourceDesc titles</change><change when="2010-07-29">elizabethmunson: Added LCNAF form of author name to sourceDesc (hyphen 
                 adjusted for both sourceDesc and fileDesc)</change><change when="2010-07-29">elizabethmunson: Normalized date in biblFull/publicationStmt</change><change when="2009-10-27">#bn: Normalized id scheme and encoding</change><change when="2009-05-10">#bn: Coverted from P4 to P5</change></revisionDesc>
@@ -50,7 +50,7 @@
                             <l>Oû donc l’aperçois‐tu ce Créatur du Beau?</l>
                             <l>Ce Rédresseur qui tu célèbres?”</l>
                         </quote>
-                        BAUDELAIRE
+                        <p>BAUDELAIRE</p>
                     
                 
                 <p>NEW EDITION</p>
@@ -62,7 +62,7 @@
         </front>
         <body>
             <head>FOLLE‐FARINE.</head>
-            <div type="book">
+            <div type="part">
                 <head>BOOK I.</head>
                 <head type="sub">DUST.</head>
                 <div type="chapter">
@@ -2121,7 +2121,7 @@
                 </div>
             </div>
             <pb n="63" xml:id="VAB7066-062"/>
-            <div type="book">
+            <div type="part">
                 <head>BOOK II.</head>
                 
                     <quote>“Yo contra todos, y todos contra yo.”</quote>
@@ -4974,7 +4974,7 @@
                 </div>
             </div>
             <pb n="149" xml:id="VAB7066-148"/>
-            <div type="book">
+            <div type="part">
                 <head>BOOK III.</head>
                 
                     <quote>“L’Artiste est un dieu tombé, qui se souvient du temps quand il créa un
@@ -7310,7 +7310,7 @@
                 </div>
             </div>
             <pb n="220" xml:id="VAB7066-219"/>
-            <div type="book">
+            <div type="part">
                 <head>BOOK IV.</head>
                 
                     <quote>“The desire of the moth for the star.”</quote>
@@ -10741,7 +10741,7 @@
                 </div>
             </div>
             <pb n="323" xml:id="VAB7066-322"/>
-            <div type="book">
+            <div type="part">
                 <head>BOOK V.</head>
                 
                     <quote>“If I love thee, what is that to thee?”</quote>
@@ -13046,7 +13046,7 @@
                 </div>
             </div>
             <pb n="392" xml:id="VAB7066-391"/>
-            <div type="book">
+            <div type="part">
                 <head>BOOK VI.</head>
                 
                     <quote>“Dust to dust.”</quote>

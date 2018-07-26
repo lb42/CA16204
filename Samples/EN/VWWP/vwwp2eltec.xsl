@@ -37,8 +37,8 @@
     <xsl:variable name="size">
         <xsl:choose>
             <xsl:when test="$wordCount &lt; 50000">short</xsl:when>
-            <xsl:when test="$wordCount &lt; 200000">medium</xsl:when>
-            <xsl:when test="$wordCount &gt; 200000">long</xsl:when>
+            <xsl:when test="$wordCount &lt; 150000">medium</xsl:when>
+            <xsl:when test="$wordCount &gt; 150000">long</xsl:when>
         </xsl:choose>
     </xsl:variable>
     
@@ -63,6 +63,9 @@
     
    
     <xsl:template match="t:title[@type='filing']"/>
+    <xsl:template match="t:title[@type='marc245b']"/>
+    
+    <xsl:template match="t:title/@type"/>
         
     <xsl:template match="t:extent">
         <extent>    
@@ -113,7 +116,7 @@
             <textDesc>
                 <authorGender xmlns="http://distantreading.net/eltec/ns" key="F"></authorGender>
                 <size xmlns="http://distantreading.net/eltec/ns" key="{$size}"></size>
-                <canonicity xmlns="http://distantreading.net/eltec/ns" key="?"></canonicity>
+                <canonicity xmlns="http://distantreading.net/eltec/ns" key="medium"></canonicity>
                 <timeSlot xmlns="http://distantreading.net/eltec/ns" key="{$timeSlot}"></timeSlot>
             </textDesc>
         </profileDesc>
@@ -186,31 +189,49 @@
     
     <xsl:template match="t:sic"/><!-- can appear outside choice for some reason -->
     
-    <xsl:template match="t:epigraph|t:lg">
+    <xsl:template match="t:epigraph|t:lg|t:abbr">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="t:figure">
+      <xsl:apply-templates/>  
+    </xsl:template>
+    
+    <xsl:template match="t:graphic">
+        <gap reason="graphic"/>
     </xsl:template>
     
     <xsl:template match="t:cit">
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="t:cit/t:bibl">
+    <!--<xsl:template match="t:cit/t:bibl">
     <xsl:apply-templates select="descendant::text()"/>
     </xsl:template>
-    
+    -->
     <xsl:template match="t:div/t:cit/t:bibl">
    <p>     <xsl:apply-templates select="descendant::text()"/>
  </p>   </xsl:template>
     
+    <xsl:template match="t:epigraph/t:cit/t:bibl">
+        <p>     <xsl:apply-templates select="descendant::text()"/>
+        </p>   </xsl:template>
     
     <xsl:template match="t:cit/t:quote">
         <xsl:copy-of select="."/>
     </xsl:template>
     
-    <xsl:template match="t:closer|t:label">
+    <xsl:template match="t:label">
         <p><xsl:apply-templates/></p>
     </xsl:template>
    
+    <xsl:template match="t:body/t:closer">       
+        <trailer><xsl:apply-templates/></trailer>
+    </xsl:template>
+    
+    <xsl:template match="t:div/t:closer">       
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
       
     <xsl:template match="t:q">
         <quote>
@@ -222,6 +243,11 @@
         <milestone type="section" rend="stars"/>
     </xsl:template>
     
+    <xsl:template match="t:milestone/@unit">
+        <xsl:attribute name="type">
+            <xsl:value-of select="."/>
+        </xsl:attribute>
+    </xsl:template>
     <xsl:template match="t:persName|t:said|t:postscript|t:salute|t:signed|t:distinct|t:sound|t:dateline">      
             <xsl:apply-templates/>
     </xsl:template>
@@ -261,7 +287,15 @@
     </xsl:template> -->
     <xsl:template match="t:floatingText/t:body/t:head">
         <p><xsl:apply-templates/></p>
-    </xsl:template>   
+    </xsl:template>  
+    
+    <xsl:template match="t:body/t:p">
+        <!-- assume a p directly in a body is a trailer -->
+        <trailer>
+            <xsl:apply-templates/>
+        </trailer>
+    </xsl:template>
+    
     <xsl:template match="* | @* | processing-instruction()">
         <xsl:copy>
             <xsl:apply-templates select="* | @* | processing-instruction() | comment() | text()"/>

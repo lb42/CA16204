@@ -19,7 +19,7 @@
                     <resp>Edited By</resp>
                     <name xml:id="mdalmau">Michelle Dalmau</name>
                 </respStmt>
-            </titleStmt>
+            </titleStmt><extent></extent>
             <publicationStmt>
                 <publisher>"Digital Library Program, Indiana University"</publisher>
                 <pubPlace>Bloomington, IN</pubPlace>
@@ -6974,8 +6974,8 @@
                         who="#rbrandon">"Dear fellow! he was quite happy!"</said></p>
                 <p><said who="#ecraven">"Was he?"</said> she says, with the same vacant look. <said who="#ecraven">"I'll
                         go to him."</said> As she speaks, she rises and moves towards the door.</p>
-                <said><said who="#rbrandon">"You had better not,"</said> he says hastily, laying his hand on her
-                    arm.</said>
+                <p><said who="#rbrandon">"You had better not,"</said> he says hastily, laying his hand on her
+                    arm.</p>
                 <p><said who="#ecraven">"Why?"</said> inquires she, looking at him with perfect calmness; <said
                         who="#ecraven">"are you afraid of my fainting or going into <pb n="228" xml:id="VAB7385-232"/>
                         hysterics ? You need not be; it is only that I am not the least sorry that <persName
@@ -7346,7 +7346,7 @@
                     frost-seared brake-fern all one way, and with rough hands pushing back <persName corresp="#rbrandon"
                         >Robert</persName> and <persName corresp="#ecraven">Esther</persName>, saying, <said>"This is
                         our territory; what brings you here?"</said></p>
-                <said><persName corresp="#ecraven">Esther</persName> shivers.</said>
+                <p><persName corresp="#ecraven">Esther</persName> shivers.</p>
                 <p><said who="#rbrandon">"You are cold, I'm afraid,"</said> says <persName corresp="#rbrandon"
                         >Brandon</persName>, anxiously, putting his head on one side, not out of sentimentality, but in
                     the endeavour to keep his hat on.</p>

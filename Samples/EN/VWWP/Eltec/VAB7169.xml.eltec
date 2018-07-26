@@ -1,11 +1,11 @@
-<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XXXXXX" xml:lang="ENG">
+<?xml-model href="https://distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:e="http://distantreading.net/ns" xml:id="ENG7169" xml:lang="ENG">
     <teiHeader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <fileDesc>
             <titleStmt>
                 <title>The Story of a Modern Woman</title>
                 
-                <author>Dixon, Ella Hepworth (1855-1932)</author>
-                <author><name type="pseudonym">Wynman, Margaret</name></author>
+                <author>Dixon, Ella Hepworth [Margaret Wynman](1855-1932)</author>
+            
                 <respStmt>
                     <resp>Transcribed, encoded, and proofed by </resp>
                     <name>Benjamin Roesch</name>
@@ -23,7 +23,7 @@
                     <name xml:id="elizabethmunson">Elizabeth Munson</name>
                 </respStmt>
             </titleStmt>
-            <extent><measure unit="words">0</measure></extent>
+            <extent><measure unit="words">58196</measure><measure unit="pages">270</measure></extent>
             <publicationStmt><p>Published as part of ELTeC</p></publicationStmt>
             
             
@@ -31,7 +31,7 @@
 </title><author>Dixon, Ella Hepworth Wynman, Margaret</author><publisher>Digital Library Program, Indiana University</publisher><pubPlace>Bloomington, IN</pubPlace><idno>VAB7169</idno><relatedItem><bibl><title>The Story of a Modern Woman</title><author>Dixon, Ella Hepworth Wynman, Margaret</author><publisher>Methuen</publisher><pubPlace>London </pubPlace><date when="1894">1894</date></bibl></relatedItem></bibl></sourceDesc>
         </fileDesc>
         <encodingDesc n="eltec-1"><p/></encodingDesc>
-        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="low"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
+        <profileDesc><langUsage><language ident="eng">English</language></langUsage><textDesc><authorGender xmlns="http://distantreading.net/eltec/ns" key="F"/><size xmlns="http://distantreading.net/eltec/ns" key="medium"/><canonicity xmlns="http://distantreading.net/eltec/ns" key="medium"/><timeSlot xmlns="http://distantreading.net/eltec/ns" key="T3"/></textDesc></profileDesc>
         <revisionDesc><change when="2018-07-23">LB convert to ELTeC-1</change><change when="2010-09-03">elizabethmunson: Added genre term</change><change when="2010-08-04">elizabethmunson: Removed date from fileDesc
                 title</change><change when="2010-08-04">elizabethmunson: Added filing title</change><change when="2010-08-04">elizabethmunson: Added LCNAF form of author name to
                 sourceDesc (hyphen adjusted for fileDesc)</change><change when="2010-08-04">elizabethmunson: Added pseudonym (Wynman, Margaret) to
@@ -1503,7 +1503,7 @@
                     new housemaid: <quote>
                         <l>‘The old three hundred sixty-five</l>
                         <l>Dull days to every year alive</l>
-                        <milestone unit="section" n="5"/>
+                        <milestone type="section" n="5"/>
                         <l>Old toil, old care, old worthless treasures,</l>
                         <l>Old gnawing sorrows, swindling pleasures,</l>
                         <l>The cards were shuffled to and fro,</l>
@@ -4774,7 +4774,7 @@
                     radiance of her face was blotted out as she began to plod homewards in the
                     twilight of the suburban road.</p>
             </div>
-            <p>THE END.</p>
+            <trailer>THE END.</trailer>
         </body>
     </text>
 </TEI>
