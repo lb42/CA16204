@@ -1,0 +1,24 @@
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_1 >verdantGreen_1.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_2 >verdantGreen_2.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_3 >verdantGreen_3.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_4 >verdantGreen_4.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_5 >verdantGreen_5.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_6 >verdantGreen_6.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_7 >verdantGreen_7.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_8 >verdantGreen_8.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_9 >verdantGreen_9.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_10 >verdantGreen_10.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11 >verdantGreen_11.html
+
+curl https://en.wikisource.org/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_12 >verdantGreen_12.html
