@@ -28,7 +28,7 @@
         </p>
     </xsl:template>
 
-    <xsl:template match="h:i">
+    <xsl:template match="h:i[not(h:br)]">
         <hi>
             <xsl:apply-templates/>
         </hi>
@@ -49,59 +49,32 @@
     <xsl:template match="h:a[@name]"/>
     <xsl:template match="h:div[@class = 'footnotes']"/>
 
-    <xsl:template match="h:blockquote[//h:br]">
+    <xsl:template match="h:blockquote">
+        <quote><xsl:apply-templates/></quote></xsl:template>      
+    
+    <xsl:template match="h:blockquote[h:br]">
         <quote>
-          <!--  <xsl:choose>
-                <xsl:when test="h:i">
-         -->           <xsl:for-each-group select="*" group-starting-with="h:br">
-                        <xsl:for-each select="current-group()//h:br">
-                            <xsl:choose>
-                                <xsl:when test="ancestor::h:i">
-                                    <l>
-                                        <hi>
-                                            <xsl:apply-templates
-                                                select="preceding-sibling::text()[1]"/>
-                                        </hi>
-                                    </l>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <l>
-                                        <xsl:apply-templates 
-                                            select="preceding-sibling::text()[1]"/>
-                                    </l>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:for-each-group>
-              <!--  </xsl:when>
-                <xsl:otherwise>
-                    <xsl:for-each-group select="*" group-starting-with="h:br">
-                        <xsl:for-each select="current-group()">
-                            <l>
-                                <xsl:apply-templates select="preceding-sibling::text()[1]"/>
-                            </l>
-                        </xsl:for-each>
-                    </xsl:for-each-group>
-
-                </xsl:otherwise>
-            </xsl:choose>-->
-        </quote>
-    </xsl:template>
-
-    <!--<xsl:template match="h:blockquote[h:br]">
-        <quote>
+                
             <xsl:for-each-group select="*" group-starting-with="h:br">
-                <xsl:for-each select="current-group()">
-                    <l>
-                        <xsl:apply-templates select="preceding-sibling::text()[1]"/>
-                    </l>  
-                </xsl:for-each>
-            </xsl:for-each-group>
-        </quote>
+            <xsl:for-each select="current-group()">                
+                <l>                 
+            <xsl:apply-templates select="preceding-sibling::text()[1]"/> 
+           </l>
+            </xsl:for-each>
+        </xsl:for-each-group></quote>
     </xsl:template>
-    -->
-    <!--<xsl:template match="h:br">
-        <lb/>
-    </xsl:template>-->
-
+    
+    <xsl:template match="h:i[h:br]">
+            <xsl:for-each-group select="*" group-starting-with="h:br">
+                <xsl:for-each select="current-group()">                
+                            <l>
+                                <hi>
+           <xsl:apply-templates select="preceding-sibling::text()[1]"/>
+                           </hi>
+                            </l>
+                            </xsl:for-each>
+            </xsl:for-each-group>
+      </xsl:template>
+        
+      
 </xsl:stylesheet>
