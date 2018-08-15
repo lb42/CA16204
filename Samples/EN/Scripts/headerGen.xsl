@@ -22,7 +22,7 @@
             <xsl:when test="$date le '1859'">T1</xsl:when>
             <xsl:when test="$date le '1879'">T2</xsl:when>
             <xsl:when test="$date le '1899'">T3</xsl:when>
-            <xsl:when test="$date le '1919'">T4</xsl:when>            
+            <xsl:when test="$date le '1920'">T4</xsl:when>            
         </xsl:choose></xsl:variable>
     
     <xsl:variable name="wordCount" as="xs:int">

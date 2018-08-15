@@ -1,25 +1,13 @@
-<text><front><div type="titlepage">
-    <gap reason="graphic" n="images/Arlen_front_cover.jpg"/>
+<ref target="https://archive.org/details/londonventure00sevigoog.pdf"/>
+
+<!-- page numbers here are from US edition, not first -->
+<text>
+    <front><div type="titlepage">
     <p>The London Venture</p>
-    <p>MICHAEL ARLEN</p>
-    <p><hi>By</hi> MICHAEL ARLEN</p>
-    <p><hi>These Charming People</hi>
-        <hi>The Green
-            Hat</hi><hi>"Piracy"</hi><hi>The London Venture</hi>
-        <hi>The
-            Romantic Lady</hi></p>
-    <gap reason="graphic" n="images/illus_003.jpg"/>
-    <p><hi>Copyright, 1920,</hi></p>
-    <p><hi>By George H. Doran Company</hi></p>
-    <gap reason="graphic" n="images/illus_004.png"/>
-    <p>THE LONDON VENTURE</p>
-    <p>— B —</p>
-    <p>PRINTED IN THE UNITED STATES OF AMERICA</p>
-    <p><hi>To</hi></p>
-    <p>THE SISTER</p>
-    <p>of</p>
-    <p>SHELMERDENE</p>
-    <p><pb n="vii"/></p>
+    <p>By MICHAEL ARLEN</p>
+    <p>With drawings by Michel Sevier</p>
+    <p><date>1920</date>
+        London: William Heinemann</p>       
 </div>
     <div type="liminal"><head>APOLOGIA PRO NOMINE MEO</head><p>Out of consideration (in part) to
         such readers as may read this book I have assumed a name by which they may refer to me
@@ -31,16 +19,17 @@
         had already taken every other precaution but this to deserve their more fortunate fate,
         in changing my name I have, I hope, robbed my readers of their last excuse for my
         obscurity.</p><p><hi>Dikran Kouyoumdjian.</hi>
-            "Michael Arlen."</p></div>
-    <div type="liminal"><gap reason="graphic" n="images/illus_009.jpg"/><p><pb n="011"
-    />THE
-        <lb/> LONDON VENTURE</p></div></front>
-<body xmlns="http://www.tei-c.org/ns/1.0">
+            "Michael Arlen."</p>
+    <note>ERRATUM Page 19 line 7, for <hi>Illustrated London News</hi> read <hi>The Sphere</hi></note></div>
+   </front>
+<body>
    
     <div type="chapter">
+        <pb n="1"/>
         <head>I</head>
         <p>MY watch has needed winding only twice since I left London, and already, as I sit here in
-            the strange library of a strange house, whose only purpose in having a library seems to
+            the strange library of a strange house, whose 
+            <pb n="2"/>only purpose in having a library seems to
             be to keep visitors like myself quiet and out of harm's way, I find myself looking back
             to those past months in which I was for ever complaining of the necessity that kept me
             in London. How I would deliver myself to a congenial friend about what men are pleased

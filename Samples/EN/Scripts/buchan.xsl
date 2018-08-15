@@ -8,20 +8,23 @@
     <xsl:template match="/">
         <xsl:apply-templates select="//h:body"/>
     </xsl:template>
-
+<xsl:template match="h:pre"/>
     <xsl:template match="h:body">
         <body>
             <xsl:for-each-group select="*" group-starting-with="h:a">
-                <xsl:for-each select="current-group()">
-                    <div type="chapter">
-                        <xsl:apply-templates />
-                    </div>  
-                </xsl:for-each>
+                <div type="chapter">
+                    <xsl:for-each select="current-group()">
+                   
+                        <xsl:apply-templates select="."/>
+                      
+                </xsl:for-each></div>
             </xsl:for-each-group>
         </body>
     </xsl:template>
     
-
+<xsl:template match="h:h3">
+    <head><xsl:apply-templates/></head>
+</xsl:template>
 
     <xsl:template match="h:p">
         <p>
@@ -35,9 +38,8 @@
         </hi>
     </xsl:template>
 
-    <xsl:template match="h:br">
-        <lb/>
-    </xsl:template>
+    <xsl:template match="h:br"/>
+      
 
     <xsl:template match="h:a"/>
 

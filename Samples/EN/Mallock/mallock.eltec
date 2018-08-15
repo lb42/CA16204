@@ -1,28 +1,84 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+<?xml-model href="../../../../WG1/distantreading.github.io/Schema/eltec-1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- TODO page breaks ; check for more notes -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ENG001" xml:lang="en">
+    <teiHeader >
         <fileDesc>
             <titleStmt>
-                <title>Mallock's new republic: ELTEC edition</title>
-                <author>assembled by Lou from work done by everyone else</author>
+                <title>The New Republic : ELTec edition</title>
+                <author>Mallock, William Hurrell (1849-1923).</author>
+                <respStmt>
+                    <resp>ELTeC conversion</resp>
+                    <name>Lou Burnard</name>
+                </respStmt>
             </titleStmt>
+            <extent><measure unit="words">79000</measure><measure unit="pages">0</measure></extent>
             <publicationStmt>
-                <p>Not published or publishable</p>
+                <p>Published as part of ELTeC</p>
             </publicationStmt>
             <sourceDesc>
-                <p>No source: this is a driver file</p>
+                <bibl><title>The New Republic by W.H. Mallock : HTML version</title>
+                    <respStmt>
+                        <resp>HTML encoding</resp>
+                        <name>Ray Davis</name>
+                    </respStmt>
+                    <idno type="url">https://www.pseudopodium.org/repress/mallock/index.html</idno>
+                    <relatedItem>
+                        <bibl type="printSource">
+                            <title>The New Republic : or, Culture, Faith, and Philosophy in a Country
+                            House</title>
+                            <author>[W.H. Mallock]</author>
+                            <publisher>London: Chatto and Windus</publisher>
+                            <date>1877</date>
+                            <ref target="ia:newrepublicorcul01mall">Internet Archive : vol 1</ref>
+                            <ref target="ia:newrepublicorcul02mall">Internet Archive : vol 2</ref>
+                        </bibl>
+                    </relatedItem></bibl>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc n="eltec-1">
+            <p/>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+            <textDesc>
+                <authorGender xmlns="http://distantreading.net/eltec/ns" key="M"/>
+                <size xmlns="http://distantreading.net/eltec/ns" key="medium"/>
+                <canonicity xmlns="http://distantreading.net/eltec/ns" key="low"/>
+                <timeSlot xmlns="http://distantreading.net/eltec/ns" key="T2"/>
+            </textDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2018-08-14">LB add header; start checking against IA edition; supply suppressed footnote</change>
+            <change when="2018-08-12">LB auto convert from HTML to ELTeC-1</change>
+        </revisionDesc>
     </teiHeader>
+    
     <text>
         <front>
             <div type="titlepage">
-                <p> THE NEW REPUBLIC OR, CULTURE, FAITH, AND PHILOSOPHY IN AN ENGLISH COUNTRY HOUSE </p>
-                <p> BY W. H. MALLOCK </p>
-                <p> A NEW EDITION </p>
+                <p> THE NEW REPUBLIC;</p>
+                <p>OR,</p>
+                <p>CULTURE, FAITH, AND PHILOSOPHY IN AN ENGLISH COUNTRY HOUSE.</p>
+                <p><gap extent="2 lines Greek" reason="untranscribed"/> Greek Anthology</p>
+                <p>IN TWO VOLUMES. - VOL. I.</p>
+                <p>SECOND EDITION</p>
+                <p>London: Chatto and Windus, Piccadilly</p>
+                <p>1877.</p>
+                <p>All rights reserved.</p>
             </div>
             <div type="liminal">
-                <p>TO ‘VIOLET FANE’ AUTHORESS OF ‘ANTHONY BABINGTON’ ‘THE QUEEN OF THE FAIRIES’ ETC.
-                    This Book is Inscribed BY HER SINCERE FRIEND THE AUTHOR</p>
+                <p>[The NEW REPUBLIC was originally published in BELGRAVIA, but in an incomplete and
+                    somewhat fragmentary condition, which gave it the appearance rather of a series
+                    of papers than of a single connected work.</p>
+                <p>It is now, with complete revision, restored to its original form, which differs
+                    materially from that which it had for a time to assume.]</p>
+            </div>
+            <div type="liminal">
+                <p>TO ‘VIOLET FANE’ </p>
+                <p>AUTHORESS OF ‘ANTHONY BABINGTON’ ‘THE QUEEN OF THE FAIRIES’ ETC.</p>
+                <p>This Book is Inscribed BY HER SINCERE FRIEND THE AUTHOR</p>
             </div>
         </front>
         <body>
@@ -57,10 +113,10 @@
                         that father contemplates the future torments of the unbelievers, when the
                         parish clergyman, who had been sent for by Mr. Laurence’s widowed
                         sister-in-law, arrived to offer his services. </p>
-                    <p> ‘How shall I admire’<note n=" 1"><p> Vide <hi>Gibbon’s Decline and
-                                Fall</hi>, chapter xv.</p></note>—these were the words that, read in
-                        a low sweet tone, first greeted his ears when he was shown softly into the
-                        sick chamber—’ how shall I admire, how laugh, how rejoice, how exult, when I
+                    <p> ‘How shall I admire’<note n="1"><p> Vide <hi>Gibbon’s Decline and Fall</hi>,
+                                chapter xv.</p></note>—these were the words that, read in a low
+                        sweet tone, first greeted his ears when he was shown softly into the sick
+                        chamber—‘ how shall I admire, how laugh, how rejoice, how exult, when I
                         behold so many proud monarchs, so many fancied gods, groaning in the lowest
                         abyss of darkness; so many magistrates who persecuted the name of the Lord,
                         liquefying in a fiercer fire than ever they kindled against the Christians!’
@@ -89,7 +145,53 @@
                         perhaps in the best taste, nor even of the most strictly Roman pattern,
                         there was yet an air about its meretricious stateliness by which the clays
                         of the Empire were at once suggested to one, a magnificence that: would at
-                        any rate have pleased Trimalcio, though it might have scandalised Horace. </p>
+                        any rate have pleased Trimalcio, though it might have scandalised Horace.
+                            <note> The present writer has so little skill in describing fine houses
+                            that he would have been here much at a loss, had not a fashionable lady
+                            novelist who knew the one in question — having been, in fact, the
+                            daughter of the housekeeper there — come to his assistance, and dictated
+                            the following description to him ; which, owing to a slight difference in the
+                            style, he has been unable to incorporate into the text. ‘There above the
+                            sea, and overlooking it, with the everlasting sea- breeze in its Parian
+                            porticoes, stood the villa, of which a Roman noble might have been proud
+                            — in which a Lucullus might have feasted, or a Clodius wreathed the
+                            brows of Aspasia with rose-petals. Laurence's Folly the simple country
+                            folk termed it ; and folly perhaps it was, but a splendid folly, and one
+                            of which none but a patrician, whose blood beat blue from the heart to
+                            the taper finger-tips, could have been ever guilty. Its lofty pillared
+                            halls with their tessellated floors — work of cunning artists from over
+                            sea struck dumb with awed amazement such of the favoured country squires
+                            as had occasional access to them, with their buxom wives decked in their
+                            best apparel, and their daughters arrayed in the flimsy fashion of the
+                            neighbouring town. Rare exotics glowing in marble vases perfumed the air
+                            exquisite frescoes on the wall caught the eye. Greek statues, in their
+                            mute immortal loveliness, rested calmly upon their granite plinths. In
+                            the libraries and drawing-rooms stood cabinets full of priceless
+                            antiquities, any one of which would have dowered an Earl's daughter.
+                            Jars and vases from China and Japan, Roman hand-mirrors, in which
+                            Faustina had perhaps surveyed her more than human loveliness, iridescent
+                            phials of glass, in which Locusta had perhaps stored her poisons,
+                            luxurious couches, some covered with purple velvet, some with crimson,
+                            inlaid tables, paintings, marbles, bronzes by immortal masters ——’ The
+                            lady, who had once helped to make an inventory of the chief valuables in
+                            the house, went on to repeat, in a more coloured form, as much of it as
+                            she recollected. She then proceeded: ‘Here, in this superb retirement,
+                            dwelt Otho Laurence, the celebrated epicurean of modern society — here
+                            seeking retirement from the caresses of the selectest circles in London,
+                            in a yet selecter circle of his own. All day long, through his gilded
+                            rooms, sounds of soft music stole and dainty-footed Circassian girls,
+                            and stealthy Odalisques, looking like strayed houris from Paradise ——’
+                            The author here interposed to tell her that on Otho Laurence was not at
+                            all such a man as she described, nor in the least given to such company.
+                            She immediately, seeing one road barred, started off with fresh alacrity
+                            on another: ‘ Often on the broad terrace outside, during the long summer
+                            evenings, haughty and titled groups of the English Aristocracy watched
+                            the crimson after-glow die away over the long horizon. Here it was that
+                            Ivo de Grantmesnil, a scion of one of the proudest English houses, which
+                            had thrice refused a peerage that had been laid at his feet——’ But our
+                            friend had automatically begun a novel, with which we are not concerned
+                            at this moment. </note>
+                    </p>
                     <p> Otho Laurence inherited with his uncle’s house something of the tastes and
                         feelings of which it was the embodiment. But, though an epicure by training
                         and by temper, he had been open to other influences as well. At one time of
