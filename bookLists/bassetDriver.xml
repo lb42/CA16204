@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+~/POub <TEI 
+xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>All Bassett Bibliography files</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>        
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+<xi:include href="Bassett/1851.xml"/>
+<xi:include href="Bassett/1852.xml"/>
+<xi:include href="Bassett/1853.xml"/>
+<xi:include href="Bassett/1854.xml"/>
+<xi:include href="Bassett/1855.xml"/>
+<xi:include href="Bassett/1856.xml"/>
+<xi:include href="Bassett/1857.xml"/>
+<xi:include href="Bassett/1858.xml"/>
+<xi:include href="Bassett/1859.xml"/>
+<xi:include href="Bassett/1860.xml"/>
+<xi:include href="Bassett/1861.xml"/>
+<xi:include href="Bassett/1862.xml"/>
+<xi:include href="Bassett/1863.xml"/>
+<xi:include href="Bassett/1864.xml"/>
+<xi:include href="Bassett/1865.xml"/>
+<xi:include href="Bassett/1866.xml"/>
+<xi:include href="Bassett/1867.xml"/>
+<xi:include href="Bassett/1868.xml"/>
+<xi:include href="Bassett/1869.xml"/>
+<xi:include href="Bassett/1870.xml"/>
+<xi:include href="Bassett/1871.xml"/>
+<xi:include href="Bassett/1872.xml"/>
+<xi:include href="Bassett/1873.xml"/>
+<xi:include href="Bassett/1874.xml"/>
+<xi:include href="Bassett/1875.xml"/>
+<xi:include href="Bassett/1876.xml"/>
+<xi:include href="Bassett/1877.xml"/>
+<xi:include href="Bassett/1878.xml"/>
+<xi:include href="Bassett/1879.xml"/>
+<xi:include href="Bassett/1880.xml"/>
+<xi:include href="Bassett/1881.xml"/>
+<xi:include href="Bassett/1882.xml"/>
+<xi:include href="Bassett/1883.xml"/>
+<xi:include href="Bassett/1884.xml"/>
+<xi:include href="Bassett/1885.xml"/>
+<xi:include href="Bassett/1886.xml"/>
+<xi:include href="Bassett/1887.xml"/>
+<xi:include href="Bassett/1888.xml"/>
+<xi:include href="Bassett/1889.xml"/>
+<xi:include href="Bassett/1890.xml"/>
+<xi:include href="Bassett/1891.xml"/>
+<xi:include href="Bassett/1892.xml"/>
+<xi:include href="Bassett/1893.xml"/>
+<xi:include href="Bassett/1894.xml"/>
+<xi:include href="Bassett/1895.xml"/>
+<xi:include href="Bassett/1896.xml"/>
+<xi:include href="Bassett/1897.xml"/>
+<xi:include href="Bassett/1898.xml"/>
+<xi:include href="Bassett/1899.xml"/>
+<xi:include href="Bassett/1900.xml"/>
+<xi:include href="Bassett/1901.xml"/>
+      </body>
+  </text>
+</TEI>

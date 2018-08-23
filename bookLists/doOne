@@ -1,0 +1,3 @@
+wget "http://www.victorianresearch.org/atcl/show_year.php?year=1850" -O temp.html ; tidy -asxml -n --new-empty-tags image temp.html | saxon - bassetConv.xsl > 1850.xml
+
+

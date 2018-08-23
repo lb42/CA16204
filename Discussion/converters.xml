@@ -54,7 +54,7 @@
                utility called textutil to do the HTML to ODT conversion (step 4 above); and relies
                on the TEI Stylesheet odttotei conversion to convert individual files from ODT to TEI
                (step 5). </p>
-            <p>We did not spend try getting the <q>quick and dirty</q> java code to work; instead we
+            <p>We did not spend time getting the <q>quick and dirty</q> java code to work; instead we
                note the interest of this approach to collecting and repurposing metadata, which
                seems worth stealing.</p>
          </div>
@@ -72,22 +72,22 @@
                and a number of common document processing formats (DOCX, ODT, XHTML, etc.) See
                article. The TEI provides a REST servoice which allows it to be invoked from a
                command line script, or it can be installed and run locally </p>
-            <p>Customization is done by creating an XSLT "profile". Thjis is very powerful, but may
+            <p>Customization is done by creating an XSLT "profile". This is very powerful, but may
                be non trivial. </p>
          </div>
          <div n="3">
             <head>Input formats</head>
-            <p>The real question is not so much a lack of tools (anything in well fornmed XML can be
+            <p>The real question is not so much a lack of tools (anything in well formed XML can be
                processed into TEI ) as a lack of information about the formats in which texts are
-               made available. This, oen oif the principal the challenmges which led to the
-               establishment of the TEI in the firsyt place, has sadly not gone away. Within the TEI
-               comnmyunity there has been a certain anmount of weailing and gnashing of teeth about
+               made available. This, one of the principal challenges which led to the
+               establishment of the TEI in the first place, has sadly not gone away. Within the TEI
+               community there has been a certain amount of wailing and gnashing of teeth about
                the laxity of popular TEI schemas which (insert stupid quote from mueller). But this
                is as nothing compared with the variety of ways in which identical phenomena may be
                encoded in a supposedly unform collection like that of PG. </p>
             <p>We took a sample of 100 titles characterised in the PG metadata as being "novels" in
                various languages. We first ran each text through the wonderful Tidy utility to get
-               them all into wellp-formed xhtml, encoded in utf8, anmd to strip out any extranbeous
+               them all into well-formed xhtml, encoded in utf8, and to strip out any extraneous
                non-XML markup. Then we counted the tags and attributes used. Then we looked at the
                specific styles used to signal the following basic features: <list>
                   <item>section divisions</item>
