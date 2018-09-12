@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xml:lang="fr">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Modèle TEI pour le projet de transcription collaborative des Testaments de
+               Poilus</title>
+            <author>Florence Clavaud (Archives nationales | Centre Jean-Mabillon de l'Ecole
+               nationale des chartes)</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>TEI Consortium</publisher>
+            <availability status="free">
+               <p>TEI material can be licensed differently depending on the use you intend to make
+                  of it. Hence it is made available under both the CC+BY and BSD-2 licences. The
+                  CC+BY licence is generally appropriate for usages which treat TEI content as data
+                  or documentation. The BSD-2 licence is generally appropriate for usage of TEI
+                  content in a software environment. For further information or clarification,
+                  please contact the TEI Consortium (info@tei-c.org).</p>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="ns">http://www.example.org/ns/nonTEI</note>
+         </notesStmt>
+         <sourceDesc>
+            <p>Written from scratch.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>TEI Complete</head>
+         <p>Modèle documenté pour l'encodage en TEI de l'édition de testaments de Poilus,&#xD;
+            telle&#xD; que pourra la produire la plate-forme de transcription collaborative&#xD;
+            en&#xD; cours de&#xD; développement (projet porté par l'U. de Cergy, les Archives&#xD;
+            nationales,&#xD; l'Ecole des&#xD; chartes, les AD des Yvelines, Patrima)</p>
+      <p>Geste de simplification de Lou</p>
+         <schemaSpec ident="poiluSimple" start="TEI teiCorpus" docLang="fr" prefix="TEI-">
+            <moduleRef key="tei"/>
+            <!-- required -->
+            <moduleRef key="core"
+               include="abbr add addrLine address author bibl cb choice corr date del editor 
+               email expan foreign gap graphic head hi imprint item label lb list note num 
+               orig p pb ptr pubPlace publisher ref reg resp respStmt series sic street teiCorpus 
+               term textLang title unclear"/>
+            <!-- required -->
+            <moduleRef key="analysis" include="c interp interpGrp pc span"/>
+            <moduleRef key="header"
+               include="abstract appInfo application authority availability cRefPattern 
+               calendar calendarDesc catDesc catRef category change classCode classDecl 
+               correction creation distributor edition editionStmt editorialDecl encodingDesc 
+               extent fileDesc funder geoDecl handNote hyphenation idno interpretation keywords 
+               langUsage language licence listChange namespace normalization notesStmt prefixDef
+               principal profileDesc projectDesc publicationStmt punctuation quotation rendition 
+               revisionDesc samplingDecl schemaRef segmentation seriesStmt sourceDesc sponsor 
+               tagUsage tagsDecl taxonomy teiHeader textClass titleStmt xenoData"/>
+            <!-- required -->
+            <moduleRef key="linking" include="seg"/>
+            <moduleRef key="msdescription"
+               include="collection condition custodialHist depth dim dimensions handDesc height 
+               history institution msContents msDesc msIdentifier msName objectDesc physDesc 
+               provenance recordHist repository summary support supportDesc width"/>
+            <moduleRef key="namesdates"
+               include="affiliation birth country death district forename geo geogFeat geogName 
+               listOrg listPerson listPlace location occupation org orgName persName person place 
+               placeName region residence settlement surname"/>
+            <moduleRef key="textcrit" include="app lem variantEncoding"/>
+            <moduleRef key="textstructure"
+               include="TEI back body dateline div group postscript signed text"/>
+            <!-- required -->
+            <moduleRef key="transcr"
+               include="damage ex facsimile metamark space subst supplied surface surfaceGrp surplus"
+            />
+         </schemaSpec>
+      </body>
+   </text>
+</TEI>
