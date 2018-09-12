@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listName>
+ <desc>Description: The following authors can all be considered canonical, as evidenced by having at
+  least one title in print in either a Broadview, Oxford World Classics, or Penguin Classics
+  edition.</desc>
+ <name type="canon" xml:id="3077">Edwin Abbott Abbott</name>
+ <name type="canon" xml:id="2774">Henry Brooks Adams</name>
+ <name type="canon" xml:id="2851">Grace Aguilar</name>
+ <name type="canon" xml:id="5">William Harrison Ainsworth</name>
+ <name type="canon" xml:id="1977">Louisa May Alcott</name>
+ <name type="canon" xml:id="335">Grant Allen</name>
+ <name type="canon" xml:id="3051">Elizabeth von Arnim</name>
+ <name type="canon" xml:id="1539">J. M. Barrie</name>
+ <name type="canon" xml:id="3072">Edward Bellamy</name>
+ <name type="canon" xml:id="3062">Arnold Bennett</name>
+ <name type="canon" xml:id="30">Richard Doddridge Blackmore</name>
+ <name type="canon" xml:id="37">Mary Elizabeth Braddon</name>
+ <name type="canon" xml:id="1114">Anne Brontë</name>
+ <name type="canon" xml:id="1115">Charlotte Brontë</name>
+ <name type="canon" xml:id="2589">Emily Jane Brontë</name>
+ <name type="canon" xml:id="219">Rhoda Broughton</name>
+ <name type="canon" xml:id="2895">John Buchan</name>
+ <name type="canon" xml:id="373">Frances Hodgson Burnett</name>
+ <name type="canon" xml:id="2684">Samuel Butler</name>
+ <name type="canon" xml:id="2134">George Washington Cable</name>
+ <name type="canon" xml:id="2854">Lewis Carroll</name>
+ <name type="canon" xml:id="65">Wilkie Collins</name>
+ <name type="canon" xml:id="2597">Joseph Conrad</name>
+ <name type="canon" xml:id="1148">James Fenimore Cooper</name>
+ <name type="canon" xml:id="413">Marie Corelli</name>
+ <name type="canon" xml:id="41">Dinah Marie Craik</name>
+ <name type="canon" xml:id="1173">Charles Dickens</name>
+ <name type="canon" xml:id="86">Benjamin Disraeli</name>
+ <name type="canon" xml:id="2591">Ella Hepworth Dixon</name>
+ <name type="canon" xml:id="1577">Arthur Conan Doyle</name>
+ <name type="canon" xml:id="1579">George Du Maurier</name>
+ <name type="canon" xml:id="105">George Eliot</name>
+ <name type="canon" xml:id="3030">Tom Gallon</name>
+ <name type="canon" xml:id="120">Elizabeth Cleghorn Gaskell</name>
+ <name type="canon" xml:id="468">George Gissing</name>
+ <name type="canon" xml:id="3014">George Grossmith</name>
+ <name type="canon" xml:id="486">H. Rider Haggard</name>
+ <name type="canon" xml:id="84">Thomas Hardy</name>
+ <name type="canon" xml:id="2803">Margaret Harkness</name>
+ <name type="canon" xml:id="892">Bret Harte</name>
+ <name type="canon" xml:id="1258">Nathaniel Hawthorne</name>
+ <name type="canon" xml:id="2315">Anthony Hope</name>
+ <name type="canon" xml:id="1432">Thomas Hughes</name>
+ <name type="canon" xml:id="523">Henry James</name>
+ <name type="canon" xml:id="528">Richard Jefferies</name>
+ <name type="canon" xml:id="2721">Jerome K. Jerome</name>
+ <name type="canon" xml:id="2318">Edith Johnstone</name>
+ <name type="canon" xml:id="1339">Charles Kingsley</name>
+ <name type="canon" xml:id="2679">Rudyard Kipling</name>
+ <name type="canon" xml:id="178">J. Sheridan Le Fanu</name>
+ <name type="canon" xml:id="549">Vernon Lee</name>
+ <name type="canon" xml:id="2670">Amy Levy</name>
+ <name type="canon" xml:id="183">Eliza Lynn Linton</name>
+ <name type="canon" xml:id="942">Edward Bulwer Lytton</name>
+ <name type="canon" xml:id="195">George MacDonald</name>
+ <name type="canon" xml:id="2611">Arthur Machen</name>
+ <name type="canon" xml:id="2671">Richard Marsh</name>
+ <name type="canon" xml:id="2692">A. E. W. Mason</name>
+ <name type="canon" xml:id="2673">W. Somerset Maugham</name>
+ <name type="canon" xml:id="1648">Elizabeth Thomasina Meade</name>
+ <name type="canon" xml:id="1376">Herman Melville</name>
+ <name type="canon" xml:id="207">George Meredith</name>
+ <name type="canon" xml:id="597">George Moore</name>
+ <name type="canon" xml:id="2331">William Morris</name>
+ <name type="canon" xml:id="2672">Arthur Morrison</name>
+ <name type="canon" xml:id="2729">John Henry Newman</name>
+ <name type="canon" xml:id="56">Margaret Oliphant</name>
+ <name type="canon" xml:id="51">Ouida</name>
+ <name type="canon" xml:id="2235">Olive Schreiner</name>
+ <name type="canon" xml:id="1473">Catharine Maria Sedgwick</name>
+ <name type="canon" xml:id="2878">Anna Sewell</name>
+ <name type="canon" xml:id="2906">George Bernard Shaw</name>
+ <name type="canon" xml:id="1475">Mary Wollstonecraft Shelley</name>
+ <name type="canon" xml:id="2598">Robert Louis Stevenson</name>
+ <name type="canon" xml:id="2605">Bram Stoker</name>
+ <name type="canon" xml:id="2541">Harriet Beecher Stowe</name>
+ <name type="canon" xml:id="1499">William Makepeace Thackeray</name>
+ <name type="canon" xml:id="301">Anthony Trollope</name>
+ <name type="canon" xml:id="1320">Frances Milton Trollope</name>
+ <name type="canon" xml:id="1049">Mark Twain</name>
+ <name type="canon" xml:id="2798">Jules Verne</name>
+ <name type="canon" xml:id="747">Mary Augusta Ward</name>
+ <name type="canon" xml:id="2659">H. G. Wells</name>
+ <name type="canon" xml:id="2680">Oscar Wilde</name>
+ <name type="canon" xml:id="320">Ellen Wood</name>
+ <name type="canon" xml:id="2633">William Butler Yeats</name>
+ <name type="canon" xml:id="1069">Charlotte Mary Yonge</name>
+ <name type="canon" xml:id="768">Émile Zola</name>
+</listName>

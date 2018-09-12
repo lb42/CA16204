@@ -18,14 +18,15 @@ bassetId|title|date|authSex|onlineID
       <!-- --> 
         <xsl:value-of select="t:date"/>
         <xsl:text>|</xsl:text>
-        <xsl:value-of select="t:author"/>
-        <xsl:text>|</xsl:text> <xsl:value-of select="t:title"/>
+        <xsl:value-of select="substring-before(t:author/@ref,':')"/>
+        <xsl:text>|</xsl:text>
+        
+        <xsl:value-of select="normalize-space(substring-before(t:author,','))"/>
+        <xsl:text>|</xsl:text> <xsl:value-of select="normalize-space(t:title)"/>
             <xsl:text>|</xsl:text>
          <!--        <xsl:value-of select="substring-before(@target,':')"/>
-   -->         <xsl:text>|</xsl:text>
-        <xsl:value-of select="substring-before(t:author/@ref,':')"/>
-            <xsl:text>|</xsl:text>
-        <xsl:value-of select="substring-after(t:ref[starts-with(@target,'pg')][1]/@target,':')"/>   
+   -->         <xsl:text>http://www.gutenberg.org/ebooks/</xsl:text>
+          <xsl:value-of select="substring-after(t:ref[starts-with(@target,'pg')][1]/@target,':')"/>   
             <xsl:text>
 </xsl:text>  
        

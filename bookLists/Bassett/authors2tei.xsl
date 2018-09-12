@@ -8,7 +8,10 @@
     <xsl:template match="/">
         <listBibl><xsl:apply-templates select="//t:table"/></listBibl>
     </xsl:template>
-
+<!-- expects rows in the form 
+        "author_id","first_name","middle_name","last_name","alt_name","birth_year","death_year","gender"
+        -->
+    
  <xsl:template match="t:table">
      <xsl:for-each select="t:row[position() gt 1]">
          <xsl:variable name="addNameStr">
