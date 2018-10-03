@@ -46,7 +46,7 @@
         </pb>
     </xsl:template>
     
-    <xsl:template match="t:hi[@rend='smallcaps']">
+    <xsl:template match="t:hi[starts-with(@rend,'smallcaps')]">
         <label>
             <xsl:apply-templates/>
         </label>

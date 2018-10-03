@@ -1,813 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
-			
-			
-
-The adventures of Mr. Verdant Green, an Oxford freshman/chapter 11			
-				From Wikisource				&lt; The adventures of Mr. Verdant Green, an Oxford freshman
-								Jump to navigation
-				Jump to search
-				
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-
-
-
-
-
-
-
-
-
-1912795The adventures of Mr. Verdant Green, an Oxford freshman —  Chapter XICuthbert Bede
-
-
-
-
-
-
-MR. VERDANT GREEN'S SPORTS AND PASTIMES.
-
-
-
-Archery was all the fashion at Brazenface. They had as fine a lawn for it as the Trinity men had; and all day long there was somebody to be seen making holes in the targets, and endeavouring to realize the pose of the Apollo Belvidere;—rather a difficult thing to do, when you come to wear plaid trousers and shaggy coats. As Mr. Verdant Green felt desirous not only to uphold all the institutions of the University, but also to make himself acquainted with the sports and pastimes of the place, he forthwith joined the Archery and Cricket Clubs. He at once inspected the manufactures of Muir and Buchanan; and after selecting from their stores a fancy-wood bow, with arrows, belt, quiver, guard, tips, tassels, and grease-pot, he felt himself to be duly prepared to represent the Toxophilite character. But the sustaining it was a more difficult thing than he had conceived; for although he thought that it would be next to impossible to miss a shot when the target was so large, and the arrow went so easily from the bow, yet our hero soon discovered that even in the first steps of archery there was something to be learnt, and that the mere stringing of his bow was a performance attended with considerable difficulty. It was always slipping from his instep, or twisting the wrong way, or threatening to snap in sunder, or refusing to allow his fingers to slip the knot, or doing something that was dreadfully uncomfortable, and productive of perspiration; and two or three times he was reduced to the abject necessity of asking his friends to string his bow for him.
-But when he had mastered this slight difficulty, he found that the arrows (to use Mr. Bouncer's phrase) "wobbled," and had a predilection for going anywhere but into the target, notwithstanding its size; and unfortunately one went into the body of the Honourable Mr. Stormer's favourite Skye terrier, though, thanks to its shaggy coat and the bluntness of the arrow, it did not do a great amount of mischief; nevertheless, the vials of Mr. Stormer's wrath were outpoured upon Mr. Verdant Green's head; and such epea pteroenta followed the winged arrow, that our hero became alarmed, and for the time forswore archery practice.
-As he had fully equipped himself for archery, so also Mr. Verdant Green, (on the authority of Mr. Bouncer) got himself up for cricket regardless of expense; and he made his first appearance in the field in a straw hat with blue ribbon, and "flannels," and spiked shoes of perfect propriety.  As Mr. Bouncer had told him that, in cricket, attitude was every thing, Verdant, as soon as he went in for his innings, took up what he considered to be a very good position at the wicket. Little Mr. Bouncer, who was bowling, delivered the ball with a swiftness that seemed rather astonishing in such a small gentleman. The first ball was "wide;" nevertheless, Verdant (after it had passed) struck at it, raising his bat high in the air, and bringing it straight down to the ground as though it were an executioner's axe. The second ball was nearer to the mark; but it came in with such swiftness, that, as Mr. Verdant Green was quite new to round bowling, it was rather too quick for him, and hit him severely on the——, well, never mind,—on the trousers.
-"Hallo, Gig-lamps!" shouted the delighted Mr. Bouncer, "nothing like backing up; but it's no use assuming a stern appearance; you'll get your hand in soon, old feller!"
-But Verdant found that before he could get his hand in, the ball was got into his wicket; and that while he was preparing for the strike, the ball shot by; and, as Mr. Stumps, the wicket-keeper, kindly informed him, "there was a row in his timber-yard." Thus Verdant's score was always on the lucus a non lucendo principle of derivation, for not even to a quarter of a score did it ever reach; and he felt that he should never rival a Mynn or be a Parr with any one of the "All England" players.
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:html="http://www.w3.org/1999/xhtml">
+<teiHeader><fileDesc><titleStmt><title>The adventures of Mr. Verdant Green, an Oxford freshman/chapter 11 - Wikisource, the free online library</title><author/></titleStmt><publicationStmt><p/></publicationStmt><sourceDesc><p>translated from HTML to TEI</p></sourceDesc></fileDesc></teiHeader>
+<text><body><!-- CentralNotice --><div><head>The adventures of Mr. Verdant Green, an Oxford freshman/chapter 11</head><p>From Wikisource</p><hi rend="subpages">&lt; <ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman">The adventures of Mr. Verdant Green, an Oxford freshman</ref></hi><ref target="#mw-head">Jump to navigation</ref><ref target="#p-search">Jump to search</ref><hi rend="searchaux" xml:id="headerprevious">←<ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_10">Chapter X</ref></hi><hi rend="bold"><hi xml:id="header_title_text"><ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman">The adventures of Mr. Verdant Green, an Oxford freshman</ref></hi></hi><hi rend="italic">by <ref target="/wiki/Author:Cuthbert_Bede"><hi xml:id="header_author_text" rend="vcard"><hi rend="fn">Cuthbert Bede</hi></hi></ref></hi><lb/><hi xml:id="header_section_text"><p> </p><hi style="text-transform: uppercase;">Chapter XI</hi></hi><hi rend="searchaux" xml:id="headernext"><ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_12">Chapter XII</ref>→</hi><hi xml:id="ws-article-id">1912795</hi><hi xml:id="ws-title"><ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman">The adventures of Mr. Verdant Green, an Oxford freshman</ref> — <hi rend="italic"><p> </p><hi style="text-transform: uppercase;">Chapter XI</hi></hi></hi><hi xml:id="ws-author">Cuthbert Bede</hi><p><lb/>
+</p><p><hi style="font-size: 83%;">MR. VERDANT GREEN'S SPORTS AND PASTIMES.</hi>
+</p><p><lb/>
+<hi style="font-variant:small-caps">Archery</hi> was all the fashion at Brazenface. They had as fine a lawn for it as the Trinity men had; and all day long there was somebody to be seen making holes in the targets, and endeavouring to realize the <hi rend="italic">pose</hi> of the Apollo Belvidere;—rather a difficult thing to do, when you come to wear plaid trousers and shaggy coats. As Mr. Verdant Green felt desirous not only to uphold all the institutions of the University, but also to make himself acquainted with the sports and pastimes of the place, he forthwith joined the Archery and Cricket Clubs. He at once inspected the manufactures of Muir and Buchanan; and after selecting from their stores a fancy-wood bow, with arrows, belt, quiver, guard, tips, tassels, and grease-pot, he felt himself to be duly prepared to represent the Toxophilite character. But the sustaining it was a more difficult thing than he had conceived; for although he thought that it would be next to impossible to miss a shot when the target was so large, and the arrow went so easily from the bow, yet our hero soon discovered that even in the first steps of archery there was something to be learnt, and that the mere stringing of his bow was a performance attended with considerable difficulty. It was always slipping from his instep, or twisting the wrong way, or threatening to snap in sunder, or refusing to allow his fingers to slip the knot, or doing something that was dreadfully uncomfortable, and productive of perspiration; and two or three times he was reduced to the abject necessity of asking his friends to string his bow for him.
+</p><p>But when he had mastered this slight difficulty, he found that the arrows (to use Mr. Bouncer's phrase) "wobbled," and had a predilection for going anywhere but into the target, notwithstanding its size; and unfortunately one went into the body of the Honourable Mr. Stormer's favourite Skye terrier, though, thanks to its shaggy coat and the bluntness of the arrow, it did not do a great amount of mischief; nevertheless, the vials of Mr. Stormer's wrath were outpoured upon Mr. Verdant Green's head; and such <hi rend="italic">epea pteroenta</hi> followed the winged arrow, that our hero became alarmed, and for the time forswore archery practice.
+</p><p>As he had fully equipped himself for archery, so also Mr. Verdant Green, (on the authority of Mr. Bouncer) got himself up for cricket regardless of expense; and he made his first appearance in the field in a straw hat with blue ribbon, and "flannels," and spiked shoes of perfect propriety.  As Mr. Bouncer had told him that, in cricket, attitude was every thing, Verdant, as soon as he went in for his innings, took up what he considered to be a very good position at the wicket. Little Mr. Bouncer, who was bowling, delivered the ball with a swiftness that seemed rather astonishing in such a small gentleman. The first ball was "wide;" nevertheless, Verdant (after it had passed) struck at it, raising his bat high in the air, and bringing it straight down to the ground as though it were an executioner's axe. The second ball was nearer to the mark; but it came in with such swiftness, that, as Mr. Verdant Green was quite new to round bowling, it was rather too quick for him, and hit him severely on the——, well, never mind,—on the trousers.
+</p><p>"Hallo, Gig-lamps!" shouted the delighted Mr. Bouncer, "nothing like backing up; but it's no use assuming a stern appearance; you'll get your hand in soon, old feller!"
+</p><p>But Verdant found that before he could get his hand in, the ball was got into his wicket; and that while he was preparing for the strike, the ball shot by; and, as Mr. Stumps, the wicket-keeper, kindly informed him, "there was a row in his timber-yard." Thus Verdant's score was always on the <hi rend="italic"><hi style="cursor:help; border-bottom:thin dotted cornflowerblue;">lucus a non lucendo</hi></hi> principle of derivation, for not even to a quarter of a score did it ever reach; and he felt that he should never rival a Mynn or be a Parr with any one of the "All England" players.
+</p><p><lb/>
+</p><ref target="/wiki/File:Pg_130_-_Mr_Verdant_Green.png"><graphic url="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pg_130_-_Mr_Verdant_Green.png/450px-Pg_130_-_Mr_Verdant_Green.png" rend="img" mimeType="image/png" width="450px" height="413px"/></ref><p><lb/>
 Besides these out-of-door sports, our hero also devoted a good deal of his time to acquiring in-door games, being quickly initiated into the mysteries of billiards, and plunging headlong into pool. It was in the billiard-room that Verdant first formed his acquaintance with Mr. Fluke of Christ Church, well known to be the best player in the University, and who, if report spoke truly, always made his five hundred a year by his skill in the game. Mr. Fluke kindly put our hero "into the way to become a player;" and Verdant soon found the apprenticeship was attended with rather heavy fees.
-
-
-
-
-At the wine-parties also that he attended he became rather a greater adept at cards than he had formerly been. "Van John" was the favourite game; and he was not long in discovering that taking shillings and half-crowns, instead of counters and "fish," and going odds on the colours, and losing five pounds before he was aware of it, was a very different thing to playing vingt-et-un at home with his sisters for "love"—(though perhaps cards afford the only way in which young ladies at twenty-one will play for love).
-In returning to Brazenface late from these parties, our hero was sometimes frightfully alarmed by suddenly finding himself face to face with a dreadful apparition, to which, by constant familiarity, he gradually became accustomed, and learned to look upon as the proctor with his marshal and bulldogs. At first, too, he was on such occasions greatly alarmed at finding the gates of Brazenface closed, obliging him thereby to "knock-in;" and not only did he apologize to the porter for troubling him to open the wicket, but he also volunteered elaborate explanations of the reasons that had kept him out after time,—explanations that were not received in the spirit with which they were tendered. When our freshman became aware of the mysteries of a gate-bill, he felt more at his ease.
-Mr. Verdant Green learned many things during his freshman's term, and, among others, he discovered that the quiet retirement of college-rooms, of which he had heard so much, was in many cases an unsubstantial idea, founded on imagination, and built up by fancy. One day that he had been writing a letter in Mr. Smalls' rooms, which were on the ground-floor, Verdant congratulated himself that his own rooms were on the third floor, and were thus removed from the possibility of his friends, when he had sported his oak, being able to get through his window to "chaff" him; but he soon discovered that rooms upstairs had also objectionable points in their private character, and were not altogether such eligible apartments as he had at first anticipated. First, there was the getting up and down the dislocated staircase, a feat which at night was sometimes attended with difficulty. Then, when he had accomplished this feat, there was no way of escaping from the noise of his neighbours. Mr. Sloe, the reading-man in the garret above, was one of those abominable nuisances, a peripatetic student, who "got up" every subject by pacing up and down his limited apartment, and, like the sentry, "walked his dreary round" at unseasonable hours of the night, at which time could be plainly heard the wretched chuckle, and crackings of knuckles (Mr. Sloe's way of expressing intense delight), with which he welcomed some miserable joke of Aristophanes, painfully elaborated by the help of Liddell-and-Scott; or the disgustingly sonorous way in which he declaimed his Greek choruses. This was bad enough at night; but in the day-time there was a still greater nuisance. The rooms immediately beneath Verdant's were possessed by a gentleman whose musical powers were of an unusually limited description, but who, unfortunately for his neighbours, possessed the idea that the cornet-à-piston was a beautiful instrument for pic-nics, races, boating-parties, and other long-vacation amusements, and sedulously practised "In my cottage near a wood," "Away with melancholy," and other airs of a lively character, in a doleful and distracted way, that would have fully justified his immediate homicide, or, at any rate, the confiscation of his offending instrument.
-Then, on the one side of Verdant's room, was Mr. Bouncer, sounding his octaves, and "going the complete unicorn;" and his bull-terriers, Huz and Buz, all and each of whom were of a restless and loud temperament; while, on the other side, were Mr. Four-in-hand Fosbrooke's rooms, in which fencing, boxing, single-stick, and other violent sports, were gone through, with a great expenditure of "Sa-ha! sa-ha!" and stampings. Verdant was sometimes induced to go in, and never could sufficiently admire the way in which men could be rapped with single-sticks without crying out or flinching; for it made him almost sore even to look at them. Mr. Blades, the stroke, was a frequent visitor there, and developed his muscles in the most satisfactory manner.
-After many refusals, our hero was at length persuaded to put on the gloves, and have a friendly bout with Mr. Blades. The result was as might have been anticipated; and Mr. Smalls doubtless gave a very correct résumé of the proceeding (for, as we have before said, he was thoroughly conversant with the sporting slang of Tintinnabulum's Life), when he told Verdant, that his claret had been repeatedly tapped, his bread-basket walked into, his day-lights darkened, his ivories rattled, his nozzle barked, his whisker-bed napped heavily, his kissing-trap countered, his ribs roasted, his nut spanked, and his whole person put in chancery, stung, bruised, fibbed, propped, fiddled, slogged, and otherwise ill-treated. So it is hardly to be wondered at if Mr. Verdant Green from thenceforth gave up boxing, as a senseless and ungentlemanly amusement.
-But while these pleasures(?) of the body were being attended to, the recreation of the mind was not forgotten. Mr. Larkyns had proposed Verdant's name at the Union; and, to that gentleman's great satisfaction, he was not black-balled. He daily, therefore, frequented the reading-room, and made a point of looking through all the magazines and newspapers; while he felt quite a pride in sitting in luxurious state upstairs, writing his letters to the home department on the very best note-paper, and sealing them extensively with "the Oxford Union" seal; though he could not at first be persuaded that trusting his letters to a wire closet was at all a safe system of postage.
-He also attended the Debates, which were then held in the long room behind Wyatt's; and he was particularly charmed with the manner in which vital questions, that (as he learned from the newspapers) had proved stumbling-blocks to the greatest statesmen of the land, were rapidly solved by the embryo statesmen of the Oxford Union. It was quite a sight, in that long picture-room, to see the rows of light iron seats densely crowded with young men—some of whom would perhaps rise to be Cannings, or Peels, or Gladstones—and to hear how one beardless gentleman would call another beardless gentleman his "honourable friend," and appeal "to the sense of the House," and address himself to "Mr. Speaker;" and how they would all juggle the same tricks of rhetoric as their fathers were doing in certain other debates in a certain other House. And it was curious, too, to mark the points of resemblance between the two Houses; and how the smaller one had, on its smaller scale, its Hume, and its Lord John, and its "Dizzy;" and how they went through the same traditional forms, and preserved the same time-honoured ideas, and debated in the fullest houses, with the greatest spirit and the greatest length, on such points as, "What course is it advisable for this country to take in regard to the government of its Indian possessions, and the imprisonment of Mr. Jones by the Rajah of Humbugpoopoonah?" Indeed, Mr. Verdant Green was so excited by this interesting debate, that on the third night of its adjournment he rose to address the House; but being "no orator as Brutus is," his few broken words were received with laughter, and the honourable gentleman was coughed down.
-Our hero had, as an Oxford freshman, to go through that cheerful form called "sitting in the schools,"—a form which consisted in the following ceremony. Through a door in the right-hand corner of the Schools Quadrangle,—(Oh, that door! does it not bring a pang into your heart only to think of it? to remember the day when you went in there as pale as the little pair of bands in which you were dressed for your sacrifice; and came out all in a glow and a chill when your examination was over; and posted your bosom-friend there to receive from Purdue the little slip of paper, and bring you the thrilling intelligence that you had passed; or to come empty-handed, and say that you had been plucked! Oh that door! well might be inscribed there the line which, on Dante's authority, is assigned to the door of another place,—
-
-
-
-"ALL HOPE ABANDON, YE WHO ENTER HERE!")
-
-
-
-
-—entering through this door in company with several other unfortunates, our hero passed between two galleries through a passage, by which, if the place had been a circus, the horses would have entered, and found himself in a tolerably large room lighted on either side by windows, and panelled half-way up the walls. Down the centre of this room ran a large green-baize-covered table, on the one side of which were some eight or ten miserable beings who were then undergoing examination, and were supplied with pens, ink, blotting-pad, and large sheets of thin "scribble-paper," on which they were struggling to impress their ideas; or else had a book set before them, out of which they were construing, or being racked with questions that touched now on one subject and now on another, like a bee  among flowers.  The large table was liberally supplied with all the apparatus and instruments of torture; and on the other side of it sat the three examiners, as dreadful and formidable as the terrible three of Venice. At the upper end of the room was a chair of state for the Vice-Chancellor, whenever he deigned to personally superintend the torture; to the right and left of which accommodation was provided for other victims. On the right hand of the room was a small open gallery of two seats (like those seen in infant schools); and here, from 10 in the morning till 4 in the afternoon, with only the interval of a quarter of an hour for luncheon, Mr. Verdant Green was compelled to sit and watch the proceedings, his perseverance being attested to by a certificate which he received as a reward for his meritorious conduct. If this "sitting in the schools" [1]  was established as an in terrorem form for the spectators, it undoubtedly generally had the desired effect; and what with the misery of sitting through a whole day on a hard bench with nothing to do, and the agony of seeing your fellow-creatures plucked, and having visions of the same prospective fate for yourself, the day on which the sitting takes place was usually regarded as one of those which, "if 'twere done, 'twere well it should be done quickly."
-
-
-
-
-As an appropriate sequel to this proceeding, Mr. Verdant Green attended the interesting ceremony of conferring degrees; where he discovered that the apparently insane promenade of the proctor gave rise to the name bestowed on (what Mr. Larkyns called) the equally insane custom of "plucking." [2] There too our hero saw the Vice-Chancellor in all his glory; and so agreeable were the proceedings, that altogether he had a great deal of Bliss. [3]
-
-
-
-↑ This form has been abolished (1853) under the new regulations.
-
-↑  When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.
-
-↑ The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.
-
-
-
-
-
-
-
-
-					
-						Retrieved from "https://en.wikisource.org/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;oldid=6579981"					
-				Hidden category: Subpages				
-							
-		
-
-				From Wikisource				&lt; The adventures of Mr. Verdant Green, an Oxford freshman
-								Jump to navigation
-				Jump to search
-				
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-
-
-
-
-
-
-
-
-
-1912795The adventures of Mr. Verdant Green, an Oxford freshman —  Chapter XICuthbert Bede
-
-
-
-
-
-
-MR. VERDANT GREEN'S SPORTS AND PASTIMES.
-
-
-
-Archery was all the fashion at Brazenface. They had as fine a lawn for it as the Trinity men had; and all day long there was somebody to be seen making holes in the targets, and endeavouring to realize the pose of the Apollo Belvidere;—rather a difficult thing to do, when you come to wear plaid trousers and shaggy coats. As Mr. Verdant Green felt desirous not only to uphold all the institutions of the University, but also to make himself acquainted with the sports and pastimes of the place, he forthwith joined the Archery and Cricket Clubs. He at once inspected the manufactures of Muir and Buchanan; and after selecting from their stores a fancy-wood bow, with arrows, belt, quiver, guard, tips, tassels, and grease-pot, he felt himself to be duly prepared to represent the Toxophilite character. But the sustaining it was a more difficult thing than he had conceived; for although he thought that it would be next to impossible to miss a shot when the target was so large, and the arrow went so easily from the bow, yet our hero soon discovered that even in the first steps of archery there was something to be learnt, and that the mere stringing of his bow was a performance attended with considerable difficulty. It was always slipping from his instep, or twisting the wrong way, or threatening to snap in sunder, or refusing to allow his fingers to slip the knot, or doing something that was dreadfully uncomfortable, and productive of perspiration; and two or three times he was reduced to the abject necessity of asking his friends to string his bow for him.
-But when he had mastered this slight difficulty, he found that the arrows (to use Mr. Bouncer's phrase) "wobbled," and had a predilection for going anywhere but into the target, notwithstanding its size; and unfortunately one went into the body of the Honourable Mr. Stormer's favourite Skye terrier, though, thanks to its shaggy coat and the bluntness of the arrow, it did not do a great amount of mischief; nevertheless, the vials of Mr. Stormer's wrath were outpoured upon Mr. Verdant Green's head; and such epea pteroenta followed the winged arrow, that our hero became alarmed, and for the time forswore archery practice.
-As he had fully equipped himself for archery, so also Mr. Verdant Green, (on the authority of Mr. Bouncer) got himself up for cricket regardless of expense; and he made his first appearance in the field in a straw hat with blue ribbon, and "flannels," and spiked shoes of perfect propriety.  As Mr. Bouncer had told him that, in cricket, attitude was every thing, Verdant, as soon as he went in for his innings, took up what he considered to be a very good position at the wicket. Little Mr. Bouncer, who was bowling, delivered the ball with a swiftness that seemed rather astonishing in such a small gentleman. The first ball was "wide;" nevertheless, Verdant (after it had passed) struck at it, raising his bat high in the air, and bringing it straight down to the ground as though it were an executioner's axe. The second ball was nearer to the mark; but it came in with such swiftness, that, as Mr. Verdant Green was quite new to round bowling, it was rather too quick for him, and hit him severely on the——, well, never mind,—on the trousers.
-"Hallo, Gig-lamps!" shouted the delighted Mr. Bouncer, "nothing like backing up; but it's no use assuming a stern appearance; you'll get your hand in soon, old feller!"
-But Verdant found that before he could get his hand in, the ball was got into his wicket; and that while he was preparing for the strike, the ball shot by; and, as Mr. Stumps, the wicket-keeper, kindly informed him, "there was a row in his timber-yard." Thus Verdant's score was always on the lucus a non lucendo principle of derivation, for not even to a quarter of a score did it ever reach; and he felt that he should never rival a Mynn or be a Parr with any one of the "All England" players.
-
-
-
-
-Besides these out-of-door sports, our hero also devoted a good deal of his time to acquiring in-door games, being quickly initiated into the mysteries of billiards, and plunging headlong into pool. It was in the billiard-room that Verdant first formed his acquaintance with Mr. Fluke of Christ Church, well known to be the best player in the University, and who, if report spoke truly, always made his five hundred a year by his skill in the game. Mr. Fluke kindly put our hero "into the way to become a player;" and Verdant soon found the apprenticeship was attended with rather heavy fees.
-
-
-
-
-At the wine-parties also that he attended he became rather a greater adept at cards than he had formerly been. "Van John" was the favourite game; and he was not long in discovering that taking shillings and half-crowns, instead of counters and "fish," and going odds on the colours, and losing five pounds before he was aware of it, was a very different thing to playing vingt-et-un at home with his sisters for "love"—(though perhaps cards afford the only way in which young ladies at twenty-one will play for love).
-In returning to Brazenface late from these parties, our hero was sometimes frightfully alarmed by suddenly finding himself face to face with a dreadful apparition, to which, by constant familiarity, he gradually became accustomed, and learned to look upon as the proctor with his marshal and bulldogs. At first, too, he was on such occasions greatly alarmed at finding the gates of Brazenface closed, obliging him thereby to "knock-in;" and not only did he apologize to the porter for troubling him to open the wicket, but he also volunteered elaborate explanations of the reasons that had kept him out after time,—explanations that were not received in the spirit with which they were tendered. When our freshman became aware of the mysteries of a gate-bill, he felt more at his ease.
-Mr. Verdant Green learned many things during his freshman's term, and, among others, he discovered that the quiet retirement of college-rooms, of which he had heard so much, was in many cases an unsubstantial idea, founded on imagination, and built up by fancy. One day that he had been writing a letter in Mr. Smalls' rooms, which were on the ground-floor, Verdant congratulated himself that his own rooms were on the third floor, and were thus removed from the possibility of his friends, when he had sported his oak, being able to get through his window to "chaff" him; but he soon discovered that rooms upstairs had also objectionable points in their private character, and were not altogether such eligible apartments as he had at first anticipated. First, there was the getting up and down the dislocated staircase, a feat which at night was sometimes attended with difficulty. Then, when he had accomplished this feat, there was no way of escaping from the noise of his neighbours. Mr. Sloe, the reading-man in the garret above, was one of those abominable nuisances, a peripatetic student, who "got up" every subject by pacing up and down his limited apartment, and, like the sentry, "walked his dreary round" at unseasonable hours of the night, at which time could be plainly heard the wretched chuckle, and crackings of knuckles (Mr. Sloe's way of expressing intense delight), with which he welcomed some miserable joke of Aristophanes, painfully elaborated by the help of Liddell-and-Scott; or the disgustingly sonorous way in which he declaimed his Greek choruses. This was bad enough at night; but in the day-time there was a still greater nuisance. The rooms immediately beneath Verdant's were possessed by a gentleman whose musical powers were of an unusually limited description, but who, unfortunately for his neighbours, possessed the idea that the cornet-à-piston was a beautiful instrument for pic-nics, races, boating-parties, and other long-vacation amusements, and sedulously practised "In my cottage near a wood," "Away with melancholy," and other airs of a lively character, in a doleful and distracted way, that would have fully justified his immediate homicide, or, at any rate, the confiscation of his offending instrument.
-Then, on the one side of Verdant's room, was Mr. Bouncer, sounding his octaves, and "going the complete unicorn;" and his bull-terriers, Huz and Buz, all and each of whom were of a restless and loud temperament; while, on the other side, were Mr. Four-in-hand Fosbrooke's rooms, in which fencing, boxing, single-stick, and other violent sports, were gone through, with a great expenditure of "Sa-ha! sa-ha!" and stampings. Verdant was sometimes induced to go in, and never could sufficiently admire the way in which men could be rapped with single-sticks without crying out or flinching; for it made him almost sore even to look at them. Mr. Blades, the stroke, was a frequent visitor there, and developed his muscles in the most satisfactory manner.
-After many refusals, our hero was at length persuaded to put on the gloves, and have a friendly bout with Mr. Blades. The result was as might have been anticipated; and Mr. Smalls doubtless gave a very correct résumé of the proceeding (for, as we have before said, he was thoroughly conversant with the sporting slang of Tintinnabulum's Life), when he told Verdant, that his claret had been repeatedly tapped, his bread-basket walked into, his day-lights darkened, his ivories rattled, his nozzle barked, his whisker-bed napped heavily, his kissing-trap countered, his ribs roasted, his nut spanked, and his whole person put in chancery, stung, bruised, fibbed, propped, fiddled, slogged, and otherwise ill-treated. So it is hardly to be wondered at if Mr. Verdant Green from thenceforth gave up boxing, as a senseless and ungentlemanly amusement.
-But while these pleasures(?) of the body were being attended to, the recreation of the mind was not forgotten. Mr. Larkyns had proposed Verdant's name at the Union; and, to that gentleman's great satisfaction, he was not black-balled. He daily, therefore, frequented the reading-room, and made a point of looking through all the magazines and newspapers; while he felt quite a pride in sitting in luxurious state upstairs, writing his letters to the home department on the very best note-paper, and sealing them extensively with "the Oxford Union" seal; though he could not at first be persuaded that trusting his letters to a wire closet was at all a safe system of postage.
-He also attended the Debates, which were then held in the long room behind Wyatt's; and he was particularly charmed with the manner in which vital questions, that (as he learned from the newspapers) had proved stumbling-blocks to the greatest statesmen of the land, were rapidly solved by the embryo statesmen of the Oxford Union. It was quite a sight, in that long picture-room, to see the rows of light iron seats densely crowded with young men—some of whom would perhaps rise to be Cannings, or Peels, or Gladstones—and to hear how one beardless gentleman would call another beardless gentleman his "honourable friend," and appeal "to the sense of the House," and address himself to "Mr. Speaker;" and how they would all juggle the same tricks of rhetoric as their fathers were doing in certain other debates in a certain other House. And it was curious, too, to mark the points of resemblance between the two Houses; and how the smaller one had, on its smaller scale, its Hume, and its Lord John, and its "Dizzy;" and how they went through the same traditional forms, and preserved the same time-honoured ideas, and debated in the fullest houses, with the greatest spirit and the greatest length, on such points as, "What course is it advisable for this country to take in regard to the government of its Indian possessions, and the imprisonment of Mr. Jones by the Rajah of Humbugpoopoonah?" Indeed, Mr. Verdant Green was so excited by this interesting debate, that on the third night of its adjournment he rose to address the House; but being "no orator as Brutus is," his few broken words were received with laughter, and the honourable gentleman was coughed down.
-Our hero had, as an Oxford freshman, to go through that cheerful form called "sitting in the schools,"—a form which consisted in the following ceremony. Through a door in the right-hand corner of the Schools Quadrangle,—(Oh, that door! does it not bring a pang into your heart only to think of it? to remember the day when you went in there as pale as the little pair of bands in which you were dressed for your sacrifice; and came out all in a glow and a chill when your examination was over; and posted your bosom-friend there to receive from Purdue the little slip of paper, and bring you the thrilling intelligence that you had passed; or to come empty-handed, and say that you had been plucked! Oh that door! well might be inscribed there the line which, on Dante's authority, is assigned to the door of another place,—
-
-
-
-"ALL HOPE ABANDON, YE WHO ENTER HERE!")
-
-
-
-
-—entering through this door in company with several other unfortunates, our hero passed between two galleries through a passage, by which, if the place had been a circus, the horses would have entered, and found himself in a tolerably large room lighted on either side by windows, and panelled half-way up the walls. Down the centre of this room ran a large green-baize-covered table, on the one side of which were some eight or ten miserable beings who were then undergoing examination, and were supplied with pens, ink, blotting-pad, and large sheets of thin "scribble-paper," on which they were struggling to impress their ideas; or else had a book set before them, out of which they were construing, or being racked with questions that touched now on one subject and now on another, like a bee  among flowers.  The large table was liberally supplied with all the apparatus and instruments of torture; and on the other side of it sat the three examiners, as dreadful and formidable as the terrible three of Venice. At the upper end of the room was a chair of state for the Vice-Chancellor, whenever he deigned to personally superintend the torture; to the right and left of which accommodation was provided for other victims. On the right hand of the room was a small open gallery of two seats (like those seen in infant schools); and here, from 10 in the morning till 4 in the afternoon, with only the interval of a quarter of an hour for luncheon, Mr. Verdant Green was compelled to sit and watch the proceedings, his perseverance being attested to by a certificate which he received as a reward for his meritorious conduct. If this "sitting in the schools" [1]  was established as an in terrorem form for the spectators, it undoubtedly generally had the desired effect; and what with the misery of sitting through a whole day on a hard bench with nothing to do, and the agony of seeing your fellow-creatures plucked, and having visions of the same prospective fate for yourself, the day on which the sitting takes place was usually regarded as one of those which, "if 'twere done, 'twere well it should be done quickly."
-
-
-
-
-As an appropriate sequel to this proceeding, Mr. Verdant Green attended the interesting ceremony of conferring degrees; where he discovered that the apparently insane promenade of the proctor gave rise to the name bestowed on (what Mr. Larkyns called) the equally insane custom of "plucking." [2] There too our hero saw the Vice-Chancellor in all his glory; and so agreeable were the proceedings, that altogether he had a great deal of Bliss. [3]
-
-
-
-↑ This form has been abolished (1853) under the new regulations.
-
-↑  When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.
-
-↑ The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.
-
-
-
-
-
-
-
-
-					
-						Retrieved from "https://en.wikisource.org/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;oldid=6579981"					
-				Hidden category: Subpages				
-							From Wikisource&lt; The adventures of Mr. Verdant Green, an Oxford freshman
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-
-
-
-
-
-
-
-
-
-1912795The adventures of Mr. Verdant Green, an Oxford freshman —  Chapter XICuthbert Bede
-
-
-
-
-
-
-MR. VERDANT GREEN'S SPORTS AND PASTIMES.
-
-
-
-Archery was all the fashion at Brazenface. They had as fine a lawn for it as the Trinity men had; and all day long there was somebody to be seen making holes in the targets, and endeavouring to realize the pose of the Apollo Belvidere;—rather a difficult thing to do, when you come to wear plaid trousers and shaggy coats. As Mr. Verdant Green felt desirous not only to uphold all the institutions of the University, but also to make himself acquainted with the sports and pastimes of the place, he forthwith joined the Archery and Cricket Clubs. He at once inspected the manufactures of Muir and Buchanan; and after selecting from their stores a fancy-wood bow, with arrows, belt, quiver, guard, tips, tassels, and grease-pot, he felt himself to be duly prepared to represent the Toxophilite character. But the sustaining it was a more difficult thing than he had conceived; for although he thought that it would be next to impossible to miss a shot when the target was so large, and the arrow went so easily from the bow, yet our hero soon discovered that even in the first steps of archery there was something to be learnt, and that the mere stringing of his bow was a performance attended with considerable difficulty. It was always slipping from his instep, or twisting the wrong way, or threatening to snap in sunder, or refusing to allow his fingers to slip the knot, or doing something that was dreadfully uncomfortable, and productive of perspiration; and two or three times he was reduced to the abject necessity of asking his friends to string his bow for him.
-But when he had mastered this slight difficulty, he found that the arrows (to use Mr. Bouncer's phrase) "wobbled," and had a predilection for going anywhere but into the target, notwithstanding its size; and unfortunately one went into the body of the Honourable Mr. Stormer's favourite Skye terrier, though, thanks to its shaggy coat and the bluntness of the arrow, it did not do a great amount of mischief; nevertheless, the vials of Mr. Stormer's wrath were outpoured upon Mr. Verdant Green's head; and such epea pteroenta followed the winged arrow, that our hero became alarmed, and for the time forswore archery practice.
-As he had fully equipped himself for archery, so also Mr. Verdant Green, (on the authority of Mr. Bouncer) got himself up for cricket regardless of expense; and he made his first appearance in the field in a straw hat with blue ribbon, and "flannels," and spiked shoes of perfect propriety.  As Mr. Bouncer had told him that, in cricket, attitude was every thing, Verdant, as soon as he went in for his innings, took up what he considered to be a very good position at the wicket. Little Mr. Bouncer, who was bowling, delivered the ball with a swiftness that seemed rather astonishing in such a small gentleman. The first ball was "wide;" nevertheless, Verdant (after it had passed) struck at it, raising his bat high in the air, and bringing it straight down to the ground as though it were an executioner's axe. The second ball was nearer to the mark; but it came in with such swiftness, that, as Mr. Verdant Green was quite new to round bowling, it was rather too quick for him, and hit him severely on the——, well, never mind,—on the trousers.
-"Hallo, Gig-lamps!" shouted the delighted Mr. Bouncer, "nothing like backing up; but it's no use assuming a stern appearance; you'll get your hand in soon, old feller!"
-But Verdant found that before he could get his hand in, the ball was got into his wicket; and that while he was preparing for the strike, the ball shot by; and, as Mr. Stumps, the wicket-keeper, kindly informed him, "there was a row in his timber-yard." Thus Verdant's score was always on the lucus a non lucendo principle of derivation, for not even to a quarter of a score did it ever reach; and he felt that he should never rival a Mynn or be a Parr with any one of the "All England" players.
-
-
-
-
-Besides these out-of-door sports, our hero also devoted a good deal of his time to acquiring in-door games, being quickly initiated into the mysteries of billiards, and plunging headlong into pool. It was in the billiard-room that Verdant first formed his acquaintance with Mr. Fluke of Christ Church, well known to be the best player in the University, and who, if report spoke truly, always made his five hundred a year by his skill in the game. Mr. Fluke kindly put our hero "into the way to become a player;" and Verdant soon found the apprenticeship was attended with rather heavy fees.
-
-
-
-
-At the wine-parties also that he attended he became rather a greater adept at cards than he had formerly been. "Van John" was the favourite game; and he was not long in discovering that taking shillings and half-crowns, instead of counters and "fish," and going odds on the colours, and losing five pounds before he was aware of it, was a very different thing to playing vingt-et-un at home with his sisters for "love"—(though perhaps cards afford the only way in which young ladies at twenty-one will play for love).
-In returning to Brazenface late from these parties, our hero was sometimes frightfully alarmed by suddenly finding himself face to face with a dreadful apparition, to which, by constant familiarity, he gradually became accustomed, and learned to look upon as the proctor with his marshal and bulldogs. At first, too, he was on such occasions greatly alarmed at finding the gates of Brazenface closed, obliging him thereby to "knock-in;" and not only did he apologize to the porter for troubling him to open the wicket, but he also volunteered elaborate explanations of the reasons that had kept him out after time,—explanations that were not received in the spirit with which they were tendered. When our freshman became aware of the mysteries of a gate-bill, he felt more at his ease.
-Mr. Verdant Green learned many things during his freshman's term, and, among others, he discovered that the quiet retirement of college-rooms, of which he had heard so much, was in many cases an unsubstantial idea, founded on imagination, and built up by fancy. One day that he had been writing a letter in Mr. Smalls' rooms, which were on the ground-floor, Verdant congratulated himself that his own rooms were on the third floor, and were thus removed from the possibility of his friends, when he had sported his oak, being able to get through his window to "chaff" him; but he soon discovered that rooms upstairs had also objectionable points in their private character, and were not altogether such eligible apartments as he had at first anticipated. First, there was the getting up and down the dislocated staircase, a feat which at night was sometimes attended with difficulty. Then, when he had accomplished this feat, there was no way of escaping from the noise of his neighbours. Mr. Sloe, the reading-man in the garret above, was one of those abominable nuisances, a peripatetic student, who "got up" every subject by pacing up and down his limited apartment, and, like the sentry, "walked his dreary round" at unseasonable hours of the night, at which time could be plainly heard the wretched chuckle, and crackings of knuckles (Mr. Sloe's way of expressing intense delight), with which he welcomed some miserable joke of Aristophanes, painfully elaborated by the help of Liddell-and-Scott; or the disgustingly sonorous way in which he declaimed his Greek choruses. This was bad enough at night; but in the day-time there was a still greater nuisance. The rooms immediately beneath Verdant's were possessed by a gentleman whose musical powers were of an unusually limited description, but who, unfortunately for his neighbours, possessed the idea that the cornet-à-piston was a beautiful instrument for pic-nics, races, boating-parties, and other long-vacation amusements, and sedulously practised "In my cottage near a wood," "Away with melancholy," and other airs of a lively character, in a doleful and distracted way, that would have fully justified his immediate homicide, or, at any rate, the confiscation of his offending instrument.
-Then, on the one side of Verdant's room, was Mr. Bouncer, sounding his octaves, and "going the complete unicorn;" and his bull-terriers, Huz and Buz, all and each of whom were of a restless and loud temperament; while, on the other side, were Mr. Four-in-hand Fosbrooke's rooms, in which fencing, boxing, single-stick, and other violent sports, were gone through, with a great expenditure of "Sa-ha! sa-ha!" and stampings. Verdant was sometimes induced to go in, and never could sufficiently admire the way in which men could be rapped with single-sticks without crying out or flinching; for it made him almost sore even to look at them. Mr. Blades, the stroke, was a frequent visitor there, and developed his muscles in the most satisfactory manner.
-After many refusals, our hero was at length persuaded to put on the gloves, and have a friendly bout with Mr. Blades. The result was as might have been anticipated; and Mr. Smalls doubtless gave a very correct résumé of the proceeding (for, as we have before said, he was thoroughly conversant with the sporting slang of Tintinnabulum's Life), when he told Verdant, that his claret had been repeatedly tapped, his bread-basket walked into, his day-lights darkened, his ivories rattled, his nozzle barked, his whisker-bed napped heavily, his kissing-trap countered, his ribs roasted, his nut spanked, and his whole person put in chancery, stung, bruised, fibbed, propped, fiddled, slogged, and otherwise ill-treated. So it is hardly to be wondered at if Mr. Verdant Green from thenceforth gave up boxing, as a senseless and ungentlemanly amusement.
-But while these pleasures(?) of the body were being attended to, the recreation of the mind was not forgotten. Mr. Larkyns had proposed Verdant's name at the Union; and, to that gentleman's great satisfaction, he was not black-balled. He daily, therefore, frequented the reading-room, and made a point of looking through all the magazines and newspapers; while he felt quite a pride in sitting in luxurious state upstairs, writing his letters to the home department on the very best note-paper, and sealing them extensively with "the Oxford Union" seal; though he could not at first be persuaded that trusting his letters to a wire closet was at all a safe system of postage.
-He also attended the Debates, which were then held in the long room behind Wyatt's; and he was particularly charmed with the manner in which vital questions, that (as he learned from the newspapers) had proved stumbling-blocks to the greatest statesmen of the land, were rapidly solved by the embryo statesmen of the Oxford Union. It was quite a sight, in that long picture-room, to see the rows of light iron seats densely crowded with young men—some of whom would perhaps rise to be Cannings, or Peels, or Gladstones—and to hear how one beardless gentleman would call another beardless gentleman his "honourable friend," and appeal "to the sense of the House," and address himself to "Mr. Speaker;" and how they would all juggle the same tricks of rhetoric as their fathers were doing in certain other debates in a certain other House. And it was curious, too, to mark the points of resemblance between the two Houses; and how the smaller one had, on its smaller scale, its Hume, and its Lord John, and its "Dizzy;" and how they went through the same traditional forms, and preserved the same time-honoured ideas, and debated in the fullest houses, with the greatest spirit and the greatest length, on such points as, "What course is it advisable for this country to take in regard to the government of its Indian possessions, and the imprisonment of Mr. Jones by the Rajah of Humbugpoopoonah?" Indeed, Mr. Verdant Green was so excited by this interesting debate, that on the third night of its adjournment he rose to address the House; but being "no orator as Brutus is," his few broken words were received with laughter, and the honourable gentleman was coughed down.
-Our hero had, as an Oxford freshman, to go through that cheerful form called "sitting in the schools,"—a form which consisted in the following ceremony. Through a door in the right-hand corner of the Schools Quadrangle,—(Oh, that door! does it not bring a pang into your heart only to think of it? to remember the day when you went in there as pale as the little pair of bands in which you were dressed for your sacrifice; and came out all in a glow and a chill when your examination was over; and posted your bosom-friend there to receive from Purdue the little slip of paper, and bring you the thrilling intelligence that you had passed; or to come empty-handed, and say that you had been plucked! Oh that door! well might be inscribed there the line which, on Dante's authority, is assigned to the door of another place,—
-
-
-
-"ALL HOPE ABANDON, YE WHO ENTER HERE!")
-
-
-
-
-—entering through this door in company with several other unfortunates, our hero passed between two galleries through a passage, by which, if the place had been a circus, the horses would have entered, and found himself in a tolerably large room lighted on either side by windows, and panelled half-way up the walls. Down the centre of this room ran a large green-baize-covered table, on the one side of which were some eight or ten miserable beings who were then undergoing examination, and were supplied with pens, ink, blotting-pad, and large sheets of thin "scribble-paper," on which they were struggling to impress their ideas; or else had a book set before them, out of which they were construing, or being racked with questions that touched now on one subject and now on another, like a bee  among flowers.  The large table was liberally supplied with all the apparatus and instruments of torture; and on the other side of it sat the three examiners, as dreadful and formidable as the terrible three of Venice. At the upper end of the room was a chair of state for the Vice-Chancellor, whenever he deigned to personally superintend the torture; to the right and left of which accommodation was provided for other victims. On the right hand of the room was a small open gallery of two seats (like those seen in infant schools); and here, from 10 in the morning till 4 in the afternoon, with only the interval of a quarter of an hour for luncheon, Mr. Verdant Green was compelled to sit and watch the proceedings, his perseverance being attested to by a certificate which he received as a reward for his meritorious conduct. If this "sitting in the schools" [1]  was established as an in terrorem form for the spectators, it undoubtedly generally had the desired effect; and what with the misery of sitting through a whole day on a hard bench with nothing to do, and the agony of seeing your fellow-creatures plucked, and having visions of the same prospective fate for yourself, the day on which the sitting takes place was usually regarded as one of those which, "if 'twere done, 'twere well it should be done quickly."
-
-
-
-
-As an appropriate sequel to this proceeding, Mr. Verdant Green attended the interesting ceremony of conferring degrees; where he discovered that the apparently insane promenade of the proctor gave rise to the name bestowed on (what Mr. Larkyns called) the equally insane custom of "plucking." [2] There too our hero saw the Vice-Chancellor in all his glory; and so agreeable were the proceedings, that altogether he had a great deal of Bliss. [3]
-
-
-
-↑ This form has been abolished (1853) under the new regulations.
-
-↑  When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.
-
-↑ The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.
-
-
-
-
-
-
-
-
-
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-
-
-
-
-
-
-
-
-
-1912795The adventures of Mr. Verdant Green, an Oxford freshman —  Chapter XICuthbert Bede
-
-
-
-
-
-
-MR. VERDANT GREEN'S SPORTS AND PASTIMES.
-
-
-
-Archery was all the fashion at Brazenface. They had as fine a lawn for it as the Trinity men had; and all day long there was somebody to be seen making holes in the targets, and endeavouring to realize the pose of the Apollo Belvidere;—rather a difficult thing to do, when you come to wear plaid trousers and shaggy coats. As Mr. Verdant Green felt desirous not only to uphold all the institutions of the University, but also to make himself acquainted with the sports and pastimes of the place, he forthwith joined the Archery and Cricket Clubs. He at once inspected the manufactures of Muir and Buchanan; and after selecting from their stores a fancy-wood bow, with arrows, belt, quiver, guard, tips, tassels, and grease-pot, he felt himself to be duly prepared to represent the Toxophilite character. But the sustaining it was a more difficult thing than he had conceived; for although he thought that it would be next to impossible to miss a shot when the target was so large, and the arrow went so easily from the bow, yet our hero soon discovered that even in the first steps of archery there was something to be learnt, and that the mere stringing of his bow was a performance attended with considerable difficulty. It was always slipping from his instep, or twisting the wrong way, or threatening to snap in sunder, or refusing to allow his fingers to slip the knot, or doing something that was dreadfully uncomfortable, and productive of perspiration; and two or three times he was reduced to the abject necessity of asking his friends to string his bow for him.
-But when he had mastered this slight difficulty, he found that the arrows (to use Mr. Bouncer's phrase) "wobbled," and had a predilection for going anywhere but into the target, notwithstanding its size; and unfortunately one went into the body of the Honourable Mr. Stormer's favourite Skye terrier, though, thanks to its shaggy coat and the bluntness of the arrow, it did not do a great amount of mischief; nevertheless, the vials of Mr. Stormer's wrath were outpoured upon Mr. Verdant Green's head; and such epea pteroenta followed the winged arrow, that our hero became alarmed, and for the time forswore archery practice.
-As he had fully equipped himself for archery, so also Mr. Verdant Green, (on the authority of Mr. Bouncer) got himself up for cricket regardless of expense; and he made his first appearance in the field in a straw hat with blue ribbon, and "flannels," and spiked shoes of perfect propriety.  As Mr. Bouncer had told him that, in cricket, attitude was every thing, Verdant, as soon as he went in for his innings, took up what he considered to be a very good position at the wicket. Little Mr. Bouncer, who was bowling, delivered the ball with a swiftness that seemed rather astonishing in such a small gentleman. The first ball was "wide;" nevertheless, Verdant (after it had passed) struck at it, raising his bat high in the air, and bringing it straight down to the ground as though it were an executioner's axe. The second ball was nearer to the mark; but it came in with such swiftness, that, as Mr. Verdant Green was quite new to round bowling, it was rather too quick for him, and hit him severely on the——, well, never mind,—on the trousers.
-"Hallo, Gig-lamps!" shouted the delighted Mr. Bouncer, "nothing like backing up; but it's no use assuming a stern appearance; you'll get your hand in soon, old feller!"
-But Verdant found that before he could get his hand in, the ball was got into his wicket; and that while he was preparing for the strike, the ball shot by; and, as Mr. Stumps, the wicket-keeper, kindly informed him, "there was a row in his timber-yard." Thus Verdant's score was always on the lucus a non lucendo principle of derivation, for not even to a quarter of a score did it ever reach; and he felt that he should never rival a Mynn or be a Parr with any one of the "All England" players.
-
-
-
-
-Besides these out-of-door sports, our hero also devoted a good deal of his time to acquiring in-door games, being quickly initiated into the mysteries of billiards, and plunging headlong into pool. It was in the billiard-room that Verdant first formed his acquaintance with Mr. Fluke of Christ Church, well known to be the best player in the University, and who, if report spoke truly, always made his five hundred a year by his skill in the game. Mr. Fluke kindly put our hero "into the way to become a player;" and Verdant soon found the apprenticeship was attended with rather heavy fees.
-
-
-
-
-At the wine-parties also that he attended he became rather a greater adept at cards than he had formerly been. "Van John" was the favourite game; and he was not long in discovering that taking shillings and half-crowns, instead of counters and "fish," and going odds on the colours, and losing five pounds before he was aware of it, was a very different thing to playing vingt-et-un at home with his sisters for "love"—(though perhaps cards afford the only way in which young ladies at twenty-one will play for love).
-In returning to Brazenface late from these parties, our hero was sometimes frightfully alarmed by suddenly finding himself face to face with a dreadful apparition, to which, by constant familiarity, he gradually became accustomed, and learned to look upon as the proctor with his marshal and bulldogs. At first, too, he was on such occasions greatly alarmed at finding the gates of Brazenface closed, obliging him thereby to "knock-in;" and not only did he apologize to the porter for troubling him to open the wicket, but he also volunteered elaborate explanations of the reasons that had kept him out after time,—explanations that were not received in the spirit with which they were tendered. When our freshman became aware of the mysteries of a gate-bill, he felt more at his ease.
-Mr. Verdant Green learned many things during his freshman's term, and, among others, he discovered that the quiet retirement of college-rooms, of which he had heard so much, was in many cases an unsubstantial idea, founded on imagination, and built up by fancy. One day that he had been writing a letter in Mr. Smalls' rooms, which were on the ground-floor, Verdant congratulated himself that his own rooms were on the third floor, and were thus removed from the possibility of his friends, when he had sported his oak, being able to get through his window to "chaff" him; but he soon discovered that rooms upstairs had also objectionable points in their private character, and were not altogether such eligible apartments as he had at first anticipated. First, there was the getting up and down the dislocated staircase, a feat which at night was sometimes attended with difficulty. Then, when he had accomplished this feat, there was no way of escaping from the noise of his neighbours. Mr. Sloe, the reading-man in the garret above, was one of those abominable nuisances, a peripatetic student, who "got up" every subject by pacing up and down his limited apartment, and, like the sentry, "walked his dreary round" at unseasonable hours of the night, at which time could be plainly heard the wretched chuckle, and crackings of knuckles (Mr. Sloe's way of expressing intense delight), with which he welcomed some miserable joke of Aristophanes, painfully elaborated by the help of Liddell-and-Scott; or the disgustingly sonorous way in which he declaimed his Greek choruses. This was bad enough at night; but in the day-time there was a still greater nuisance. The rooms immediately beneath Verdant's were possessed by a gentleman whose musical powers were of an unusually limited description, but who, unfortunately for his neighbours, possessed the idea that the cornet-à-piston was a beautiful instrument for pic-nics, races, boating-parties, and other long-vacation amusements, and sedulously practised "In my cottage near a wood," "Away with melancholy," and other airs of a lively character, in a doleful and distracted way, that would have fully justified his immediate homicide, or, at any rate, the confiscation of his offending instrument.
-Then, on the one side of Verdant's room, was Mr. Bouncer, sounding his octaves, and "going the complete unicorn;" and his bull-terriers, Huz and Buz, all and each of whom were of a restless and loud temperament; while, on the other side, were Mr. Four-in-hand Fosbrooke's rooms, in which fencing, boxing, single-stick, and other violent sports, were gone through, with a great expenditure of "Sa-ha! sa-ha!" and stampings. Verdant was sometimes induced to go in, and never could sufficiently admire the way in which men could be rapped with single-sticks without crying out or flinching; for it made him almost sore even to look at them. Mr. Blades, the stroke, was a frequent visitor there, and developed his muscles in the most satisfactory manner.
-After many refusals, our hero was at length persuaded to put on the gloves, and have a friendly bout with Mr. Blades. The result was as might have been anticipated; and Mr. Smalls doubtless gave a very correct résumé of the proceeding (for, as we have before said, he was thoroughly conversant with the sporting slang of Tintinnabulum's Life), when he told Verdant, that his claret had been repeatedly tapped, his bread-basket walked into, his day-lights darkened, his ivories rattled, his nozzle barked, his whisker-bed napped heavily, his kissing-trap countered, his ribs roasted, his nut spanked, and his whole person put in chancery, stung, bruised, fibbed, propped, fiddled, slogged, and otherwise ill-treated. So it is hardly to be wondered at if Mr. Verdant Green from thenceforth gave up boxing, as a senseless and ungentlemanly amusement.
-But while these pleasures(?) of the body were being attended to, the recreation of the mind was not forgotten. Mr. Larkyns had proposed Verdant's name at the Union; and, to that gentleman's great satisfaction, he was not black-balled. He daily, therefore, frequented the reading-room, and made a point of looking through all the magazines and newspapers; while he felt quite a pride in sitting in luxurious state upstairs, writing his letters to the home department on the very best note-paper, and sealing them extensively with "the Oxford Union" seal; though he could not at first be persuaded that trusting his letters to a wire closet was at all a safe system of postage.
-He also attended the Debates, which were then held in the long room behind Wyatt's; and he was particularly charmed with the manner in which vital questions, that (as he learned from the newspapers) had proved stumbling-blocks to the greatest statesmen of the land, were rapidly solved by the embryo statesmen of the Oxford Union. It was quite a sight, in that long picture-room, to see the rows of light iron seats densely crowded with young men—some of whom would perhaps rise to be Cannings, or Peels, or Gladstones—and to hear how one beardless gentleman would call another beardless gentleman his "honourable friend," and appeal "to the sense of the House," and address himself to "Mr. Speaker;" and how they would all juggle the same tricks of rhetoric as their fathers were doing in certain other debates in a certain other House. And it was curious, too, to mark the points of resemblance between the two Houses; and how the smaller one had, on its smaller scale, its Hume, and its Lord John, and its "Dizzy;" and how they went through the same traditional forms, and preserved the same time-honoured ideas, and debated in the fullest houses, with the greatest spirit and the greatest length, on such points as, "What course is it advisable for this country to take in regard to the government of its Indian possessions, and the imprisonment of Mr. Jones by the Rajah of Humbugpoopoonah?" Indeed, Mr. Verdant Green was so excited by this interesting debate, that on the third night of its adjournment he rose to address the House; but being "no orator as Brutus is," his few broken words were received with laughter, and the honourable gentleman was coughed down.
-Our hero had, as an Oxford freshman, to go through that cheerful form called "sitting in the schools,"—a form which consisted in the following ceremony. Through a door in the right-hand corner of the Schools Quadrangle,—(Oh, that door! does it not bring a pang into your heart only to think of it? to remember the day when you went in there as pale as the little pair of bands in which you were dressed for your sacrifice; and came out all in a glow and a chill when your examination was over; and posted your bosom-friend there to receive from Purdue the little slip of paper, and bring you the thrilling intelligence that you had passed; or to come empty-handed, and say that you had been plucked! Oh that door! well might be inscribed there the line which, on Dante's authority, is assigned to the door of another place,—
-
-
-
-"ALL HOPE ABANDON, YE WHO ENTER HERE!")
-
-
-
-
-—entering through this door in company with several other unfortunates, our hero passed between two galleries through a passage, by which, if the place had been a circus, the horses would have entered, and found himself in a tolerably large room lighted on either side by windows, and panelled half-way up the walls. Down the centre of this room ran a large green-baize-covered table, on the one side of which were some eight or ten miserable beings who were then undergoing examination, and were supplied with pens, ink, blotting-pad, and large sheets of thin "scribble-paper," on which they were struggling to impress their ideas; or else had a book set before them, out of which they were construing, or being racked with questions that touched now on one subject and now on another, like a bee  among flowers.  The large table was liberally supplied with all the apparatus and instruments of torture; and on the other side of it sat the three examiners, as dreadful and formidable as the terrible three of Venice. At the upper end of the room was a chair of state for the Vice-Chancellor, whenever he deigned to personally superintend the torture; to the right and left of which accommodation was provided for other victims. On the right hand of the room was a small open gallery of two seats (like those seen in infant schools); and here, from 10 in the morning till 4 in the afternoon, with only the interval of a quarter of an hour for luncheon, Mr. Verdant Green was compelled to sit and watch the proceedings, his perseverance being attested to by a certificate which he received as a reward for his meritorious conduct. If this "sitting in the schools" [1]  was established as an in terrorem form for the spectators, it undoubtedly generally had the desired effect; and what with the misery of sitting through a whole day on a hard bench with nothing to do, and the agony of seeing your fellow-creatures plucked, and having visions of the same prospective fate for yourself, the day on which the sitting takes place was usually regarded as one of those which, "if 'twere done, 'twere well it should be done quickly."
-
-
-
-
-As an appropriate sequel to this proceeding, Mr. Verdant Green attended the interesting ceremony of conferring degrees; where he discovered that the apparently insane promenade of the proctor gave rise to the name bestowed on (what Mr. Larkyns called) the equally insane custom of "plucking." [2] There too our hero saw the Vice-Chancellor in all his glory; and so agreeable were the proceedings, that altogether he had a great deal of Bliss. [3]
-
-
-
-↑ This form has been abolished (1853) under the new regulations.
-
-↑  When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.
-
-↑ The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.
-
-
-
-
-
-
-
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-
-
-
-
-
-
-
-
-
-1912795The adventures of Mr. Verdant Green, an Oxford freshman —  Chapter XICuthbert Bede
-
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-
-
-←Chapter X
-
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
-
-Chapter XII→
-
-←Chapter X
-The adventures of Mr. Verdant Green, an Oxford freshman  by Cuthbert Bede Chapter XI
- Chapter XII→
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1912795The adventures of Mr. Verdant Green, an Oxford freshman —  Chapter XICuthbert Bede
- 
-
-MR. VERDANT GREEN'S SPORTS AND PASTIMES.
-
-
-
-Archery was all the fashion at Brazenface. They had as fine a lawn for it as the Trinity men had; and all day long there was somebody to be seen making holes in the targets, and endeavouring to realize the pose of the Apollo Belvidere;—rather a difficult thing to do, when you come to wear plaid trousers and shaggy coats. As Mr. Verdant Green felt desirous not only to uphold all the institutions of the University, but also to make himself acquainted with the sports and pastimes of the place, he forthwith joined the Archery and Cricket Clubs. He at once inspected the manufactures of Muir and Buchanan; and after selecting from their stores a fancy-wood bow, with arrows, belt, quiver, guard, tips, tassels, and grease-pot, he felt himself to be duly prepared to represent the Toxophilite character. But the sustaining it was a more difficult thing than he had conceived; for although he thought that it would be next to impossible to miss a shot when the target was so large, and the arrow went so easily from the bow, yet our hero soon discovered that even in the first steps of archery there was something to be learnt, and that the mere stringing of his bow was a performance attended with considerable difficulty. It was always slipping from his instep, or twisting the wrong way, or threatening to snap in sunder, or refusing to allow his fingers to slip the knot, or doing something that was dreadfully uncomfortable, and productive of perspiration; and two or three times he was reduced to the abject necessity of asking his friends to string his bow for him.
-But when he had mastered this slight difficulty, he found that the arrows (to use Mr. Bouncer's phrase) "wobbled," and had a predilection for going anywhere but into the target, notwithstanding its size; and unfortunately one went into the body of the Honourable Mr. Stormer's favourite Skye terrier, though, thanks to its shaggy coat and the bluntness of the arrow, it did not do a great amount of mischief; nevertheless, the vials of Mr. Stormer's wrath were outpoured upon Mr. Verdant Green's head; and such epea pteroenta followed the winged arrow, that our hero became alarmed, and for the time forswore archery practice.
-As he had fully equipped himself for archery, so also Mr. Verdant Green, (on the authority of Mr. Bouncer) got himself up for cricket regardless of expense; and he made his first appearance in the field in a straw hat with blue ribbon, and "flannels," and spiked shoes of perfect propriety.  As Mr. Bouncer had told him that, in cricket, attitude was every thing, Verdant, as soon as he went in for his innings, took up what he considered to be a very good position at the wicket. Little Mr. Bouncer, who was bowling, delivered the ball with a swiftness that seemed rather astonishing in such a small gentleman. The first ball was "wide;" nevertheless, Verdant (after it had passed) struck at it, raising his bat high in the air, and bringing it straight down to the ground as though it were an executioner's axe. The second ball was nearer to the mark; but it came in with such swiftness, that, as Mr. Verdant Green was quite new to round bowling, it was rather too quick for him, and hit him severely on the——, well, never mind,—on the trousers.
-"Hallo, Gig-lamps!" shouted the delighted Mr. Bouncer, "nothing like backing up; but it's no use assuming a stern appearance; you'll get your hand in soon, old feller!"
-But Verdant found that before he could get his hand in, the ball was got into his wicket; and that while he was preparing for the strike, the ball shot by; and, as Mr. Stumps, the wicket-keeper, kindly informed him, "there was a row in his timber-yard." Thus Verdant's score was always on the lucus a non lucendo principle of derivation, for not even to a quarter of a score did it ever reach; and he felt that he should never rival a Mynn or be a Parr with any one of the "All England" players.
-
-
-
-
-Besides these out-of-door sports, our hero also devoted a good deal of his time to acquiring in-door games, being quickly initiated into the mysteries of billiards, and plunging headlong into pool. It was in the billiard-room that Verdant first formed his acquaintance with Mr. Fluke of Christ Church, well known to be the best player in the University, and who, if report spoke truly, always made his five hundred a year by his skill in the game. Mr. Fluke kindly put our hero "into the way to become a player;" and Verdant soon found the apprenticeship was attended with rather heavy fees.
-
-
-
-
-At the wine-parties also that he attended he became rather a greater adept at cards than he had formerly been. "Van John" was the favourite game; and he was not long in discovering that taking shillings and half-crowns, instead of counters and "fish," and going odds on the colours, and losing five pounds before he was aware of it, was a very different thing to playing vingt-et-un at home with his sisters for "love"—(though perhaps cards afford the only way in which young ladies at twenty-one will play for love).
-In returning to Brazenface late from these parties, our hero was sometimes frightfully alarmed by suddenly finding himself face to face with a dreadful apparition, to which, by constant familiarity, he gradually became accustomed, and learned to look upon as the proctor with his marshal and bulldogs. At first, too, he was on such occasions greatly alarmed at finding the gates of Brazenface closed, obliging him thereby to "knock-in;" and not only did he apologize to the porter for troubling him to open the wicket, but he also volunteered elaborate explanations of the reasons that had kept him out after time,—explanations that were not received in the spirit with which they were tendered. When our freshman became aware of the mysteries of a gate-bill, he felt more at his ease.
-Mr. Verdant Green learned many things during his freshman's term, and, among others, he discovered that the quiet retirement of college-rooms, of which he had heard so much, was in many cases an unsubstantial idea, founded on imagination, and built up by fancy. One day that he had been writing a letter in Mr. Smalls' rooms, which were on the ground-floor, Verdant congratulated himself that his own rooms were on the third floor, and were thus removed from the possibility of his friends, when he had sported his oak, being able to get through his window to "chaff" him; but he soon discovered that rooms upstairs had also objectionable points in their private character, and were not altogether such eligible apartments as he had at first anticipated. First, there was the getting up and down the dislocated staircase, a feat which at night was sometimes attended with difficulty. Then, when he had accomplished this feat, there was no way of escaping from the noise of his neighbours. Mr. Sloe, the reading-man in the garret above, was one of those abominable nuisances, a peripatetic student, who "got up" every subject by pacing up and down his limited apartment, and, like the sentry, "walked his dreary round" at unseasonable hours of the night, at which time could be plainly heard the wretched chuckle, and crackings of knuckles (Mr. Sloe's way of expressing intense delight), with which he welcomed some miserable joke of Aristophanes, painfully elaborated by the help of Liddell-and-Scott; or the disgustingly sonorous way in which he declaimed his Greek choruses. This was bad enough at night; but in the day-time there was a still greater nuisance. The rooms immediately beneath Verdant's were possessed by a gentleman whose musical powers were of an unusually limited description, but who, unfortunately for his neighbours, possessed the idea that the cornet-à-piston was a beautiful instrument for pic-nics, races, boating-parties, and other long-vacation amusements, and sedulously practised "In my cottage near a wood," "Away with melancholy," and other airs of a lively character, in a doleful and distracted way, that would have fully justified his immediate homicide, or, at any rate, the confiscation of his offending instrument.
-Then, on the one side of Verdant's room, was Mr. Bouncer, sounding his octaves, and "going the complete unicorn;" and his bull-terriers, Huz and Buz, all and each of whom were of a restless and loud temperament; while, on the other side, were Mr. Four-in-hand Fosbrooke's rooms, in which fencing, boxing, single-stick, and other violent sports, were gone through, with a great expenditure of "Sa-ha! sa-ha!" and stampings. Verdant was sometimes induced to go in, and never could sufficiently admire the way in which men could be rapped with single-sticks without crying out or flinching; for it made him almost sore even to look at them. Mr. Blades, the stroke, was a frequent visitor there, and developed his muscles in the most satisfactory manner.
-After many refusals, our hero was at length persuaded to put on the gloves, and have a friendly bout with Mr. Blades. The result was as might have been anticipated; and Mr. Smalls doubtless gave a very correct résumé of the proceeding (for, as we have before said, he was thoroughly conversant with the sporting slang of Tintinnabulum's Life), when he told Verdant, that his claret had been repeatedly tapped, his bread-basket walked into, his day-lights darkened, his ivories rattled, his nozzle barked, his whisker-bed napped heavily, his kissing-trap countered, his ribs roasted, his nut spanked, and his whole person put in chancery, stung, bruised, fibbed, propped, fiddled, slogged, and otherwise ill-treated. So it is hardly to be wondered at if Mr. Verdant Green from thenceforth gave up boxing, as a senseless and ungentlemanly amusement.
-But while these pleasures(?) of the body were being attended to, the recreation of the mind was not forgotten. Mr. Larkyns had proposed Verdant's name at the Union; and, to that gentleman's great satisfaction, he was not black-balled. He daily, therefore, frequented the reading-room, and made a point of looking through all the magazines and newspapers; while he felt quite a pride in sitting in luxurious state upstairs, writing his letters to the home department on the very best note-paper, and sealing them extensively with "the Oxford Union" seal; though he could not at first be persuaded that trusting his letters to a wire closet was at all a safe system of postage.
-He also attended the Debates, which were then held in the long room behind Wyatt's; and he was particularly charmed with the manner in which vital questions, that (as he learned from the newspapers) had proved stumbling-blocks to the greatest statesmen of the land, were rapidly solved by the embryo statesmen of the Oxford Union. It was quite a sight, in that long picture-room, to see the rows of light iron seats densely crowded with young men—some of whom would perhaps rise to be Cannings, or Peels, or Gladstones—and to hear how one beardless gentleman would call another beardless gentleman his "honourable friend," and appeal "to the sense of the House," and address himself to "Mr. Speaker;" and how they would all juggle the same tricks of rhetoric as their fathers were doing in certain other debates in a certain other House. And it was curious, too, to mark the points of resemblance between the two Houses; and how the smaller one had, on its smaller scale, its Hume, and its Lord John, and its "Dizzy;" and how they went through the same traditional forms, and preserved the same time-honoured ideas, and debated in the fullest houses, with the greatest spirit and the greatest length, on such points as, "What course is it advisable for this country to take in regard to the government of its Indian possessions, and the imprisonment of Mr. Jones by the Rajah of Humbugpoopoonah?" Indeed, Mr. Verdant Green was so excited by this interesting debate, that on the third night of its adjournment he rose to address the House; but being "no orator as Brutus is," his few broken words were received with laughter, and the honourable gentleman was coughed down.
-Our hero had, as an Oxford freshman, to go through that cheerful form called "sitting in the schools,"—a form which consisted in the following ceremony. Through a door in the right-hand corner of the Schools Quadrangle,—(Oh, that door! does it not bring a pang into your heart only to think of it? to remember the day when you went in there as pale as the little pair of bands in which you were dressed for your sacrifice; and came out all in a glow and a chill when your examination was over; and posted your bosom-friend there to receive from Purdue the little slip of paper, and bring you the thrilling intelligence that you had passed; or to come empty-handed, and say that you had been plucked! Oh that door! well might be inscribed there the line which, on Dante's authority, is assigned to the door of another place,—
-
-
-
-"ALL HOPE ABANDON, YE WHO ENTER HERE!")
-
-
-
-
-—entering through this door in company with several other unfortunates, our hero passed between two galleries through a passage, by which, if the place had been a circus, the horses would have entered, and found himself in a tolerably large room lighted on either side by windows, and panelled half-way up the walls. Down the centre of this room ran a large green-baize-covered table, on the one side of which were some eight or ten miserable beings who were then undergoing examination, and were supplied with pens, ink, blotting-pad, and large sheets of thin "scribble-paper," on which they were struggling to impress their ideas; or else had a book set before them, out of which they were construing, or being racked with questions that touched now on one subject and now on another, like a bee  among flowers.  The large table was liberally supplied with all the apparatus and instruments of torture; and on the other side of it sat the three examiners, as dreadful and formidable as the terrible three of Venice. At the upper end of the room was a chair of state for the Vice-Chancellor, whenever he deigned to personally superintend the torture; to the right and left of which accommodation was provided for other victims. On the right hand of the room was a small open gallery of two seats (like those seen in infant schools); and here, from 10 in the morning till 4 in the afternoon, with only the interval of a quarter of an hour for luncheon, Mr. Verdant Green was compelled to sit and watch the proceedings, his perseverance being attested to by a certificate which he received as a reward for his meritorious conduct. If this "sitting in the schools" [1]  was established as an in terrorem form for the spectators, it undoubtedly generally had the desired effect; and what with the misery of sitting through a whole day on a hard bench with nothing to do, and the agony of seeing your fellow-creatures plucked, and having visions of the same prospective fate for yourself, the day on which the sitting takes place was usually regarded as one of those which, "if 'twere done, 'twere well it should be done quickly."
-
-
-
-
-As an appropriate sequel to this proceeding, Mr. Verdant Green attended the interesting ceremony of conferring degrees; where he discovered that the apparently insane promenade of the proctor gave rise to the name bestowed on (what Mr. Larkyns called) the equally insane custom of "plucking." [2] There too our hero saw the Vice-Chancellor in all his glory; and so agreeable were the proceedings, that altogether he had a great deal of Bliss. [3]
-
-
-
-↑ This form has been abolished (1853) under the new regulations.
-
-↑  When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.
-
-↑ The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.
-
-
-
-
-MR. VERDANT GREEN'S SPORTS AND PASTIMES.
-
-
-"ALL HOPE ABANDON, YE WHO ENTER HERE!")
-
-
-
-↑ This form has been abolished (1853) under the new regulations.
-
-↑  When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.
-
-↑ The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.
-
-
-
-						Retrieved from "https://en.wikisource.org/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;oldid=6579981"					Hidden category: SubpagesHidden category: Subpages
-			Navigation menu
-			
-									
-						Personal tools
-						
-							Not logged inTalkContributionsCreate accountLog in						
-					
-									
-										
-						Namespaces
-						
-							PageDiscussion						
-					
-										
-												
-						
-							Variants
-						
-						
-							
-															
-						
-					
-									
-				
-										
-						Views
-						
-							ReadEditView history						
-					
-										
-						
-						More
-						
-							
-															
-						
-					
-										
-						
-							Search
-						
-						
-							
-															
-						
-					
-									
-			
-			
-				
-						
-			Navigation
-			
-								
-					Main PageCommunity portalCentral discussionRecent changesSubject indexAuthorsRandom workRandom authorRandom transcriptionHelpDonate				
-							
-		
-			
-			Display Options
-			
-								
-									
-							
-		
-			
-			Tools
-			
-								
-					What links hereRelated changesSpecial pagesPermanent linkPage informationCite this page				
-							
-		
-			
-			Download/print
-			
-								
-					Create a bookDownload as PDFPrintable version				
-							
-		
-			
-			In other languages
-			
-								
-									
-				Add links			
-		
-				
-		
-									
-						Personal tools
-						
-							Not logged inTalkContributionsCreate accountLog in						
-					
-									
-										
-						Namespaces
-						
-							PageDiscussion						
-					
-										
-												
-						
-							Variants
-						
-						
-							
-															
-						
-					
-									
-				
-										
-						Views
-						
-							ReadEditView history						
-					
-										
-						
-						More
-						
-							
-															
-						
-					
-										
-						
-							Search
-						
-						
-							
-															
-						
-					
-									
-			
-						Personal tools
-						
-							Not logged inTalkContributionsCreate accountLog in						
-					
-										
-						Namespaces
-						
-							PageDiscussion						
-					
-										
-												
-						
-							Variants
-						
-						
-							
-															
-						
-					
-									
-						Namespaces
-						
-							PageDiscussion						
-					
-												
-						
-							Variants
-						
-						
-							
-															
-						
-					
-							
-															
-						
-										
-						Views
-						
-							ReadEditView history						
-					
-										
-						
-						More
-						
-							
-															
-						
-					
-										
-						
-							Search
-						
-						
-							
-															
-						
-					
-									
-						Views
-						
-							ReadEditView history						
-					
-						
-						More
-						
-							
-															
-						
-					
-							
-															
-						
-						
-							Search
-						
-						
-							
-															
-						
-					
-															
-				
-						
-			Navigation
-			
-								
-					Main PageCommunity portalCentral discussionRecent changesSubject indexAuthorsRandom workRandom authorRandom transcriptionHelpDonate				
-							
-		
-			
-			Display Options
-			
-								
-									
-							
-		
-			
-			Tools
-			
-								
-					What links hereRelated changesSpecial pagesPermanent linkPage informationCite this page				
-							
-		
-			
-			Download/print
-			
-								
-					Create a bookDownload as PDFPrintable version				
-							
-		
-			
-			In other languages
-			
-								
-									
-				Add links			
-		
-				
-			Navigation
-			
-								
-					Main PageCommunity portalCentral discussionRecent changesSubject indexAuthorsRandom workRandom authorRandom transcriptionHelpDonate				
-							
-		
-								
-					Main PageCommunity portalCentral discussionRecent changesSubject indexAuthorsRandom workRandom authorRandom transcriptionHelpDonate				
-							
-			Display Options
-			
-								
-									
-							
-		
-								
-									
-							
-			Tools
-			
-								
-					What links hereRelated changesSpecial pagesPermanent linkPage informationCite this page				
-							
-		
-								
-					What links hereRelated changesSpecial pagesPermanent linkPage informationCite this page				
-							
-			Download/print
-			
-								
-					Create a bookDownload as PDFPrintable version				
-							
-		
-								
-					Create a bookDownload as PDFPrintable version				
-							
-			In other languages
-			
-								
-									
-				Add links			
-		
-								
-									
-				Add links			Add links
-						
-								 This page was last edited on 27 December 2016, at 18:31.
-								Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy.
-							
-						
-								Privacy policy
-								About Wikisource
-								Disclaimers
-								Developers
-								Cookie statement
-								Mobile view
-							
-										
-										
-											
-										
-											
-									
-						
-		
+</p><p><lb/>
+</p><ref target="/wiki/File:Pg_131_-_Mr_Verdant_Green.png"><graphic url="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pg_131_-_Mr_Verdant_Green.png/450px-Pg_131_-_Mr_Verdant_Green.png" rend="img" mimeType="image/png" width="450px" height="449px"/></ref><p><lb/>
+At the wine-parties also that he attended he became rather a greater adept at cards than he had formerly been. "Van John" was the favourite game; and he was not long in discovering that taking shillings and half-crowns, instead of counters and "fish," and going odds on the colours, and losing five pounds before he was aware of it, was a very different thing to playing <hi rend="italic">vingt-et-un</hi> at home with his sisters for "love"—(though perhaps cards afford the only way in which young ladies at twenty-one will <hi rend="italic">play</hi> for love).
+</p><p>In returning to Brazenface late from these parties, our hero was sometimes frightfully alarmed by suddenly finding himself face to face with a dreadful apparition, to which, by constant familiarity, he gradually became accustomed, and learned to look upon as the proctor with his marshal and bulldogs. At first, too, he was on such occasions greatly alarmed at finding the gates of Brazenface closed, obliging him thereby to "knock-in;" and not only did he apologize to the porter for troubling him to open the wicket, but he also volunteered elaborate explanations of the reasons that had kept him out after time,—explanations that were not received in the spirit with which they were tendered. When our freshman became aware of the mysteries of a gate-bill, he felt more at his ease.
+</p><p>Mr. Verdant Green learned many things during his freshman's term, and, among others, he discovered that the quiet retirement of college-rooms, of which he had heard so much, was in many cases an unsubstantial idea, founded on imagination, and built up by fancy. One day that he had been writing a letter in Mr. Smalls' rooms, which were on the ground-floor, Verdant congratulated himself that his own rooms were on the third floor, and were thus removed from the possibility of his friends, when he had sported his oak, being able to get through his window to "chaff" him; but he soon discovered that rooms upstairs had also objectionable points in their private character, and were not altogether such eligible apartments as he had at first anticipated. First, there was the getting up and down the dislocated staircase, a feat which at night was sometimes attended with difficulty. Then, when he had accomplished this feat, there was no way of escaping from the noise of his neighbours. Mr. Sloe, the reading-man in the garret above, was one of those abominable nuisances, a peripatetic student, who "got up" every subject by pacing up and down his limited apartment, and, like the sentry, "walked his dreary round" at unseasonable hours of the night, at which time could be plainly heard the wretched chuckle, and crackings of knuckles (Mr. Sloe's way of expressing intense delight), with which he welcomed some miserable joke of Aristophanes, painfully elaborated by the help of Liddell-and-Scott; or the disgustingly sonorous way in which he declaimed his Greek choruses. This was bad enough at night; but in the day-time there was a still greater nuisance. The rooms immediately beneath Verdant's were possessed by a gentleman whose musical powers were of an unusually limited description, but who, unfortunately for his neighbours, possessed the idea that the cornet-à-piston was a beautiful instrument for pic-nics, races, boating-parties, and other long-vacation amusements, and sedulously practised "In my cottage near a wood," "Away with melancholy," and other airs of a lively character, in a doleful and distracted way, that would have fully justified his immediate homicide, or, at any rate, the confiscation of his offending instrument.
+</p><p>Then, on the one side of Verdant's room, was Mr. Bouncer, sounding his octaves, and "going the complete unicorn;" and his bull-terriers, Huz and Buz, all and each of whom were of a restless and loud temperament; while, on the other side, were Mr. Four-in-hand Fosbrooke's rooms, in which fencing, boxing, single-stick, and other violent sports, were gone through, with a great expenditure of "Sa-ha! sa-ha!" and stampings. Verdant was sometimes induced to go in, and never could sufficiently admire the way in which men could be rapped with single-sticks without crying out or flinching; for it made him almost sore even to look at them. Mr. Blades, the stroke, was a frequent visitor there, and developed his muscles in the most satisfactory manner.
+</p><p>After many refusals, our hero was at length persuaded to put on the gloves, and have a friendly bout with Mr. Blades. The result was as might have been anticipated; and Mr. Smalls doubtless gave a very correct <hi rend="italic">résumé</hi> of the proceeding (for, as we have before said, he was thoroughly conversant with the sporting slang of <hi rend="italic">Tintinnabulum's Life</hi>), when he told Verdant, that his claret had been repeatedly tapped, his bread-basket walked into, his day-lights darkened, his ivories rattled, his nozzle barked, his whisker-bed napped heavily, his kissing-trap countered, his ribs roasted, his nut spanked, and his whole person put in chancery, stung, bruised, fibbed, propped, fiddled, slogged, and otherwise ill-treated. So it is hardly to be wondered at if Mr. Verdant Green from thenceforth gave up boxing, as a senseless and ungentlemanly amusement.
+</p><p>But while these pleasures(?) of the body were being attended to, the recreation of the mind was not forgotten. Mr. Larkyns had proposed Verdant's name at the Union; and, to that gentleman's great satisfaction, he was not black-balled. He daily, therefore, frequented the reading-room, and made a point of looking through all the magazines and newspapers; while he felt quite a pride in sitting in luxurious state upstairs, writing his letters to the home department on the very best note-paper, and sealing them extensively with "the Oxford Union" seal; though he could not at first be persuaded that trusting his letters to a wire closet was at all a safe system of postage.
+</p><p>He also attended the Debates, which were then held in the long room behind Wyatt's; and he was particularly charmed with the manner in which vital questions, that (as he learned from the newspapers) had proved stumbling-blocks to the greatest statesmen of the land, were rapidly solved by the embryo statesmen of the Oxford Union. It was quite a sight, in that long picture-room, to see the rows of light iron seats densely crowded with young men—some of whom would perhaps rise to be Cannings, or Peels, or Gladstones—and to hear how one beardless gentleman would call another beardless gentleman his "honourable friend," and appeal "to the sense of the House," and address himself to "Mr. Speaker;" and how they would all juggle the same tricks of rhetoric as their fathers were doing in certain other debates in a certain other House. And it was curious, too, to mark the points of resemblance between the two Houses; and how the smaller one had, on its smaller scale, its Hume, and its Lord John, and its "Dizzy;" and how they went through the same traditional forms, and preserved the same time-honoured ideas, and debated in the fullest houses, with the greatest spirit and the greatest length, on such points as, "What course is it advisable for this country to take in regard to the government of its Indian possessions, and the imprisonment of Mr. Jones by the Rajah of Humbugpoopoonah?" Indeed, Mr. Verdant Green was so excited by this interesting debate, that on the third night of its adjournment he rose to address the House; but being "no orator as Brutus is," his few broken words were received with laughter, and the honourable gentleman was coughed down.
+</p><p>Our hero had, as an Oxford freshman, to go through that cheerful form called "sitting in the schools,"—a form which consisted in the following ceremony. Through a door in the right-hand corner of the Schools Quadrangle,—(Oh, that door! does it not bring a pang into your heart only to think of it? to remember the day when you went in there as pale as the little pair of bands in which you were dressed for your sacrifice; and came out all in a glow and a chill when your examination was over; and posted your bosom-friend there to receive from Purdue the little slip of paper, and bring you the thrilling intelligence that you had passed; or to come empty-handed, and say that you had been plucked! Oh that door! well might be inscribed there the line which, on Dante's authority, is assigned to the door of another place,—
+</p><p><lb/>
+</p><p>"ALL HOPE ABANDON, YE WHO ENTER HERE!")
+</p><p><lb/>
+</p><ref target="/wiki/File:Pg_136_-_Mr_Verdant_Green.png"><graphic url="//upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pg_136_-_Mr_Verdant_Green.png/450px-Pg_136_-_Mr_Verdant_Green.png" rend="img" mimeType="image/png" width="450px" height="375px"/></ref><hi rend="sup"><ref target="#cite_note-1">[1]</ref></hi><hi rend="italic">in terrorem</hi><p><lb/>
+</p><ref target="/wiki/File:Pg_137_-_Mr_Verdant_Green.png"><graphic url="//upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pg_137_-_Mr_Verdant_Green.png/450px-Pg_137_-_Mr_Verdant_Green.png" rend="img" mimeType="image/png" width="450px" height="175px"/></ref><p><lb/>
+As an appropriate sequel to this proceeding, Mr. Verdant Green attended the interesting ceremony of conferring degrees; where he discovered that the apparently insane promenade of the proctor gave rise to the name bestowed on (what Mr. Larkyns called) the equally insane custom of "plucking." <hi rend="sup"><ref target="#cite_note-2">[2]</ref></hi> There too our hero saw the Vice-Chancellor in all his glory; and so agreeable were the proceedings, that altogether he had a great deal of Bliss. <hi rend="sup"><ref target="#cite_note-3">[3]</ref></hi>
+</p><list type="ordered">
+<item><hi rend="mw-cite-backlink"><ref target="#cite_ref-1">↑</ref></hi> <hi rend="reference-text">This form has been abolished (1853) under the new regulations.</hi>
+</item>
+<item><hi rend="mw-cite-backlink"><ref target="#cite_ref-2">↑</ref></hi> <hi rend="reference-text"> When the degrees are conferred, the name of each person is read out before he is presented to the Vice-Chancellor. The proctor then walks once up and down the room, so that any person who objects to the degree being granted may signify the same by pulling or "plucking" the proctor's robes. This has been occasionally done by tradesmen in order to obtain payment of their "little bills;" but such a proceeding is very rare, and the proctor's promenade is usually undisturbed.</hi>
+</item>
+<item><hi rend="mw-cite-backlink"><ref target="#cite_ref-3">↑</ref></hi> <hi rend="reference-text">The Rev. Philip Bliss, D.C.L., after holding the onerous post of Registrar of the University for many years, and discharging its duties in a way that called forth the unanimous thanks of the University, resigned office in 1853.</hi>
+</item>
+</list><!-- 
+NewPP limit report
+Parsed by mw1320
+Cached time: 20180801115000
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.088 seconds
+Real time usage: 0.156 seconds
+Preprocessor visited node count: 285/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 4007/2097152 bytes
+Template argument size: 1252/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 2/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1439/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.006/10.000 seconds
+Lua memory usage: 607 KB/50 MB
+--><!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   58.091      1 -total
+ 64.72%   37.596      1 Template:Header
+  9.67%    5.620      1 Template:Smallrefs
+  8.40%    4.882      1 Template:Tooltip
+  8.01%    4.655      2 Template:C
+  5.27%    3.060      1 Template:Dhr
+  4.14%    2.403      1 Template:Uc
+  3.97%    2.308      1 Template:Sc
+  2.58%    1.501      1 Template:Smaller
+--><!-- Saved in parser cache with key enwikisource:pcache:idhash:1912795-0!canonical and timestamp 20180801115000 and revision id 6579981
+ --><!--<noscript>--><graphic url="//en.wikisource.org/wiki/Special:CentralAutoLogin/start?type=1x1" rend="img" mimeType="image/jpeg" width="1px" height="1px"/><!--</noscript>--><ref target="https://en.wikisource.org/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;oldid=6579981">https://en.wikisource.org/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;oldid=6579981</ref><list type="unordered"><item><ref target="/wiki/Category:Subpages">Subpages</ref></item></list><div><head>Navigation menu</head><div><head>Personal tools</head><list type="unordered">
+							<item>Not logged in</item><item><ref target="/wiki/Special:MyTalk">Talk</ref></item><item><ref target="/wiki/Special:MyContributions">Contributions</ref></item><item><ref target="/w/index.php?title=Special:CreateAccount&amp;returnto=The+adventures+of+Mr.+Verdant+Green%2C+an+Oxford+freshman%2Fchapter+11">Create account</ref></item><item><ref target="/w/index.php?title=Special:UserLogin&amp;returnto=The+adventures+of+Mr.+Verdant+Green%2C+an+Oxford+freshman%2Fchapter+11">Log in</ref></item>						</list></div><div><head>Namespaces</head><list type="unordered">
+							<item><hi><ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11">Page</ref></hi></item><item><hi><ref target="/w/index.php?title=Talk:The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;action=edit&amp;redlink=1">Discussion</ref></hi></item>						</list><!--<input
+  type="checkbox"
+  class="vectorMenuCheckbox"
+  aria-labelledby="p-variants-label">--><!--</input>--></div><div><head>
+							<hi>Variants</hi>
+						</head><list type="unordered">
+															</list></div><div><head>Views</head><list type="unordered">
+							<item><hi><ref target="/wiki/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11">Read</ref></hi></item><item><hi><ref target="/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;action=edit">Edit</ref></hi></item><item><hi><ref target="/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;action=history">View history</ref></hi></item>						</list><!--<input
+  type="checkbox"
+  class="vectorMenuCheckbox"
+  aria-labelledby="p-cactions-label">--><!--</input>--></div><div><head><hi>More</hi></head><list type="unordered">
+															</list></div><div><head>
+							<!--<label
+  for="searchInput">-->Search<!--</label>-->
+						</head><!--<form
+  action="/w/index.php"
+  id="searchform">--><!--<input
+  type="search"
+  name="search"
+  placeholder="Search Wikisource"
+  title="Search Wikisource [f]"
+  accesskey="f"
+  id="searchInput">--><!--</input>--><!--<input
+  type="hidden"
+  value="Special:Search"
+  name="title">--><!--</input>--><!--<input
+  type="submit"
+  name="fulltext"
+  value="Search"
+  title="Search the pages for this text"
+  id="mw-searchButton"
+  class="searchButton mw-fallbackSearchButton">--><!--</input>--><!--<input
+  type="submit"
+  name="go"
+  value="Go"
+  title="Go to a page with this exact name if it exists"
+  id="searchButton"
+  class="searchButton">--><!--</input>--><!--</form>--><ref target="/wiki/Main_Page"/></div><div><head>Navigation</head><list type="unordered">
+					<item><ref target="/wiki/Main_Page">Main Page</ref></item><item><ref target="/wiki/Wikisource:Community_portal">Community portal</ref></item><item><ref target="/wiki/Wikisource:Scriptorium">Central discussion</ref></item><item><ref target="/wiki/Special:RecentChanges">Recent changes</ref></item><item><ref target="/wiki/Portal:Portals">Subject index</ref></item><item><ref target="/wiki/Category:Authors_by_alphabetical_order">Authors</ref></item><item><ref target="/wiki/Special:RandomRootpage/Main">Random work</ref></item><item><ref target="/wiki/Special:Random/Author">Random author</ref></item><item><ref target="/wiki/Special:Random/Index">Random transcription</ref></item><item><ref target="/wiki/Help:Contents">Help</ref></item><item><ref target="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikisource.org&amp;uselang=en">Donate</ref></item>				</list></div><div><head>Display Options</head><list type="unordered">
+									</list></div><div><head>Tools</head><list type="unordered">
+					<item><ref target="/wiki/Special:WhatLinksHere/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11">What links here</ref></item><item><ref target="/wiki/Special:RecentChangesLinked/The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11">Related changes</ref></item><item><ref target="/wiki/Special:SpecialPages">Special pages</ref></item><item><ref target="/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;oldid=6579981">Permanent link</ref></item><item><ref target="/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;action=info">Page information</ref></item><item><ref target="/w/index.php?title=Special:CiteThisPage&amp;page=The_adventures_of_Mr._Verdant_Green%2C_an_Oxford_freshman%2Fchapter_11&amp;id=6579981">Cite this page</ref></item>				</list></div><div><head>Download/print</head><list type="unordered">
+					<item><ref target="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=The+adventures+of+Mr.+Verdant+Green%2C+an+Oxford+freshman%2Fchapter+11">Create a book</ref></item><item><ref target="/w/index.php?title=Special:ElectronPdf&amp;page=The+adventures+of+Mr.+Verdant+Green%2C+an+Oxford+freshman%2Fchapter+11&amp;action=show-download-screen">Download as PDF</ref></item><item><ref target="/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;printable=yes">Printable version</ref></item>				</list></div><div><head>In other languages</head><list type="unordered">
+									</list><hi rend="wb-langlinks-add wb-langlinks-link"><ref target="https://www.wikidata.org/wiki/Special:NewItem?site=enwikisource&amp;page=The+adventures+of+Mr.+Verdant+Green%2C+an+Oxford+freshman%2Fchapter+11">Add links</ref></hi><list type="unordered">
+								<item> This page was last edited on 27 December 2016, at 18:31.</item>
+								<item>Text is available under the <ref target="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License</ref>; additional terms may apply.  By using this site, you agree to the <ref target="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</ref> and <ref target="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</ref><lb/></item>
+							</list><list type="unordered">
+								<item><ref target="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy policy</ref></item>
+								<item><ref target="/wiki/Wikisource:About">About Wikisource</ref></item>
+								<item><ref target="/wiki/Wikisource:General_disclaimer">Disclaimers</ref></item>
+								<item><ref target="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</ref></item>
+								<item><ref target="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</ref></item>
+								<item><ref target="//en.m.wikisource.org/w/index.php?title=The_adventures_of_Mr._Verdant_Green,_an_Oxford_freshman/chapter_11&amp;mobileaction=toggle_view_mobile">Mobile view</ref></item>
+							</list><list type="unordered">
+										<item>
+						<ref target="https://foundation.wikimedia.org/"><graphic url="/static/images/wikimedia-button.png" rend="img" mimeType="image/png" width="88px" height="31px"/></ref>					</item>
+										<item>
+						<ref target="//www.mediawiki.org/"><graphic url="/static/images/poweredby_mediawiki_88x31.png" rend="img" mimeType="image/png" width="88px" height="31px"/></ref>					</item>
+									</list><!--<script>--><!--</script>--></div></div></div></body></text>
+</TEI>
