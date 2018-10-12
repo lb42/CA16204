@@ -21,6 +21,10 @@
         <xsl:value-of select="substring-after(//t:TEI/@xml:id,'-')"/>
     </xsl:variable>
 
+<xsl:variable name="pageCount">
+    <xsl:value-of select="count(//t:pb)"/>
+</xsl:variable>
+    
 <xsl:variable name="textId">
     <xsl:value-of select="concat('SL',$fileId)"/>
 </xsl:variable>
@@ -60,6 +64,8 @@
         <title><xsl:value-of select="concat(substring-before(substring-after(.,':'),'('),' : ELTeC edition')"/></title>
         <author><xsl:value-of select="concat(substring-before(.,':'),' (?-?)')"/></author>  
     </xsl:template>
+    
+    
     <xsl:template match="e:size/@key">
         <xsl:attribute name="key">
         <xsl:choose>
@@ -70,6 +76,10 @@
     </xsl:template>
     
     <xsl:template match="t:publicationStmt">
+        <extent>
+            <measure unit="words"><xsl:value-of select="$fileSize"/></measure>
+            <measure unit="pages"><xsl:value-of select="$pageCount"/></measure>
+        </extent>
         <publicationStmt>
             <p>Dodan ELTeC <date>2018-10-11</date></p>
         </publicationStmt>
@@ -102,6 +112,15 @@
             <xsl:otherwise>????</xsl:otherwise>
        </xsl:choose></xsl:attribute>    </xsl:template>
     
+   <!-- fix errors not caught by retag.xsl -->
+    
+    <xsl:template match="t:choice">
+        <corr><xsl:value-of select="t:corr"/></corr>
+    </xsl:template>
+    
+    <xsl:template match="t:encodingDesc/@n">
+        <xsl:attribute name="n">level-1</xsl:attribute>
+    </xsl:template>
     <xsl:template match="* | @* | processing-instruction()">
         <xsl:copy>
             <xsl:apply-templates select="* | @* | processing-instruction() | comment() | text()"/>
