@@ -8,28 +8,33 @@ version="2.0">
 <xsl:output method="text"/>
     
     <xsl:template match="/">
-<xsl:text>
+<!--<xsl:text>
 bassetId|title|date|authSex|onlineID
-</xsl:text>
-        <xsl:apply-templates select="//t:bibl[t:ref[starts-with(@target,'pg')]]"/>
+</xsl:text>-->
+        <xsl:apply-templates select="//bibl[ref[starts-with(@target,'pg')]]"/>
+        <xsl:message><xsl:value-of select="count(//bibl[ref[starts-with(@target,'pg')]])"/> PG titles</xsl:message>
     </xsl:template>
-    <xsl:template match="t:bibl">
-      
-      <!-- --> 
-        <xsl:value-of select="t:date"/>
+    
+    <xsl:template match="bibl">    
+<xsl:variable name="authorCode">
+    <xsl:value-of select="substring-after(author/@ref,':')"/>
+</xsl:variable>
+     <xsl:if test="not(document('nonBritishAuthors.xml')//name[@xml:id=$authorCode])
+         and date &lt; 1900 and date &gt; 1839         ">
+       <xsl:value-of select="date"/>
         <xsl:text>|</xsl:text>
-        <xsl:value-of select="substring-before(t:author/@ref,':')"/>
+        <xsl:value-of select="substring-before(author/@ref,':')"/>
         <xsl:text>|</xsl:text>
         
-        <xsl:value-of select="normalize-space(substring-before(t:author,','))"/>
-        <xsl:text>|</xsl:text> <xsl:value-of select="normalize-space(t:title)"/>
+        <xsl:value-of select="normalize-space(substring-before(author,','))"/>
+        <xsl:text>|</xsl:text> <xsl:value-of select="normalize-space( title)"/>
             <xsl:text>|</xsl:text>
          <!--        <xsl:value-of select="substring-before(@target,':')"/>
    -->         <xsl:text>http://www.gutenberg.org/ebooks/</xsl:text>
-          <xsl:value-of select="substring-after(t:ref[starts-with(@target,'pg')][1]/@target,':')"/>   
+          <xsl:value-of select="substring-after(ref[starts-with(@target,'pg')][1]/@target,':')"/>   
             <xsl:text>
-</xsl:text>  
-       
+</xsl:text> 
+        </xsl:if>
   
     </xsl:template>
 </xsl:stylesheet>
