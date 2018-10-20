@@ -8,7 +8,10 @@
     <xsl:template match="/">
         <xsl:apply-templates select="//h:body"/>
     </xsl:template>
-<xsl:template match="h:pre"/>
+    
+<xsl:template match="h:pre|h:p[@class='toc']|h:br|h:a|h:eg|h:table"/>
+    
+    
     <xsl:template match="h:body">
         <body>
             <xsl:for-each-group select="*" group-starting-with="h:a">
@@ -22,7 +25,7 @@
         </body>
     </xsl:template>
     
-<xsl:template match="h:h3">
+<xsl:template match="h:h2">
     <head><xsl:apply-templates/></head>
 </xsl:template>
 
@@ -38,10 +41,7 @@
         </hi>
     </xsl:template>
 
-    <xsl:template match="h:br"/>
-      
-
-    <xsl:template match="h:a"/>
+    
 
 
 </xsl:stylesheet>
