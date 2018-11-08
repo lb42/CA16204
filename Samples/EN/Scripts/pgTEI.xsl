@@ -36,6 +36,33 @@
         </div>
     </xsl:template>
     
+    <xsl:template match="pgIf">
+        <gap unit="fullPageIllus"/><pb/>
+    </xsl:template>
+    
+    <xsl:template match="note">
+        <xsl:variable name="num">
+            <xsl:value-of select="count(preceding::note)+1"/>
+        </xsl:variable>
+        <xsl:variable name="noteNum">
+            <xsl:value-of select="concat('#N',$num)"/>
+        </xsl:variable>
+        <ref target="{$noteNum}"/>
+    </xsl:template>
+    
+    <xsl:template match="back">
+      <back>  <div type="notes">
+            <xsl:for-each select="//note">
+                <xsl:variable name="noteNum">
+                    <xsl:value-of select="concat('N',position())"/>
+                </xsl:variable> 
+            <note xml:id="{$noteNum}">
+                <xsl:apply-templates/>
+  </note><xsl:text>
+</xsl:text>          </xsl:for-each>
+        </div>
+      <xsl:apply-templates/></back>
+    </xsl:template>
     <xsl:template match="div[@rend]" >
         <div type="chapter">
             <xsl:apply-templates/>
@@ -47,9 +74,13 @@
     </xsl:template>
     
     <xsl:template match="q">
-        <xsl:text>"</xsl:text>
+        <xsl:text>“</xsl:text>
         <xsl:apply-templates/>
-        <xsl:text>"</xsl:text>
+        <xsl:text>”</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="lg">
+        <xsl:apply-templates/>
     </xsl:template>
     
     <xsl:template match="* | @* | processing-instruction()">
