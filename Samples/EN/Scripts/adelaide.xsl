@@ -10,7 +10,7 @@
     <xsl:template match="/">
         <text>
             <front><div type="titlepage"><p><xsl:apply-templates select="//h:div[@class='titlepage']"/></p></div>
-                <div type="liminal"><xsl:apply-templates select="//h:div[@class='introduction']"/> </div>                      
+                <div type="liminal"><xsl:apply-templates select="//h:div[@class='prologue']"/> </div>                      
             </front>
             <body>
         <xsl:apply-templates select="//h:body/h:div[@class='chapter']"/>
@@ -18,6 +18,8 @@
         </text>
     </xsl:template>
 
+    
+    
     <xsl:template match="h:div[@class='chapter']">
         <div type="chapter" >
             <xsl:apply-templates/>
@@ -36,13 +38,17 @@
     <xsl:template match="h:div[@class='colophon']|h:div[@class='titleverso']">
         <xsl:comment><xsl:apply-templates/></xsl:comment>
     </xsl:template>
-    <xsl:template match="h:div[@class='illustration']">
+    <xsl:template match="h:div[@class='illustration']|h:figure">
 <xsl:variable name="imgURI">
-    <xsl:value-of select="//h:img/@src"/>
+    <xsl:value-of select=".//h:img/@src"/>
 </xsl:variable>        
         <gap reason="graphic" n="{$imgURI}"/>
     </xsl:template>
+  
+<xsl:template match="h:figure/h:figcaption"/>
     
+
+
     <xsl:template match="h:div[@class='header']">     
             <xsl:apply-templates/>
     </xsl:template>
