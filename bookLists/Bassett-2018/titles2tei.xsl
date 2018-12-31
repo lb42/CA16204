@@ -51,7 +51,7 @@
                 <!-- not sanitized for
                     consitency with the vwwp-list etc. -->
             </xsl:variable>
-            <xsl:if test="string-length(t:cell[@n='1']) gt 0">
+          <xsl:if test="$authId">
             <bibl>
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="concat('B', t:cell[@n='1'])"/>
