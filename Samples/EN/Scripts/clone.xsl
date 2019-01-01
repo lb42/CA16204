@@ -7,10 +7,7 @@
     xmlns="http://www.tei-c.org/ns/1.0" 
     version="2.0">
    <!-- by default this stylesheet copies all existing tagging unchanged--> 
-    
-   <!-- add templates for elements you want to change here -->
-    
-    
+        
     
     <xsl:template match="* | @* | processing-instruction()">
         <xsl:copy>
