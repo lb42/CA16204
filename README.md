@@ -1,2 +1,0 @@
-# fr-CH
-# ELTEC-FRCH

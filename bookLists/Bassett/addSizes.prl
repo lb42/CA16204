@@ -1,0 +1,31 @@
+open(F, "<", "sizes.txt")
+  	or die "Can't open < input.txt: $!";
+while (<F>) {
+chop;
+if (/\s+(\d+)\s+(G\d+)/) {
+  $sz=$1; $txt=$2;
+$sized{$txt} = $sz;
+$nSz++;
+}}
+
+close F;
+#print "Added $nSz sizes\n";
+
+while (<>) {
+chop;
+($id,$tag,$date,$size,$Gid,$sex,$slot) = split /,/;
+
+if ($sized{$Gid} > 0) {
+   $size = $sized{$Gid};
+  $nAdd++;
+   }
+   if ($size eq '4') {$szCode='S0'
+   } elsif ($size eq '0') {$szCode = 'S0';
+   } elsif ($size < 500) {$szCode = 'S1';
+   } elsif ($size < 1000) {$szCode = 'S2';
+   } elsif ($size < 1500) {$szCode = 'S3';
+   } else { $szCode='S4'};
+   
+   print "$id,$tag,$date,$size,$Gid,$sex,$slot,$szCode\n";
+   }
+   print "$nAdd sizes added\n";

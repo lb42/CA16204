@@ -4,7 +4,7 @@
     
     <xsl:output exclude-result-prefixes="#all" omit-xml-declaration="yes"/>
 
-    <!-- Process the bassett TEI file 
+    <!-- Process the input file (a TEI version of the Bassett dump) 
         mergeing in links for $hitName from the file $hitFile -->
     
     <xsl:param name="hitFile">ht-bit.xml</xsl:param>

@@ -1,0 +1,5 @@
+#extract the csv files from bassett dump and make them TEI files
+csvtotei 20181231_snapshop_version_2.0/authors.csv authors.tmp
+saxon authors.tmp authors2tei.xsl -o:authors.tei
+csvtotei 20181231_snapshop_version_2.0/titles.csv titles.tmp
+saxon titles.tmp titles2tei.xsl -o:titles.tei
