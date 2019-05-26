@@ -5,12 +5,14 @@
      version="2.0">
     <xsl:output omit-xml-declaration="yes"/>
     <xsl:template match="/">
-        <xsl:for-each select="//bibl">
-            <xsl:sort select="title"/>
+<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:for-each select="//t:bibl">
+            <xsl:value-of select="@xml:id"/>
+<xsl:text>|</xsl:text>
             <xsl:value-of select="@n"/>
             <xsl:text>
 </xsl:text>
         </xsl:for-each>
-    </xsl:template>
+</listBibl>    </xsl:template>
   
 </xsl:stylesheet>
