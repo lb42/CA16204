@@ -10,7 +10,7 @@
                 <xsl:value-of select="substring-after(@target,':')"/>
             </xsl:variable>
             <xsl:variable name="gutenFile">
-                <xsl:value-of select="concat($gutenNum,'.txt')"/>
+                <xsl:value-of select="concat($gutenNum,'*.txt')"/>
             </xsl:variable>
             
             <xsl:text>curl -Of http://www.gutenberg.org/files/</xsl:text>
