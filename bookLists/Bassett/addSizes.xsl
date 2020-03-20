@@ -6,8 +6,14 @@
     version="2.0">
   
     <xsl:key name="wcounts" match="sz" use="@n"/>
-    
-       <xsl:template match="bibl/ref[starts-with(@target,'pg')]">
+
+<xsl:template match="/">
+<listBibl>
+<xsl:apply-templates select="//bibl[ref[starts-with(@target,'pg')]]"/>
+</listBibl>
+</xsl:template>
+
+       <xsl:template match="ref">
             <ref>   
                 <xsl:variable name="gutenKey">
                     <xsl:value-of select="substring-after(@target,':')"/>
@@ -20,7 +26,7 @@
                 <xsl:choose>
                     <xsl:when test="$wc gt '0'">
                         <xsl:attribute name="wcount"><xsl:value-of select="$wc"/></xsl:attribute>
-                        <xsl:attribute name="size"><xsl:value-of select="e:szCode($wc)"/></xsl:attribute>                        
+                                
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:message><xsl:value-of select="concat('No size info for ', $gutenKey)"/></xsl:message>
@@ -29,14 +35,6 @@
               <xsl:apply-templates select="@*"/></ref>
        </xsl:template>
     
-    <xsl:function name="e:szCode">
-        <xsl:param name="count" as="xs:integer"/>
-            <xsl:choose>
-                <xsl:when test="$count lt 50000">short</xsl:when>
-                <xsl:when test="$count lt 100000">medium</xsl:when>
-                <xsl:when test="$count gt 100000">long</xsl:when>
-            </xsl:choose>
-     </xsl:function>
     
     <xsl:template match="* | @* | processing-instruction()">
         <xsl:copy>
