@@ -51,6 +51,22 @@
                 <!-- not sanitized for
                     consitency with the vwwp-list etc. -->
             </xsl:variable>
+            
+            <xsl:variable name="pubDate">
+                <xsl:value-of select="substring(t:cell[@n='7'],1,4)"/>
+            </xsl:variable>
+            
+            <xsl:variable name="balanceKey">
+                <xsl:choose>
+                    <xsl:when test="$pubDate le '1859'">T1</xsl:when>
+                    <xsl:when test="$pubDate le '1879'">T2</xsl:when>
+                    <xsl:when test="$pubDate le '1899'">T3</xsl:when>
+                    <xsl:when test="$pubDate le '1920'">T4</xsl:when>
+                </xsl:choose>
+                <xsl:value-of select="$authSex"/>
+                <xsl:value-of select="t:cell[@n='4']"/> <!-- use vol count as surrogate for length-->              
+            </xsl:variable>
+            
             <xsl:if test="string-length(t:cell[@n='1']) gt 0">
             <bibl>
                 <xsl:attribute name="xml:id">
@@ -58,6 +74,9 @@
                 </xsl:attribute>
                 <xsl:attribute name="n">
                     <xsl:value-of select="concat($titleKey, $authKey)"/>
+                </xsl:attribute>
+                <xsl:attribute name="ana">
+                    <xsl:value-of select="$balanceKey"/>
                 </xsl:attribute>
                 <author>
                     <xsl:attribute name="ref">
