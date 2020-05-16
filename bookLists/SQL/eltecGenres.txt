@@ -1,0 +1,84 @@
+eltec_id	title_id	genre_name
+ENG18400	4163	Factory Novel
+ENG18400	4163	Social Problem Novel
+ENG18410	4292	Newgate Novel
+ENG18440	3025	Political Novel
+ENG18440	3025	School Novel
+ENG18440	3025	University Novel
+ENG18450	3028	Factory Novel
+ENG18450	3028	Social Problem Novel
+ENG18450	3028	University Novel
+ENG18471	7446	Character: Gypsy
+ENG18480	7155	Character: Governess
+ENG18480	7155	Indian Novel
+ENG18481	7467	Social Problem Novel
+ENG18482	6955	Character: Disabled
+ENG18482	6955	Character: Fallen Woman
+ENG18482	6955	Character: Musician
+ENG18482	6955	Factory Novel
+ENG18482	6955	Social Problem Novel
+ENG18500	7800	Historical Novel: 17th Century
+ENG18500	7800	Science Fiction
+ENG18500	7800	Supernatural Fiction
+ENG18510	7479	Social Problem Novel
+ENG18530	7470	Character: Drug Addict
+ENG18530	7470	Character: Suicide
+ENG18530	7470	Detective Fiction
+ENG18530	7470	Social Problem Novel
+ENG18540	7471	Factory Novel
+ENG18540	7471	Social Problem Novel
+ENG18551	7448	Chronicles of Barsetshire
+ENG18551	7448	Social Problem Novel
+ENG18600	7604	Sensation Novel
+ENG18621	2978	Bigamy Novel
+ENG18621	2978	Character: Governess
+ENG18621	2978	Detective Fiction
+ENG18621	2978	Sensation Novel
+ENG18630	579	Character: Mentally Ill
+ENG18630	579	Nautical Novel
+ENG18630	579	Sensation Novel
+ENG18630	579	Social Problem Novel
+ENG18630	579	University Novel
+ENG18640	120	Sensation Novel
+ENG18650	5492	Palliser Novels
+ENG18660	218	Historical Novel: 19th Century
+ENG18660	218	Political Novel
+ENG18660	218	Sensation Novel
+ENG18660	218	Social Problem Novel
+ENG18670	719	African Novel
+ENG18670	719	Unfinished Serializations
+ENG18702	8122	Character: Suicide
+ENG18721	5429	Four-Volume Novel
+ENG18741	5873	Four-Volume Novel
+ENG18760	5727	Bigamy Novel
+ENG18770	5727	Bigamy Novel
+ENG18800	1984	Political Novel
+ENG18800	1984	University Novel
+ENG18820	9340	School Novel
+ENG18830	1017	Character: Suicide
+ENG18830	1017	University Novel
+ENG18840	1493	Character: Governess
+ENG18840	1493	New Woman Novel
+ENG18860	6088	Bigamy Novel
+ENG18870	1671	New Woman Novel
+ENG18872	7708	Russian Novel
+ENG18890	8322	Russian Novel
+ENG18900	7559	Detective Fiction
+ENG18900	7559	Sensation Novel
+ENG18910	8426	Pseudonym Library
+ENG18911	4652	Character: Author
+ENG18931	13385	New Woman Novel
+ENG18940	7490	Character: Author
+ENG18940	7490	New Woman Novel
+ENG18941	9120	New Woman Novel
+ENG18950	8318	Keynotes Series
+ENG18950	8318	New Woman Novel
+ENG18952	8588	Science Fiction
+ENG18954	8281	Keynotes Series
+ENG18960	11171	Character: Suicide
+ENG18960	11171	South African Novel
+ENG18961	14515	Detective Fiction
+ENG18980	10971	Historical Novel: Classical
+ENG19011	9715	Arrowsmith's Bristol Library
+ENG19030	8466	Historical Novel: 18th Century
+ENG19030	8466	Pseudonym Library
