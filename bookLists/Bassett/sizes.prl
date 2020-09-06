@@ -1,6 +1,0 @@
-print "<sizes>\n";
-while (<>) {
- if (/(\d+) (\d+)/) {
-    print "<sz w='$1' n='$2'\/>\n";
-}}
-print "<\/sizes>\n";
